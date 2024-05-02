@@ -1,0 +1,8 @@
+site_name: Sagi's database
+site_url: https://sagidb.github.io
+theme:
+    name: material
+    palette:
+        scheme: slate
+        primary: black
+        accent: cyan
