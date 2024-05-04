@@ -1,5 +1,6 @@
 site_name: Sagi's database
 site_url: https://sagidb.github.io
+dev_addr: '127.0.0.1:46552' 
 theme:
     name: material
     palette:
