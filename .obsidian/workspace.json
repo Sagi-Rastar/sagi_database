@@ -149,6 +149,9 @@
   },
   "active": "4cd482f59a7f8074",
   "lastOpenFiles": [
+    "docs/软件/04-AI/index.md",
+    "docs/软件/03-WEB技术/index.md",
+    "docs/软件/02-嵌入式Linux/index.md",
     "site/软件/01-嵌入式软件/index.html",
     "site/软件/00-通用算法/index.html",
     "site/软件/index.html",
@@ -168,7 +171,6 @@
     "docs/平台/index.md",
     "site/search/search_index.json",
     "site/search",
-    "site/软件/04-AI/00-AI总述/index.html",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
     "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
@@ -192,8 +194,6 @@
     "docs/硬件/03-机械结构/00-机械结构总述.md",
     "docs/硬件/02-Layout参考/00-layout总述.md",
     "docs/硬件/01-电路与模块/00-电路与模块总述.md",
-    "docs/index.md",
-    "docs/平台/00-平台总述.md",
     "site/assets/images/favicon.png"
   ]
 }

@@ -27,7 +27,7 @@ icon: material/home
 
     > “平台”：ARM/MCU/x86平台…
 
--   :simple-opensourcehardware:{ .lg .middle } [__硬件__](https://sagi-rastar.github.io/sagi_database/%E7%A1%AC%E4%BB%B6/)
+-   :simple-opensourcehardware:{ .lg .middle } [__硬件__](硬件/index.md)
 
     ---
 
@@ -35,7 +35,7 @@ icon: material/home
     
     > “硬件”：基础理论/电路模块/机械/材料…
 
--   :simple-gnubash:{ .lg .middle } [__软件__](https://sagi-rastar.github.io/sagi_database/%E8%BD%AF%E4%BB%B6/)
+-   :simple-gnubash:{ .lg .middle } [__软件__](软件/index.md)
 
     ---
 

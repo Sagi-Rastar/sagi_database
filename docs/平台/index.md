@@ -9,7 +9,7 @@ icon: simple/formspree
 
 <div class="grid cards" markdown>
 
-- :material-chip:{ .lg .middle } [__MCU__](#)
+- :material-chip:{ .lg .middle } [__MCU__](00-MCU/index.md)
 
     ---
 
@@ -17,7 +17,7 @@ icon: simple/formspree
 
     > “MCU”：微控制器/单片机/嵌入式系统…
 
-- :simple-arm:{ .lg .middle } [__ARM__](#)
+- :simple-arm:{ .lg .middle } [__ARM__](01-ARM/index.md)
 
     ---
 
@@ -25,7 +25,7 @@ icon: simple/formspree
 
     > “ARM”：ARM处理器/ARM架构设计…
 
-- :simple-intel:{ .lg .middle } [__x86__](#)
+- :simple-intel:{ .lg .middle } [__x86__](02-x86/index.md)
 
     ---
 

@@ -9,7 +9,7 @@ icon: simple/gnubash
 
 <div class="grid cards" markdown>
 
-- :simple-thealgorithms:{ .lg .middle } [__通用算法__](#)
+- :simple-thealgorithms:{ .lg .middle } [__通用算法__](00-通用算法/index.md)
 
     ---
 
@@ -17,7 +17,7 @@ icon: simple/gnubash
 
     > “通用算法”：排序算法/搜索算法/图算法…
 
-- :fontawesome-solid-microchip:{ .lg .middle } [__嵌入式软件__](https://sagi-rastar.github.io/sagi_database/%E8%BD%AF%E4%BB%B6/01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/00-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%80%BB%E8%BF%B0/)
+- :fontawesome-solid-microchip:{ .lg .middle } [__嵌入式软件__](01-嵌入式软件/index.md)
 
     ---
 
@@ -25,7 +25,7 @@ icon: simple/gnubash
 
     > “嵌入式软件”：实时操作系统/驱动程序/中间件/通讯协议…
 
-- :simple-linux:{ .lg .middle } [__嵌入式Linux__](#)
+- :simple-linux:{ .lg .middle } [__嵌入式Linux__](02-嵌入式Linux/index.h)
 
     ---
 
@@ -33,7 +33,7 @@ icon: simple/gnubash
 
     > “嵌入式Linux”：Linux内核/文件系统/设备树…
 
-- :material-web:{ .lg .middle } [__WEB技术__](#)
+- :material-web:{ .lg .middle } [__WEB技术__](03-WEB技术/index.md)
 
     ---
 
@@ -41,7 +41,7 @@ icon: simple/gnubash
 
     > “WEB技术”：HTML/CSS/JavaScript/框架…
 
-- :material-robot:{ .lg .middle } [__AI__](#)
+- :material-robot:{ .lg .middle } [__AI__](04-AI/00-AI总述.md)
 
     ---
 
