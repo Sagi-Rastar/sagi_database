@@ -1,4 +1,11 @@
-# 欢迎
+---
+hide:
+  - navigation
+  - toc
+icon: material/home
+---
+
+# :material-home: 欢迎
 
 这里是 SagiRastar 用于存储各类他所感兴趣的技术相关的文档库。
 
@@ -36,5 +43,12 @@
 
     > “软件”：数据结构/嵌软/Linux/WEB/AI…
 
+-   :simple-gnubash:{ .lg .middle } [__个人主页__](https://sagi-rastar.github.io/)
+
+    ---
+
+    个人主页主要用来存放碎碎念
+
+    > “个人主页”：Blog/图集/关于…
 
 </div>

@@ -1,4 +1,11 @@
+---
+hide:
+  - navigation
+  - toc
+icon: simple/gnubash
+---
 
+# :simple-gnubash: 软件
 
 <div class="grid cards" markdown>
 

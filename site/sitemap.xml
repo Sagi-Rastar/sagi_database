@@ -6,12 +6,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-%E5%B9%B3%E5%8F%B0%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-MCU/00-MCU%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-MCU/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -26,7 +26,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/01-ARM/00-ARM%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/01-ARM/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -36,12 +36,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/02-x86/00-%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/02-x86/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E7%A1%AC%E4%BB%B6/00-%E7%A1%AC%E4%BB%B6%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E7%A1%AC%E4%BB%B6/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -86,17 +86,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/00-%E8%BD%AF%E4%BB%B6%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/00-%E9%80%9A%E7%94%A8%E7%AE%97%E6%B3%95/00-%E9%80%9A%E7%94%A8%E7%AE%97%E6%B3%95%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/00-%E9%80%9A%E7%94%A8%E7%AE%97%E6%B3%95/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/00-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
