@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/硬件/00-硬件总述.md",
+                "file": "docs/平台/MCU/ESP32/00-ESP32总述.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 421.5
+    "width": 421.5,
+    "collapsed": true
   },
   "right": {
     "id": "1529aa6e59d1d32b",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/硬件/00-硬件总述.md",
+                "file": "docs/平台/MCU/ESP32/00-ESP32总述.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/硬件/00-硬件总述.md",
+                "file": "docs/平台/MCU/ESP32/00-ESP32总述.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/硬件/00-硬件总述.md"
+                "file": "docs/平台/MCU/ESP32/00-ESP32总述.md"
               }
             }
           }
@@ -149,6 +150,7 @@
   },
   "active": "4cd482f59a7f8074",
   "lastOpenFiles": [
+    "docs/硬件/00-硬件总述.md",
     "docs/硬件/00-基础理论/模电/00-模电总述.md",
     "site/search/search_index.json",
     "site/search",
@@ -172,7 +174,6 @@
     "docs/硬件/02-Layout参考/00-layout总述.md",
     "docs/硬件/01-电路与模块/00-电路与模块总述.md",
     "docs/index.md",
-    "docs/硬件/00-硬件总述.md",
     "docs/平台/00-平台总述.md",
     "docs/软件/00-通用算法.md",
     "docs/软件/00-通用算法/数电/00-数电总述.md",
