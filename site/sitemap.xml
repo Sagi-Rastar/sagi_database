@@ -11,32 +11,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/ARM/00-ARM%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-MCU/00-MCU%E6%80%BB%E8%BF%B0/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/ARM/Raspberry%20Pi/00-RaspberryPi%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/00-ESP32%E6%80%BB%E8%BF%B0/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/MCU/00-MCU%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-MCU/STM32/00-STM32%E6%80%BB%E8%BF%B0/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/MCU/ESP32/00-ESP32%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/01-ARM/00-ARM%E6%80%BB%E8%BF%B0/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/MCU/STM32/00-STM32%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/01-ARM/Raspberry%20Pi/00-RaspberryPi%E6%80%BB%E8%BF%B0/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/x86/00-%E6%80%BB%E8%BF%B0/</loc>
+         <loc>https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/02-x86/00-%E6%80%BB%E8%BF%B0/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -97,6 +97,11 @@
     </url>
     <url>
          <loc>https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/00-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E6%80%BB%E8%BF%B0/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/00-%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE/00-%E9%9F%A6%E6%A0%B9%E5%8D%8F%E8%AE%AEWiegand/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
