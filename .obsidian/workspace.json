@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/硬件/00-基础理论/模电/00-模电总述.md",
+                "file": "docs/硬件/00-硬件总述.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 354.5
+    "width": 421.5
   },
   "right": {
     "id": "1529aa6e59d1d32b",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/硬件/00-基础理论/模电/00-模电总述.md",
+                "file": "docs/硬件/00-硬件总述.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/硬件/00-基础理论/模电/00-模电总述.md",
+                "file": "docs/硬件/00-硬件总述.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/硬件/00-基础理论/模电/00-模电总述.md"
+                "file": "docs/硬件/00-硬件总述.md"
               }
             }
           }
@@ -147,8 +147,9 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3fb23f5db3f883e4",
+  "active": "4cd482f59a7f8074",
   "lastOpenFiles": [
+    "docs/硬件/00-基础理论/模电/00-模电总述.md",
     "site/search/search_index.json",
     "site/search",
     "site/软件/04-AI/00-AI总述/index.html",
@@ -159,7 +160,6 @@
     "site/软件/03-WEB技术",
     "site/软件/02-嵌入式Linux/00-嵌入式Linux总述/index.html",
     "site/软件/02-嵌入式Linux/00-嵌入式Linux总述",
-    "site/软件/02-嵌入式Linux",
     "docs/硬件/00-基础理论/00-基础理论总述.md",
     "docs/软件/00-软件总述.md",
     "docs/软件/04-AI/00-AI总述.md",
