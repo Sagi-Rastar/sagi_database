@@ -19,7 +19,7 @@ icon: material/home
 
 <div class="grid cards" markdown>
 
--   :simple-formspree:{ .lg .middle } [__平台__](https://sagi-rastar.github.io/sagi_database/%E5%B9%B3%E5%8F%B0/)
+-   :simple-formspree:{ .lg .middle } [__平台__](平台/index.md)
 
     ---
 
