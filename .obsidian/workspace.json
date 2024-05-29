@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/平台/MCU/ESP32/00-ESP32总述.md",
+                "file": "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 421.5,
-    "collapsed": true
+    "width": 421.5
   },
   "right": {
     "id": "1529aa6e59d1d32b",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/平台/MCU/ESP32/00-ESP32总述.md",
+                "file": "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/平台/MCU/ESP32/00-ESP32总述.md",
+                "file": "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/平台/MCU/ESP32/00-ESP32总述.md"
+                "file": "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md"
               }
             }
           }
@@ -150,6 +149,18 @@
   },
   "active": "4cd482f59a7f8074",
   "lastOpenFiles": [
+    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
+    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
+    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
+    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151439325.png",
+    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand",
+    "docs/软件/01-嵌入式软件/00-通讯协议/image-20240529151104755.png",
+    "docs/软件/01-嵌入式软件/00-通讯协议/image-20240529151033377.png",
+    "docs/软件/01-嵌入式软件/00-通讯协议/image-20240529144604510.png",
+    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529144425472.png",
+    "docs/软件/01-嵌入式软件/00-嵌入式软件总述.md",
+    "docs/软件/01-嵌入式软件/00-通讯协议",
+    "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
     "docs/硬件/00-硬件总述.md",
     "docs/硬件/00-基础理论/模电/00-模电总述.md",
     "site/search/search_index.json",
@@ -160,14 +171,11 @@
     "site/软件/03-WEB技术/00-WEB技术总述/index.html",
     "site/软件/03-WEB技术/00-WEB技术总述",
     "site/软件/03-WEB技术",
-    "site/软件/02-嵌入式Linux/00-嵌入式Linux总述/index.html",
-    "site/软件/02-嵌入式Linux/00-嵌入式Linux总述",
     "docs/硬件/00-基础理论/00-基础理论总述.md",
     "docs/软件/00-软件总述.md",
     "docs/软件/04-AI/00-AI总述.md",
     "docs/软件/03-WEB技术/00-WEB技术总述.md",
     "docs/软件/02-嵌入式Linux/00-嵌入式Linux总述.md",
-    "docs/软件/01-嵌入式软件/00-嵌入式软件总述.md",
     "docs/软件/00-通用算法/00-通用算法总述.md",
     "docs/硬件/04-材料/00-材料总述.md",
     "docs/硬件/03-机械结构/00-机械结构总述.md",
@@ -183,9 +191,6 @@
     "docs/软件/00-基础/数电/00-数电总述.md",
     "docs/软件/00-基础/模电/00-模电总述.md",
     "docs/软件/04-AI.md",
-    "docs/软件/03-WEB技术.md",
-    "docs/软件/02-嵌入式Linux.md",
-    "docs/软件/01-嵌入式软件.md",
     "site/assets/images/favicon.png"
   ]
 }
