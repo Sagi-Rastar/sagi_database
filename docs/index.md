@@ -1,48 +1,46 @@
-# 1 欢迎
+# 欢迎
 
-这里是 sagirastar 用于存储各类他所感兴趣的技术相关的文档库。
+这里是 SagiRastar 用于存储各类他所感兴趣的技术相关的文档库。
 
 旨在妥善管理平日所积累的各类技术相关笔记、参考文档等需要反复查阅的内容。
 
-MkDocs 命令：
+??? note "MKDocs速查"
+    - `mkdocs new [dir-name]` - 创建一个新项目
+    - `mkdocs serve` - 本地调试web界面
+    - `mkdocs build` - 构建项目
+    - `mkdocs -h` - 帮助
+    
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
 
-## 1.1 文档库结构
+## 1 文档库结构
 
 该库结构按照以下若干方面组织：
 
-```markdown
-**硬件：**
-- 基础部分
-	- 模电
-	- 数电
-	- 信号完整性
-- 常用电路与模块
-	- 参考电路
-	- 参考模块
-- Layout 参考
-- 机械结构
-- 常见材料
+<div class="grid cards" markdown>
 
-**软件：**
-- 通用算法
-- 嵌软部分
-	- 常用通讯协议栈
-	- RTOS 等系统框架
-- Web 技术
-- 嵌入式 Linux
-- AI
+-   :simple-formspree:{ .lg .middle } [__“平台”__]()
 
-**平台：**
-- MCU
-	- STM32
-	- ESP32
-- ARM
-	- Raspberry Pi
-- x86
-```
+    ---
 
+    偏向实际开发的分类
+
+    > “平台”：ARM/MCU/x86平台…
+
+-   :simple-opensourcehardware:{ .lg .middle } __“硬件”__
+
+    ---
+
+    偏向理论知识、硬件模块参考的分类
+    
+    > “硬件”：基础理论/电路模块/机械/材料…
+
+-   :simple-gnubash:{ .lg .middle } __“软件”__
+
+    ---
+
+    偏向软件知识的分类
+
+    > “软件”：数据结构/嵌软/Linux/WEB/AI…
+
+
+</div>

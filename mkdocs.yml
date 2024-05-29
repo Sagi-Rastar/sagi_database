@@ -1,9 +1,26 @@
 site_name: Sagi's database
 site_url: https://sagidb.github.io
-dev_addr: '127.0.0.1:46552' 
+dev_addr: "127.0.0.1:46552"
+markdown_extensions:
+    - admonition 
+    - pymdownx.details
+    - pymdownx.superfences
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - md_in_html
 theme:
     name: material
     palette:
         scheme: slate
         primary: black
         accent: cyan
+    features:
+        - navigation.instant
+        - navigation.instant.progress
+        - navigation.indexes
+        - navigation.top
+        - toc.integrate
+        - navigation.tabs
+        - header.autohide
