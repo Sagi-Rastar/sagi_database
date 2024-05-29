@@ -19,7 +19,7 @@ icon: material/home
 
 <div class="grid cards" markdown>
 
--   :simple-formspree:{ .lg .middle } [__平台__](https://sagi-rastar.github.io/sagi_database/%E5%B9%B3%E5%8F%B0/00-%E5%B9%B3%E5%8F%B0%E6%80%BB%E8%BF%B0/)
+-   :simple-formspree:{ .lg .middle } [__平台__](https://sagi-rastar.github.io/sagi_database/%E5%B9%B3%E5%8F%B0/)
 
     ---
 
@@ -27,7 +27,7 @@ icon: material/home
 
     > “平台”：ARM/MCU/x86平台…
 
--   :simple-opensourcehardware:{ .lg .middle } [__硬件__](https://sagi-rastar.github.io/sagi_database/%E7%A1%AC%E4%BB%B6/00-%E7%A1%AC%E4%BB%B6%E6%80%BB%E8%BF%B0/)
+-   :simple-opensourcehardware:{ .lg .middle } [__硬件__](https://sagi-rastar.github.io/sagi_database/%E7%A1%AC%E4%BB%B6/)
 
     ---
 
@@ -35,7 +35,7 @@ icon: material/home
     
     > “硬件”：基础理论/电路模块/机械/材料…
 
--   :simple-gnubash:{ .lg .middle } [__软件__](https://sagi-rastar.github.io/sagi_database/%E8%BD%AF%E4%BB%B6/00-%E8%BD%AF%E4%BB%B6%E6%80%BB%E8%BF%B0/)
+-   :simple-gnubash:{ .lg .middle } [__软件__](https://sagi-rastar.github.io/sagi_database/%E8%BD%AF%E4%BB%B6/)
 
     ---
 
