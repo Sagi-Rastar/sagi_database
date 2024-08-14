@@ -147,7 +147,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "4cd482f59a7f8074",
+  "active": "3fb23f5db3f883e4",
   "lastOpenFiles": [
     "site/search/search_index.json",
     "site/search",
@@ -166,6 +166,9 @@
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814181005083.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
+    "docs/平台/00-MCU/STM32/00-STM32总述.md",
+    "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
+    "docs/平台/00-MCU/index.md",
     "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814181005083.png",
     "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
     "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
@@ -174,12 +177,10 @@
     "docs/软件/02-嵌入式Linux/index.md",
     "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
     "docs/软件/00-通用算法/index.md",
-    "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
     "docs/软件/04-AI/index.md",
     "docs/软件/03-WEB技术/index.md",
     "docs/平台/02-x86/index.md",
     "docs/平台/01-ARM/index.md",
-    "docs/平台/00-MCU/index.md",
     "docs/软件/00-软件总述.md",
     "docs/硬件/index.md",
     "docs/软件/index.md",
@@ -193,7 +194,6 @@
     "docs/软件/04-AI/00-AI总述.md",
     "docs/软件/03-WEB技术/00-WEB技术总述.md",
     "docs/软件/02-嵌入式Linux/00-嵌入式Linux总述.md",
-    "docs/软件/00-通用算法/00-通用算法总述.md",
-    "docs/硬件/04-材料/00-材料总述.md"
+    "docs/软件/00-通用算法/00-通用算法总述.md"
   ]
 }
