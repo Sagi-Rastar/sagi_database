@@ -7,7 +7,7 @@ icon: material/home
 
 # :material-home: 欢迎
 
-这里是 SagiRastar 用于存储各类他所感兴趣的技术文档库。
+用于存储各类感兴趣的、  以及日常开发的技术文档。
 
 旨在妥善管理平日所积累的各类技术相关笔记、参考文档等需要反复查阅的内容。
 
@@ -43,13 +43,13 @@ icon: material/home
     偏向软件知识的分类
 
     > “软件”：数据结构/嵌软/Linux/WEB/AI/语言…
-
+<!-- 
 -   :simple-gnubash:{ .lg .middle } [__个人主页__](https://sagi-rastar.github.io/about/)
 
     ---
 
     个人主页主要用来存放碎碎念
 
-    > “个人主页”：Blog/图集/关于…
+    > “个人主页”：Blog/图集/关于… -->
 
 </div>

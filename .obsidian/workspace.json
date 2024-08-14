@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
+                "file": "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
+                "file": "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
+                "file": "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md"
+                "file": "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md"
               }
             }
           }
@@ -149,19 +149,34 @@
   },
   "active": "4cd482f59a7f8074",
   "lastOpenFiles": [
+    "site/search/search_index.json",
+    "site/search",
+    "site/软件/05-语言/C语言/内存管理相关/index.html",
+    "site/软件/05-语言/C语言/内存管理相关",
+    "site/软件/05-语言/C语言/index.html",
+    "site/软件/05-语言/C语言",
+    "site/软件/05-语言/index.html",
+    "site/软件/05-语言",
+    "site/软件/04-AI/index.html",
+    "site/软件/04-AI",
+    "site/软件/03-WEB技术/index.html",
+    "site/assets/images/favicon.png",
+    "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
+    "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
+    "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814181005083.png",
+    "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
+    "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
+    "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814181005083.png",
+    "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
+    "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
+    "docs/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记.md",
+    "docs/软件/01-嵌入式软件/index.md",
+    "docs/软件/02-嵌入式Linux/index.md",
+    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
+    "docs/软件/00-通用算法/index.md",
+    "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
     "docs/软件/04-AI/index.md",
     "docs/软件/03-WEB技术/index.md",
-    "docs/软件/02-嵌入式Linux/index.md",
-    "site/软件/01-嵌入式软件/index.html",
-    "site/软件/00-通用算法/index.html",
-    "site/软件/index.html",
-    "site/硬件/index.html",
-    "site/平台/02-x86/index.html",
-    "site/平台/01-ARM/index.html",
-    "site/平台/00-MCU/index.html",
-    "site/平台/index.html",
-    "docs/软件/01-嵌入式软件/index.md",
-    "docs/软件/00-通用算法/index.md",
     "docs/平台/02-x86/index.md",
     "docs/平台/01-ARM/index.md",
     "docs/平台/00-MCU/index.md",
@@ -169,18 +184,7 @@
     "docs/硬件/index.md",
     "docs/软件/index.md",
     "docs/平台/index.md",
-    "site/search/search_index.json",
-    "site/search",
-    "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
-    "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
     "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
-    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
-    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
-    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151439325.png",
-    "docs/软件/01-嵌入式软件/00-通讯协议/image-20240529151104755.png",
-    "docs/软件/01-嵌入式软件/00-通讯协议/image-20240529151033377.png",
-    "docs/软件/01-嵌入式软件/00-通讯协议/image-20240529144604510.png",
-    "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529144425472.png",
     "docs/软件/01-嵌入式软件/00-嵌入式软件总述.md",
     "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
     "docs/硬件/00-硬件总述.md",
@@ -190,10 +194,6 @@
     "docs/软件/03-WEB技术/00-WEB技术总述.md",
     "docs/软件/02-嵌入式Linux/00-嵌入式Linux总述.md",
     "docs/软件/00-通用算法/00-通用算法总述.md",
-    "docs/硬件/04-材料/00-材料总述.md",
-    "docs/硬件/03-机械结构/00-机械结构总述.md",
-    "docs/硬件/02-Layout参考/00-layout总述.md",
-    "docs/硬件/01-电路与模块/00-电路与模块总述.md",
-    "site/assets/images/favicon.png"
+    "docs/硬件/04-材料/00-材料总述.md"
   ]
 }
