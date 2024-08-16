@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/">
+        <link rel="canonical" href="https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240618-SNTP%20%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E3%80%81AES%20%E5%8A%A0%E5%AF%86/">
       
       
-        <link rel="prev" href="../00-ESP32%E6%80%BB%E8%BF%B0/">
+        <link rel="prev" href="../240617-IDF%20%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%EF%BC%8C%E5%8F%8A%20wifi%20%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/">
       
       
-        <link rel="next" href="../../STM32/00-STM32%E6%80%BB%E8%BF%B0/">
+        <link rel="next" href="../240619-%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>240615-smartconfig 配网 - Sagi's database</title>
+        <title>240618-SNTP 获取时间、AES 加密 - Sagi's database</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#240615-smartconfig" class="md-skip">
+        <a href="#240618-sntp-aes" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              240615-smartconfig 配网
+              240618-SNTP 获取时间、AES 加密
             
           </span>
         </div>
@@ -456,6 +456,18 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -512,6 +524,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../240615-smartconfig%E9%85%8D%E7%BD%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240615-smartconfig 配网
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../240617-IDF%20%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%EF%BC%8C%E5%8F%8A%20wifi%20%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240617-IDF 的事件循环，及 wifi 运行流程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -528,7 +582,7 @@
           
   
   <span class="md-ellipsis">
-    240615-smartconfig 配网
+    240618-SNTP 获取时间、AES 加密
   </span>
   
 
@@ -539,7 +593,7 @@
         
   
   <span class="md-ellipsis">
-    240615-smartconfig 配网
+    240618-SNTP 获取时间、AES 加密
   </span>
   
 
@@ -561,180 +615,66 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-api" class="md-nav__link">
+  <a href="#1-sntp" class="md-nav__link">
     <span class="md-ellipsis">
-      1 API 参考
+      1 SNTP 获取时间
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1 API 参考">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-aes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 AES 加密
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 AES 加密">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
+  <a href="#21-aes" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1 函数
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1.1 函数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#111-esp_smartconfig_get_versionvoid" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1.1 esp_smartconfig_get_version(void)
+      2.1 AES 种类
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#112-esp_smartconfig_startconst-smartconfig_start_config_tconfig" class="md-nav__link">
+  <a href="#22-esp32-aes-menuconfig" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.2 esp_smartconfig_start(const smartconfig_start_config_t*config)
+      2.2 ESP32 关于 AES 的 menuconfig 选项
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#113-esp_smartconfig_stopvoid" class="md-nav__link">
+  <a href="#23-aes" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.3 esp_smartconfig_stop(void)
+      2.3 AES 填充
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#114-esp_esptouch_set_timeoutuint8_t-time_s" class="md-nav__link">
+  <a href="#24-mbedtls" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.4 esp_esptouch_set_timeout(uint8_t time_s)
+      2.4 Mbedtls 库
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#115-esp_smartconfig_set_typesmartconfig_type_t-type" class="md-nav__link">
+  <a href="#25-aes-api" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1.5 esp_smartconfig_set_type(smartconfig_type_t type)
+      2.5 门禁 AES 任务 API
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#116-esp_smartconfig_fast_modebool-enable" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1.6 esp_smartconfig_fast_mode(bool enable)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#117-esp_smartconfig_get_rvd_datauint8_trvd_data-uint8_t-len" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1.7 esp_smartconfig_get_rvd_data(uint8_t*rvd_data, uint8_t len)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 结构体
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1.2 结构体">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#121-smartconfig_event_got_ssid_pswd_t" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2.1 smartconfig_event_got_ssid_pswd_t
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#122-smartconfig_start_config_t" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2.2 smartconfig_start_config_t
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.3 宏定义
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1.3 宏定义">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#131-smartconfig_start_config_default" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.3.1 SMARTCONFIG_START_CONFIG_DEFAULT()
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.4 枚举
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1.4 枚举">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#141-smartconfig_type_t" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.4.1 smartconfig_type_t
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#142-smartconfig_event_t" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.4.2 smartconfig_event_t
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -747,6 +687,90 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../240619-%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240619-蓝牙开发
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../240625-%E5%8D%A1%E5%85%B3%E7%B3%BB%E5%AD%98%E5%82%A8%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240625-卡关系存储设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../240626-BM8563%20%E9%A9%B1%E5%8A%A8%E7%A7%BB%E6%A4%8D%EF%BC%8CIDF-I2C%20%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240626-BM8563 驱动移植，IDF-I2C 笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../240719-LEDPWM%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8C%87%E7%A4%BA%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240719-LEDPWM及常用指示函数封装
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -836,7 +860,7 @@
         
   
   <span class="md-ellipsis">
-    硬件参考
+    240814-CubeMX+FreeRTOS开发笔记
   </span>
   
 
@@ -2310,167 +2334,150 @@
                   
 
 
-<h1 id="240615-smartconfig">240615-smartconfig 配网</h1>
+<h1 id="240618-sntp-aes">240618-SNTP 获取时间、AES 加密</h1>
+<h2 id="1-sntp">1 SNTP 获取时间</h2>
 <blockquote>
-<p>API 参考： https://docs.espressif.com/projects/esp-idf/zh_CN/v5.2.2/esp32s3/api-reference/network/esp_smartconfig.html</p>
+<p>参考博客： https://blog.csdn.net/qq_41741344/article/details/120117151</p>
+<p>官方文档： https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/system/system_time.html#sntp</p>
 </blockquote>
-<h2 id="1-api">1 API 参考</h2>
-<h3 id="11">1.1 函数</h3>
-<h4 id="111-esp_smartconfig_get_versionvoid">1.1.1 <code>esp_smartconfig_get_version(void)</code></h4>
-<p>获取 SmartConfig 的版本。</p>
+<p>SNTP for Simple Network Time Protocol. 是 NTP 协议的一个子集</p>
+<p>NTP 时间戳是该协议的重要内容，是一个 64 位无符号浮点数组成，前面 32 位表示整数，后面 32 位表示小数。单位是秒。时间是相对于 1900 年 1 月 0 点开始到现在所经过的秒数。它能表示的最大数字是 4,294,967,295 秒。嵌入式设备上电后连接 AP 获取 IP 地址之后，可以通过 SNTP 的协议获取全球时间。</p>
+<p>LwIP 的 SNTP 库中含有一些 API 可以更新系统时间，但是并非为线程安全的 API，官方推荐使用 <code>esp_netif_component</code> 来更新时间</p>
+<p>具体开发上在 wifi 那边获取到 ip 之后按照如下方式调用并设置 sntp 服务器即可开启 sntp 服务：
+<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">esp_initialize_sntp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Initializing SNTP&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">sntp_setoperatingmode</span><span class="p">(</span><span class="n">SNTP_OPMODE_POLL</span><span class="p">);</span>
+<span class="w">    </span><span class="n">sntp_set_sync_mode</span><span class="p">(</span><span class="n">SNTP_SYNC_MODE_IMMED</span><span class="p">);</span>
+<span class="w">    </span><span class="n">sntp_setservername</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;s1b.time.edu.cn&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">sntp_setservername</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;210.72.145.44&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">sntp_setservername</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ntp1.aliyun.com&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">sntp_init</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>随后调用 POSIX 函数 <code>setenv</code> 和 <code>tzset</code> 设置时区以及更新 C 库的运行数据。</p>
+<p>完成上述操作之后可以调用如下函数获取本地时间：</p>
 <ul>
-<li><strong>返回值：</strong></li>
-<li>SmartConfig 版本字符串。</li>
+<li><code>localtime</code>，在调用 <code>time(NULL)</code> 后可以使用这个函数将 <code>time_t</code> 转换为 <code>tm</code> 结构体</li>
+<li><code>localtime_r</code>，跟上面相同，但由于不带 <code>_r</code> 的返回的是一个指向静态变量的指针，因此有可能被覆盖，特别是多线程环境下</li>
 </ul>
-<h4 id="112-esp_smartconfig_startconst-smartconfig_start_config_tconfig">1.1.2 <code>esp_smartconfig_start(const smartconfig_start_config_t*config)</code></h4>
-<p>启动 SmartConfig，配置 ESP 设备连接到接入点（AP）。需要通过手机 APP 广播包含目标 AP 的 SSID 和密码的特殊数据包。</p>
+<p><img alt="" src="../01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/image-20240816113803368.png" /></p>
+<blockquote>
+<p>注意: sntp 依赖套接字, 因此维护的 sntp 应用需要监听 wifi 事件</p>
+</blockquote>
+<h2 id="2-aes">2 AES 加密</h2>
+<blockquote>
+<p>参考博客: https://blog.csdn.net/qq_36347513/article/details/120991568</p>
+<p>idf 集成的 mbedtls 加密库的 API 参考： https://mbed-tls.readthedocs.io/projects/api/en/v3.4.1/api/file/aes_8h/#_CPPv416mbedtls_aes_initP19mbedtls_aes_context</p>
+</blockquote>
+<p>乐鑫 esp-idf 框架集成开源的 mbedtls 加密库。Mbedtls 也许是最小巧的 SSL 代码库。高效、便于移植和集成。支持常见的安全算法，如：AES、DES、RSA、ECC、SHA256、MD5、BASE64 等等。除此之外还支持公钥证书体系。它提供了具有直观的 API 和可读源代码的 SSL 库。该工具即开即用，可以在大部分系统上直接构建它，也可以手动选择和配置各项功能。</p>
+<h3 id="21-aes">2.1 AES 种类</h3>
+<p><strong>ECB 形式</strong>：即电子密码本形式，最早采用并且最简单的方式，将加密的数据分为若干组，每组大小跟加密密钥长度相同。一次只能加解密 128 位的明文，也就是 16 个字节。</p>
+<p><strong>CBC 形式</strong>：即加密块链形式，需要一个初始化向量。</p>
+<blockquote>
+<p><strong>什么是初始化向量？</strong></p>
+<p>在密码学中，初始化向量（Initialization Vector，简称 IV）是一个在加密过程中使用的固定长度的随机或伪随机值。它与第一个块的明文一起使用，以确保即使相同的明文块多次加密，也会产生不同的密文块，从而增加加密的安全性。</p>
+<p>在使用像 AES 这样的块加密算法时，每个数据块（通常是 16 字节）都需要使用密钥进行加密。如果不使用 IV，那么相同的明文块将总是产生相同的密文块，这将使得加密算法容易被攻击。</p>
+</blockquote>
+<h3 id="22-esp32-aes-menuconfig">2.2 ESP32 关于 AES 的 menuconfig 选项</h3>
+<p><img alt="" src="../01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/image-20240816114141586.png" /></p>
+<p>可以选择打开硬件 AES 加速, 并有如下设置</p>
 <ul>
-<li><strong>注意：</strong></li>
-<li>此 API 可以在 STA 或 softAP-STA 模式下调用。</li>
-<li>
-<p>在完成之前，不能两次调用 <code>esp_smartconfig_start</code>，请先调用 <code>esp_smartconfig_stop</code>。</p>
-</li>
-<li>
-<p><strong>参数：</strong></p>
-</li>
-<li>
-<p><code>config</code> - 指向 SmartConfig 启动配置结构的指针。</p>
-</li>
-<li>
-<p><strong>返回值：</strong></p>
-</li>
-<li><code>ESP_OK</code>：成功</li>
-<li>其他：失败</li>
+<li><code>CONFIG_MBEDTLS_AES_USE_INTERRUPT</code> </li>
+<li><code>CONFIG_MBEDTLS_AES_INTERRUPT_LEVEL</code></li>
 </ul>
-<h4 id="113-esp_smartconfig_stopvoid">1.1.3 <code>esp_smartconfig_stop(void)</code></h4>
-<p>停止 SmartConfig，释放由 <code>esp_smartconfig_start</code> 占用的缓冲区。</p>
-<ul>
-<li>
-<p><strong>注意：</strong>
-  无论是否成功连接到 AP，都应该调用此 API 以释放由 <code>smartconfig_start</code> 占用的内存。</p>
-</li>
-<li>
-<p><strong>返回值：</strong></p>
-</li>
-<li><code>ESP_OK</code>：成功</li>
-<li>其他：失败</li>
-</ul>
-<h4 id="114-esp_esptouch_set_timeoutuint8_t-time_s">1.1.4 <code>esp_esptouch_set_timeout(uint8_t time_s)</code></h4>
-<p>设置 SmartConfig 过程的超时时间。</p>
-<ul>
-<li>
-<p><strong>注意：</strong>
-  计时从 <code>SC_STATUS_FIND_CHANNEL</code> 状态开始。如果超时，SmartConfig 将重新启动。</p>
-</li>
-<li>
-<p><strong>参数：</strong></p>
-</li>
-<li>
-<p><code>time_s</code> - 范围 15 秒到 255 秒，偏移量：45 秒。</p>
-</li>
-<li>
-<p><strong>返回值：</strong></p>
-</li>
-<li><code>ESP_OK</code>：成功</li>
-<li>其他：失败</li>
-</ul>
-<h4 id="115-esp_smartconfig_set_typesmartconfig_type_t-type">1.1.5 <code>esp_smartconfig_set_type(smartconfig_type_t type)</code></h4>
-<p>设置 SmartConfig 的协议类型。</p>
-<ul>
-<li>
-<p><strong>注意：</strong>
-  如果用户需要设置 SmartConfig 类型，请在调用 <code>esp_smartconfig_start</code> 之前设置。</p>
-</li>
-<li>
-<p><strong>参数：</strong></p>
-</li>
-<li>
-<p><code>type</code> - 从 <code>smartconfig_type_t</code> 中选择。</p>
-</li>
-<li>
-<p><strong>返回值：</strong></p>
-</li>
-<li><code>ESP_OK</code>：成功</li>
-<li>其他：失败</li>
-</ul>
-<h4 id="116-esp_smartconfig_fast_modebool-enable">1.1.6 <code>esp_smartconfig_fast_mode(bool enable)</code></h4>
-<p>设置 SmartConfig 的模式，默认为普通模式。</p>
-<ul>
-<li><strong>注意：</strong></li>
-<li>请在调用 API <code>esp_smartconfig_start</code> 之前调用它。</li>
-<li>快速模式需要相应的 APP（手机）。</li>
-<li>
-<p>两种模式兼容。</p>
-</li>
-<li>
-<p><strong>参数：</strong></p>
-</li>
-<li>
-<p><code>enable</code> - false-禁用（默认）; true-启用。</p>
-</li>
-<li>
-<p><strong>返回值：</strong></p>
-</li>
-<li><code>ESP_OK</code>：成功</li>
-<li>其他：失败</li>
-</ul>
-<h4 id="117-esp_smartconfig_get_rvd_datauint8_trvd_data-uint8_t-len">1.1.7 <code>esp_smartconfig_get_rvd_data(uint8_t*rvd_data, uint8_t len)</code></h4>
-<p>获取 ESPTouch v2 的保留数据。</p>
-<ul>
-<li><strong>参数：</strong></li>
-<li><code>rvd_data</code> - 保留数据</li>
-<li>
-<p><code>len</code> - 保留数据的长度</p>
-</li>
-<li>
-<p><strong>返回值：</strong></p>
-</li>
-<li><code>ESP_OK</code>：成功</li>
-<li>其他：失败</li>
-</ul>
-<h3 id="12">1.2 结构体</h3>
-<h4 id="121-smartconfig_event_got_ssid_pswd_t">1.2.1 <code>smartconfig_event_got_ssid_pswd_t</code></h4>
-<p>SC_EVENT_GOT_SSID_PSWD 事件的参数结构体。</p>
-<ul>
-<li><strong>公共成员：</strong></li>
-<li><code>uint8_t ssid[32]</code> - 接入点（AP）的 SSID。以空字符终止的字符串。</li>
-<li><code>uint8_t password[64]</code> - 接入点的密码。以空字符终止的字符串。</li>
-<li><code>bool bssid_set</code> - 是否设置了目标 AP 的 MAC 地址。</li>
-<li><code>uint8_t bssid[6]</code> - 目标 AP 的 MAC 地址。</li>
-<li><code>smartconfig_type_t type</code> - SmartConfig 的类型（ESPTouch 或 AirKiss）。</li>
-<li><code>uint8_t token</code> - 来自手机的令牌，用于向手机发送确认（ACK）。</li>
-<li><code>uint8_t cellphone_ip[4]</code> - 手机的 IP 地址。</li>
-</ul>
-<h4 id="122-smartconfig_start_config_t">1.2.2 <code>smartconfig_start_config_t</code></h4>
-<p><code>esp_smartconfig_start</code> 的配置结构。</p>
-<ul>
-<li><strong>公共成员：</strong></li>
-<li><code>bool enable_log</code> - 启用 SmartConfig 日志。</li>
-<li><code>bool esp_touch_v2_enable_crypt</code> - 启用 ESPTouch v2 加密。</li>
-<li><code>char* esp_touch_v2_key</code> - ESPTouch v2 加密密钥，长度应为 16。</li>
-</ul>
-<h3 id="13">1.3 宏定义</h3>
-<h4 id="131-smartconfig_start_config_default">1.3.1 <code>SMARTCONFIG_START_CONFIG_DEFAULT()</code></h4>
-<p>默认的 SmartConfig 启动配置。</p>
-<h3 id="14">1.4 枚举</h3>
-<h4 id="141-smartconfig_type_t">1.4.1 <code>smartconfig_type_t</code></h4>
-<ul>
-<li><strong>值：</strong></li>
-<li><code>SC_TYPE_ESPTOUCH</code> - 协议：ESPTouch</li>
-<li><code>SC_TYPE_AIRKISS</code> - 协议：AirKiss</li>
-<li><code>SC_TYPE_ESPTOUCH_AIRKISS</code> - 协议：ESPTouch 和 AirKiss</li>
-<li><code>SC_TYPE_ESPTOUCH_V2</code> - 协议：ESPTouch v2</li>
-</ul>
-<h4 id="142-smartconfig_event_t">1.4.2 <code>smartconfig_event_t</code></h4>
-<p>SmartConfig 事件声明。</p>
-<ul>
-<li><strong>值：</strong></li>
-<li><code>SC_EVENT_SCAN_DONE</code> - 智能配置的 STA 已完成对 AP 的扫描</li>
-<li><code>SC_EVENT_FOUND_CHANNEL</code> - 智能配置的 STA 已找到目标 AP 的信道</li>
-<li><code>SC_EVENT_GOT_SSID_PSWD</code> - 智能配置的 STA 已获取 SSID 和密码</li>
-<li><code>SC_EVENT_SEND_ACK_DONE</code> - 智能配置的 STA 已向手机发送确认（ACK）</li>
-</ul>
-<h1 id="240617-idf">240617-IDF 的事件循环</h1>
+<h3 id="23-aes">2.3 AES 填充</h3>
+<p>AES-128-CBC 属于分组对称加密算法：同一组 key 进行明文和密文的转换</p>
+<p>使用 16B 为一组进行加密，即明文的 16B 对应一组加密后的 16B 密文。因此 AES-CBC 需要明文为 16B 的倍数，在不满 16B 的时候需要对明文进行填充，通常的填充方法为 PKCS7（Public-Key Cryptography Standards 7）：</p>
+<p>当加密到最后一组的时候：若不足 16B 则填充长度为恰好补足到 16B 的长度，填充内容即填充长度值本身；若恰好为 16B 则最后加入一个 16B 的 0x10 组再进行加密。</p>
+<p>传入明文、16B 的 key、16B 的初始偏移向量 IV</p>
+<p>初始向量和 key 加密第一组数据之后，<strong>会将第一组加密后的密文赋值给 IV</strong>，然后再进行第二组加密，循环直到结束。</p>
+<h3 id="24-mbedtls">2.4 Mbedtls 库</h3>
+<p>使用该库函数之前需要初始化语境（contex）以及设置加解密的密钥</p>
+<div class="highlight"><pre><span></span><code><span class="n">mbedtls_aes_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">aes_ctx</span><span class="p">);</span>
+
+<span class="n">mbedtls_aes_setkey_dec</span><span class="p">(</span><span class="o">&amp;</span><span class="n">aes_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">aes_key</span><span class="p">,</span><span class="w"> </span><span class="mi">128</span><span class="p">);</span>
+<span class="n">mbedtls_aes_setkey_enc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">aes_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">aes_key</span><span class="p">,</span><span class="w"> </span><span class="mi">128</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="25-aes-api">2.5 门禁 AES 任务 API</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aes_enc_uint8</span><span class="p">(</span><span class="n">mbedtls_aes_context</span><span class="w"> </span><span class="o">*</span><span class="n">aes_ctx</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">input_iv</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">plain</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">cipher</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">cipher_len</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/**
+ * @brief AES加密任务，密文输出为uint8_t，HEX格式
+ *
+ * @param aes_ctx AES上下文
+ * @param[in] input_iv 本次加密的偏移量IV
+ * @param[in] plain 需要被加密的明文，可不定长，最大不可超过 AES_TASK_MAX_LEN
+ * @param[out] cipher 加密后输出的密文，长度与输入的明文长度相同
+ * @param[out] cipher_len 加密后输出的密文长度
+ *
+ * @return 0: 加密成功
+ * @return 1: 明文为空
+ * @return 2: 明文过长
+ *
+ * @attention 本函数会自动对输入的明文进行PKCS7填充
+ */
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aes_dec_uint8</span><span class="p">(</span><span class="n">mbedtls_aes_context</span><span class="w"> </span><span class="o">*</span><span class="n">aes_ctx</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">input_iv</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">plain</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">cipher</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">cipher_len</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/**
+ * @brief AES解密任务，明文输出为uint8_t，字符串格式
+ *
+ * @param aes_ctx AES上下文
+ * @param[in] input_iv 本次解密的偏移量IV
+ * @param[out] plain 解密后输出的明文
+ * @param[in] cipher 需要被解密的密文，最大长度不可超过 AES_TASK_MAX_LEN
+ * @param[in] cipher_len 需要被解密的密文长度
+ *
+ * @return 0: 解密成功
+ * @return 1: 密文为空
+ * @return 2: 密文过长
+ * @return 3: 填充错误
+ *
+ * @attention 本函数会自动对输出的明文移除PKCS7填充
+ */
+</code></pre></div>
+<p>以下为根据蓝牙私有协议封装的打包/解包数据帧函数</p>
+<p><img alt="" src="../01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/image-20240816120317949.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="kt">uint8_t</span><span class="w"> </span><span class="n">data_frame_packing</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">payload</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">payload_len</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">frame_len</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/**
+ * @brief 打包数据帧
+ *
+ * @param[in] payload 需要加密的特征值负载
+ * @param[in] payload_len 特征值长度
+ * @param[out] frame 指向数据帧的指针地址
+ * @param[out] frame_len 输出的数据帧长度
+ *
+ * @return 0: 打包成功
+ * @return 1: AES密钥设置错误
+ * @return 2: 加密错误
+ *
+ * @note 暂未支持分包操作
+ */
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kt">uint8_t</span><span class="w"> </span><span class="n">data_frame_unpacking</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">frame_len</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">payload</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">payload_len</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/**
+ * @brief 解包数据帧
+ *
+ * @param[in] frame 接收到的数据帧
+ * @param[in] frame_len 数据帧长度
+ * @param[out] payload 解密后的特征值负载
+ * @param[out] payload_len 特征值负载长度
+ *
+ * @return 0: 解包成功
+ * @return 1: 帧头错误
+ * @return 2: AES密钥设置错误
+ * @return 3: 解密错误
+ * @return 4: CRC校验错误
+ *
+ * @note 暂未支持分包操作
+ *
+ */
+</code></pre></div>
+<p>使用时, 应当先维护一个全局变量 <code>uint8_t aes_key[16] = AES_KEY_DEFAULT;</code> 用于提供密钥</p>
+<p>系统在初始化阶段应当通过读取初始参数获取历史存储过的密钥, 并替换全局变量的默认值.</p>
 
 
 

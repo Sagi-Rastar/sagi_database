@@ -21,9 +21,9 @@ icon: simple/formspree
 
     ---
 
-    ARM架构相关的硬件平台分类
+    ARM_SOC相关的硬件平台分类
 
-    > “ARM”：ARM处理器/ARM架构设计…
+    > “ARM”：ARMSOC…
 
 - :simple-intel:{ .lg .middle } [__x86__](02-x86/index.md)
 
@@ -31,6 +31,6 @@ icon: simple/formspree
 
     x86架构相关的硬件平台分类
 
-    > “x86”：x86处理器/PC架构/兼容性…
+    > “x86”：x86…
 
 </div>

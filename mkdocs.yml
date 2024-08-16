@@ -24,3 +24,6 @@ theme:
         - toc.integrate
         - navigation.tabs
         - header.autohide
+
+plugins:
+    - search
