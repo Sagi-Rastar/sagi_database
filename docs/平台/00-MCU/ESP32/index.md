@@ -7,6 +7,13 @@
 
 > 项目链接：https://gitee.com/chenym_simpler/git_lock_electromagnet
 
+- [240615-smartconfig配网](240615-smartconfig配网.md)
+- [240617-IDF 的事件循环，及 wifi 运行流程](240617-IDF%20的事件循环，及%20wifi%20运行流程.md)
+- [240618-SNTP 获取时间、AES 加密](240618-SNTP%20获取时间、AES%20加密.md)
+- [240619-蓝牙开发](240619-蓝牙开发.md)
+- [240625-卡关系存储设计](240625-卡关系存储设计.md)
+- [240626-BM8563 驱动移植，IDF-I2C 笔记](240626-BM8563%20驱动移植，IDF-I2C%20笔记.md)
+- [240719-LEDPWM及常用指示函数封装](240719-LEDPWM及常用指示函数封装.md)
 
 ## 参考文档以及链接：
 

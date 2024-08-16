@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
+                "file": "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
+                "file": "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
+                "file": "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md"
+                "file": "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md"
               }
             }
           }
@@ -170,16 +170,16 @@
     "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163307917.png",
     "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163248583.png",
     "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163223341.png",
-    "docs/平台/00-MCU/ESP32/index.md",
-    "docs/平台/00-MCU/ESP32/240615-smartconfig配网.md",
-    "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
-    "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
-    "docs/平台/00-MCU/ESP32/x.md",
     "docs/平台/00-MCU/ESP32/240626-BM8563 驱动移植，IDF-I2C 笔记.md",
-    "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
+    "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
     "docs/平台/00-MCU/ESP32/240619-蓝牙开发.md",
+    "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
     "docs/平台/00-MCU/ESP32/240618-SNTP 获取时间、AES 加密.md",
     "docs/平台/00-MCU/ESP32/240617-IDF 的事件循环，及 wifi 运行流程.md",
+    "docs/平台/00-MCU/ESP32/240615-smartconfig配网.md",
+    "docs/平台/00-MCU/ESP32/index.md",
+    "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
+    "docs/平台/00-MCU/ESP32/x.md",
     "docs/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记.md",
     "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
     "docs/平台/00-MCU/STM32/00-STM32总述.md",
