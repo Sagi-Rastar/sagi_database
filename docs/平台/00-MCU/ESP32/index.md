@@ -1,8 +1,18 @@
-参考文档以及链接：
+# 概述
+
+
+## 蓝牙WIFI双模门禁控制器
+
+使用ESP32-S3作为主控，旨在实现断网情况下也可以利用蓝牙功能进行门禁控制。
+
+> 项目链接：https://gitee.com/chenym_simpler/git_lock_electromagnet
+
+
+## 参考文档以及链接：
 
 - [IDF 官方文档](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.2.1/esp32/get-started/index.html)
 - [IDF 官方注册表仓库](https://components.espressif.com/)
 - [ESP32-S3 技术参考手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_cn.pdf)
-	- 较为详细，包括概述、功能列表、硬件架构、编程指南、寄存器列表等信息
+> 较为详细，包括概述、功能列表、硬件架构、编程指南、寄存器列表等信息
 - [ESP32-S3 技术规格书](https://espressif.com/sites/default/files/documentation/esp32-s3_datasheet_cn.pdf)
-	- 概述类型，包括各外设重要参数
+> 概述类型，包括各外设重要参数

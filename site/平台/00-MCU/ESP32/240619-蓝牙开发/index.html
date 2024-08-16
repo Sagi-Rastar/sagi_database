@@ -453,6 +453,8 @@
     
       
         
+          
+        
       
         
       
@@ -481,16 +483,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     ESP32
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2">
@@ -499,25 +509,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../00-ESP32%E6%80%BB%E8%BF%B0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    00 ESP32总述
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -2484,8 +2475,8 @@
 <p>所有的服务以及特征都需要有唯一一个 UUID 来标识。</p>
 <h2 id="2-ble_gatt_server_service_table">2 基于../ble_gatt_server_service_table 例程的二次开发<a class="headerlink" href="#2-ble_gatt_server_service_table" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>官方 GATT_SERVER_API 参考: <a href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/bluetooth/esp_gatts.html">https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/bluetooth/esp_gatts.html</a>
-例程源码: <a href="https://github.com/espressif/esp-idf/tree/d7ca8b94/examples/bluetooth/bluedroid/ble/gatt_server_service_table">https://github.com/espressif/esp-idf/tree/d7ca8b94/examples/bluetooth/bluedroid/ble/gatt_server_service_table</a></p>
+<p>官方 GATT_SERVER_API 参考: <a href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/bluetooth/esp_gatts.html">https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/bluetooth/esp_gatts.html</a></p>
+<p>例程源码: <a href="https://github.com/espressif/esp-idf/tree/d7ca8b94/examples/bluetooth/bluedroid/ble/gatt_server_service_table">https://github.com/espressif/esp-idf/tree/d7ca8b94/examples/bluetooth/bluedroid/ble/gatt_server_service_table</a></p>
 </blockquote>
 <h3 id="21-app-profiles">2.1 APP Profiles<a class="headerlink" href="#21-app-profiles" title="Permanent link">&para;</a></h3>
 <p>demo 中只定义了一个用于测量心率的 Profile，开头的宏定义如下：</p>
@@ -2504,9 +2495,11 @@
 </code></pre></div>
 <h3 id="22">2.2 设置广播数据<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
 <p>注册应用程序事件是在程序生命周期中触发的第一个事件。</p>
-<p>此示例使用此事件在注册概要文件事件处理程序时配置广播参数。用于实现此目的的函数有：
-- <code>esp_ble_gap_set_device_name()</code>: 用于设置被广播的设备名称。
-- <code>esp_ble_gap_config_adv_data()</code>: 用于配置标准广播数据。</p>
+<p>此示例使用此事件在注册概要文件事件处理程序时配置广播参数。用于实现此目的的函数有：</p>
+<ul>
+<li><code>esp_ble_gap_set_device_name()</code>: 用于设置被广播的设备名称。</li>
+<li><code>esp_ble_gap_config_adv_data()</code>: 用于配置标准广播数据。</li>
+</ul>
 <p>后者接收一个指向 <code>esp_ble_adv_data_t</code> 类型结构体的指针，该结构体定义了广播数据包的具体负载。此处需要注意，一般广播数据包的具体负载不能超过 31 个字节，否则将会被堆栈截断后面的消息。</p>
 <p>一般为了解决这个问题，较长的参数可以存储在扫描响应中。如果要采取扫描响应的话，可以新建一个 <code>esp_ble_adv_data_t</code> 类型的结构体，并将 <code>set_scan_rsp</code> 设置为 <code>true</code> 后使用相同的函数进行配置。</p>
 <p>以上的操作被放在 <code>gatts_profile_event_handler</code> 这个函数中的 <code>ESP_GATTS_REG_EVT</code> 事件中，一旦设置完广播数据之后，将会触发 <code>ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT</code> 事件，并交由 <code>gap_event_handler</code> 函数进行管理，若也设置了扫描响应，则 <code>ESP_GAP_BLE_SCAN_RSP_DATA_SET_COMPLETE_EVT</code> 事件也会被触发。</p>
@@ -2533,11 +2526,13 @@
 <span class="w">    </span><span class="n">esp_ble_adv_filter_t</span><span class="w"> </span><span class="n">adv_filter_policy</span><span class="p">;</span><span class="w"> </span><span class="cm">/*!&lt; 广播过滤策略 */</span>
 <span class="p">}</span><span class="w"> </span><span class="n">esp_ble_adv_params_t</span><span class="p">;</span>
 </code></pre></div>
-<p>例程中配置的几个重要参数：
-- <code>adv_type</code> - <code>ADV_ IND</code> 类型，通用类型，不针对特定的中心设备，广播服务器为可连接的。
-- <code>own_addr_type</code> - <code>BLE_ADDR_TYPE_PUBLIC</code> 公共地址类型
-- <code>channel_map</code> - <code>ADV_CHNL_ALL</code> 使用所有通道
-- <code>adv_filter_policy</code> - <code>ADV_FILTER_ALLOW_SCAN_ANY_CON_ANY</code> 允许来自任何中心设备的扫描和连接请求</p>
+<p>例程中配置的几个重要参数：</p>
+<ul>
+<li><code>adv_type</code> - <code>ADV_ IND</code> 类型，通用类型，不针对特定的中心设备，广播服务器为可连接的。</li>
+<li><code>own_addr_type</code> - <code>BLE_ADDR_TYPE_PUBLIC</code> 公共地址类型</li>
+<li><code>channel_map</code> - <code>ADV_CHNL_ALL</code> 使用所有通道</li>
+<li><code>adv_filter_policy</code> - <code>ADV_FILTER_ALLOW_SCAN_ANY_CON_ANY</code> 允许来自任何中心设备的扫描和连接请求</li>
+</ul>
 <p>一旦广播成功开始后，<code>esp_ble_gap_start_advertising</code> 函数将会触发 <code>ESP_GAP_BLE_ADV_START_COMPLETE_EVT</code> 事件，例程中在这个事件中只是单纯检查广播状态，并打印消息。</p>
 <h3 id="24-gatt">2.4 GATT 事件<a class="headerlink" href="#24-gatt" title="Permanent link">&para;</a></h3>
 <p>应用的 <code>Profile</code> 注册操作在例程中的 <code>ble_server_task_init</code> 初始化流程中通过调用 <code>esp_ble_gatts_app_register</code> 函数实现，该函数使用一个 <code>APP ID</code> 用于区分各种应用层的回调。</p>
@@ -2588,9 +2583,11 @@
 <span class="w">    </span><span class="n">esp_attr_desc_t</span><span class="w">         </span><span class="n">att_desc</span><span class="p">;</span><span class="w">  </span>
 <span class="p">}</span><span class="w"> </span><span class="n">esp_gatts_attr_db_t</span><span class="p">;</span>
 </code></pre></div>
-<p>第一个是自动响应参数，有两个可选：
-- <code>ESP_GATT_AUTO_RSP</code> - 允许 BLE 堆栈对于读取或写入事件到达时自动发送响应消息
-- <code>ESP_GATT_RSP_BY_APP</code> - 使用 <code>esp_ble_gatts_send_response</code> 函数进行手动响应消息</p>
+<p>第一个是自动响应参数，有两个可选：</p>
+<ul>
+<li><code>ESP_GATT_AUTO_RSP</code> - 允许 BLE 堆栈对于读取或写入事件到达时自动发送响应消息</li>
+<li><code>ESP_GATT_RSP_BY_APP</code> - 使用 <code>esp_ble_gatts_send_response</code> 函数进行手动响应消息</li>
+</ul>
 <p>第二个是属性类型：</p>
 <div class="highlight"><pre><span></span><code><span class="kt">uint16_t</span><span class="w"> </span><span class="n">uuid_length</span><span class="p">;</span><span class="w">      </span><span class="cm">/*!&lt; UUID长度 */</span>
 <span class="kt">uint8_t</span><span class="w">  </span><span class="o">*</span><span class="n">uuid_p</span><span class="p">;</span><span class="w">          </span><span class="cm">/*!&lt; UUID值 */</span>
@@ -2776,8 +2773,8 @@
 <h2 id="3-walkthrough">3 门禁控制器中的蓝牙任务 Walkthrough<a class="headerlink" href="#3-walkthrough" title="Permanent link">&para;</a></h2>
 <p>首先调用 <code>ble_server_task_init</code> 函数用于初始化蓝牙控制器，蓝牙协议栈，注册 GATT 回调函数以及 GAP 回调函数，设置 MTU，并注册 profile <code>esp_ble_gatts_app_register</code>，注册 profile 将会触发事件 <code>ESP_GATTS_REG_EVT</code></p>
 <blockquote>
-<p>回调函数：其中 GATT 回调函数以及 GAP 回调函数用于处理蓝牙栈所有可能发生的情况，来达到 FSM 的效果
-MTU（最大传输单元）：通过设置 MTU 的值限制 PDU（协议数据单元）最大能够交换的数据量</p>
+<p>回调函数：其中 GATT 回调函数以及 GAP 回调函数用于处理蓝牙栈所有可能发生的情况，来达到 FSM 的效果</p>
+<p>MTU（最大传输单元）：通过设置 MTU 的值限制 PDU（协议数据单元）最大能够交换的数据量</p>
 </blockquote>
 <p><code>gap_event_handler</code> 用于处理 GAP 中的事件，本次不太需要关心</p>
 <p><code>gatts_event_handler</code> 接收来自协议栈中的 GATTS 事件，分发给不同的 Profile，由于本次系统设计只使用了一个 Profile ，因此相当于将事件直接传递给这唯一的 Profile</p>

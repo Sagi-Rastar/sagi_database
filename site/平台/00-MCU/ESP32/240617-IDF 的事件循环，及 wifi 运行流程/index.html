@@ -453,6 +453,8 @@
     
       
         
+          
+        
       
         
       
@@ -481,16 +483,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     ESP32
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2">
@@ -499,25 +509,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../00-ESP32%E6%80%BB%E8%BF%B0/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    00 ESP32总述
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -2426,7 +2417,7 @@
 <p>如阶段 6 所推荐的一样，此时应当再次调用连接函数：移除所有套接字，并尝试重新连接 wifi</p>
 <h3 id="25-ip">2.5 获取 IP<a class="headerlink" href="#25-ip" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/image-20240816100348352.png" /></p>
-<p>这个阶段需要注意的就是一点，即**在接收到 IP 之后再进行所有的套接字创建等相关操作**</p>
+<p>这个阶段需要注意的就是一点，即 <strong>在接收到 IP 之后再进行所有的套接字创建等相关操作</strong></p>
 <h3 id="26">2.6 断开处理<a class="headerlink" href="#26" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/image-20240816100445139.png" /></p>
 <p>如上文 1.4 所述</p>

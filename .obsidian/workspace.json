@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
+                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
+                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
+                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/00-ESP32总述.md"
+                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md"
               }
             }
           }
@@ -163,13 +163,16 @@
     "site/assets/images/favicon.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
-    "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240815102201356.png",
+    "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
     "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163321161.png",
     "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163307917.png",
     "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163248583.png",
     "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163223341.png",
+    "docs/平台/00-MCU/ESP32/index.md",
+    "docs/平台/00-MCU/ESP32/240615-smartconfig配网.md",
+    "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
     "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
     "docs/平台/00-MCU/ESP32/x.md",
     "docs/平台/00-MCU/ESP32/240626-BM8563 驱动移植，IDF-I2C 笔记.md",
@@ -178,8 +181,6 @@
     "docs/平台/00-MCU/ESP32/240618-SNTP 获取时间、AES 加密.md",
     "docs/平台/00-MCU/ESP32/240617-IDF 的事件循环，及 wifi 运行流程.md",
     "docs/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记.md",
-    "docs/平台/00-MCU/ESP32/240615-smartconfig配网.md",
-    "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
     "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
     "docs/平台/00-MCU/STM32/00-STM32总述.md",
     "docs/平台/00-MCU/index.md",
@@ -193,7 +194,6 @@
     "docs/平台/01-ARM/index.md",
     "docs/软件/00-软件总述.md",
     "docs/硬件/index.md",
-    "docs/软件/index.md",
-    "docs/平台/index.md"
+    "docs/软件/index.md"
   ]
 }
