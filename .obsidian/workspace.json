@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/平台/00-MCU/index.md",
+                "file": "docs/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/平台/00-MCU/index.md",
+                "file": "docs/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/平台/00-MCU/index.md",
+                "file": "docs/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/平台/00-MCU/index.md"
+                "file": "docs/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索.md"
               }
             }
           }
@@ -182,6 +182,7 @@
     "site/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索/image-20240818192046201.png",
     "site/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索/image-20240818191902611.jpeg",
     "site/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索/image-20240818191543683.png",
+    "docs/平台/00-MCU/index.md",
     "docs/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索.md",
     "docs/平台/00-MCU/ESP32/index.md",
     "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
@@ -201,7 +202,6 @@
     "docs/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记.md",
     "docs/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记.md",
     "docs/平台/00-MCU/STM32/00-STM32总述.md",
-    "docs/平台/00-MCU/index.md",
     "docs/软件/01-嵌入式软件/index.md",
     "docs/软件/02-嵌入式Linux/index.md",
     "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",

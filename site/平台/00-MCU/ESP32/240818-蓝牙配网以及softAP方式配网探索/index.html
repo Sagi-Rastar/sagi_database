@@ -2404,7 +2404,7 @@
 </ul>
 <h3 id="21">2.1 基于官方例程尝试移植<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <h4 id="211">2.1.1 官方例程结构<a class="headerlink" href="#211" title="Permanent link">&para;</a></h4>
-<p><strong>主函数中首先初始化了三个必要的组件：</strong></p>
+<p><strong>主函数中首先初始化了四个必要的组件：</strong></p>
 <ul>
 <li>nvs 存储</li>
 <li>wifi 初始化</li>
@@ -2446,9 +2446,8 @@
 <p>并可通过 Kconfig 选择配网方式</p>
 <p><img alt="" src="image-20240818192046201.png" /></p>
 <h4 id="214-todo">2.1.4 ToDo<a class="headerlink" href="#214-todo" title="Permanent link">&para;</a></h4>
-<p>因为是验证性质所以移植的可复用性很差（）</p>
-<p>后面还需要继续重构，并检查有没有因为更改配网方式导致的其他依赖 WIFI 的应用程序错误运行。</p>
-<p>以及还需要与小程序端一起测试一下不同平台手机的配网成功率</p>
+<p>因为是验证性质的移植所以还有很多可以删减的部分，业务逻辑也还有一点不完善，因此后面还需要继续重构，并检查有没有因为更改配网方式导致的其他依赖 WIFI 的应用程序错误运行。</p>
+<p>以及还需要与小程序端一起，测试一下不同平台手机的配网成功率以及验证。</p>
 
 
 
