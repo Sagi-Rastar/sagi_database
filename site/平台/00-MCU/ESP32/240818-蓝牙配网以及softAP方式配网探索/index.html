@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/03-WEB%E6%8A%80%E6%9C%AF/">
+        <link rel="canonical" href="https://sagidb.github.io/%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240818-%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%91%E4%BB%A5%E5%8F%8AsoftAP%E6%96%B9%E5%BC%8F%E9%85%8D%E7%BD%91%E6%8E%A2%E7%B4%A2/">
       
       
-        <link rel="prev" href="../02-%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/">
+        <link rel="prev" href="../240719-LEDPWM%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8C%87%E7%A4%BA%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/">
       
       
-        <link rel="next" href="../04-AI/">
+        <link rel="next" href="../../STM32/00-STM32%E6%80%BB%E8%BF%B0/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
-        <title>WEB技术 - Sagi's database</title>
+        <title>240818-蓝牙配网以及 softAP 方式配网探索 - Sagi's database</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#web" class="md-skip">
+        <a href="#240818-softap" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Sagi&#39;s database" class="md-header__button md-logo" aria-label="Sagi's database" data-md-component="logo">
+    <a href="../../../.." title="Sagi&#39;s database" class="md-header__button md-logo" aria-label="Sagi's database" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WEB技术
+              240818-蓝牙配网以及 softAP 方式配网探索
             
           </span>
         </div>
@@ -175,7 +175,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -192,11 +192,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../%E5%B9%B3%E5%8F%B0/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
     
@@ -218,7 +220,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../%E7%A1%AC%E4%BB%B6/" class="md-tabs__link">
+        <a href="../../../../%E7%A1%AC%E4%BB%B6/" class="md-tabs__link">
           
   
     
@@ -236,13 +238,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../%E8%BD%AF%E4%BB%B6/" class="md-tabs__link">
           
   
     
@@ -281,7 +281,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Sagi&#39;s database" class="md-nav__button md-logo" aria-label="Sagi's database" data-md-component="logo">
+    <a href="../../../.." title="Sagi&#39;s database" class="md-nav__button md-logo" aria-label="Sagi's database" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -299,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
@@ -318,6 +318,8 @@
       
   
   
+    
+  
   
   
     
@@ -336,19 +338,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../%E5%B9%B3%E5%8F%B0/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.333 2a2 2 0 0 1 2-2h17.334a2 2 0 0 1 2 2v2.857a2 2 0 0 1-2 2H3.333a2 2 0 0 1-2-2zm0 8.571a2 2 0 0 1 2-2h17.334a2 2 0 0 1 2 2v2.858a2 2 0 0 1-2 2H3.333a2 2 0 0 1-2-2zm2 6.572a2 2 0 0 0-2 2V22a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2.857a2 2 0 0 0-2-2z"/></svg>
@@ -361,13 +366,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             平台
@@ -380,6 +385,8 @@
                 
   
   
+    
+  
   
   
     
@@ -399,16 +406,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -425,7 +432,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             00 MCU
@@ -438,6 +445,8 @@
                 
   
   
+    
+  
   
   
     
@@ -469,16 +478,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -495,7 +504,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             ESP32
@@ -511,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240615-smartconfig%E9%85%8D%E7%BD%91/" class="md-nav__link">
+      <a href="../240615-smartconfig%E9%85%8D%E7%BD%91/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240617-IDF%20%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%EF%BC%8C%E5%8F%8A%20wifi%20%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="md-nav__link">
+      <a href="../240617-IDF%20%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%EF%BC%8C%E5%8F%8A%20wifi%20%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240618-SNTP%20%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E3%80%81AES%20%E5%8A%A0%E5%AF%86/" class="md-nav__link">
+      <a href="../240618-SNTP%20%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E3%80%81AES%20%E5%8A%A0%E5%AF%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -574,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240619-%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91/" class="md-nav__link">
+      <a href="../240619-%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240625-%E5%8D%A1%E5%85%B3%E7%B3%BB%E5%AD%98%E5%82%A8%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+      <a href="../240625-%E5%8D%A1%E5%85%B3%E7%B3%BB%E5%AD%98%E5%82%A8%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240626-BM8563%20%E9%A9%B1%E5%8A%A8%E7%A7%BB%E6%A4%8D%EF%BC%8CIDF-I2C%20%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../240626-BM8563%20%E9%A9%B1%E5%8A%A8%E7%A7%BB%E6%A4%8D%EF%BC%8CIDF-I2C%20%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240719-LEDPWM%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8C%87%E7%A4%BA%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/" class="md-nav__link">
+      <a href="../240719-LEDPWM%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8C%87%E7%A4%BA%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -655,10 +664,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240818-%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%91%E4%BB%A5%E5%8F%8AsoftAP%E6%96%B9%E5%BC%8F%E9%85%8D%E7%BD%91%E6%8E%A2%E7%B4%A2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    240818-蓝牙配网以及 softAP 方式配网探索
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -667,6 +696,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 统一配网
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-blufi" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 BluFi 配网
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 BluFi 配网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 基于官方例程尝试移植
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 基于官方例程尝试移植">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 官方例程结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212-kconfig-smartconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 利用 Kconfig 将原配网实现（smartconfig）配置为可选项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 移植结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214-todo" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.4 ToDo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -731,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/STM32/00-STM32%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../STM32/00-STM32%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/00-MCU/STM32/240814-CubeMX%2BFreeRTOS%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../../STM32/240814-CubeMX%2BFreeRTOS%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +936,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../%E5%B9%B3%E5%8F%B0/01-ARM/" class="md-nav__link ">
+            <a href="../../../01-ARM/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -887,7 +1011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%B9%B3%E5%8F%B0/01-ARM/Raspberry%20Pi/00-RaspberryPi%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../01-ARM/Raspberry%20Pi/00-RaspberryPi%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -945,7 +1069,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../%E5%B9%B3%E5%8F%B0/02-x86/" class="md-nav__link ">
+            <a href="../../../02-x86/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1019,7 +1143,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../%E7%A1%AC%E4%BB%B6/" class="md-nav__link ">
+            <a href="../../../../%E7%A1%AC%E4%BB%B6/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.87 11.525c.071.013.13.084.13.157v3.033a.166.166 0 0 1-.13.157l-2.875.535a.243.243 0 0 0-.17.151l-.898 2.242a.252.252 0 0 0 .017.229l1.633 2.379a.167.167 0 0 1-.02.204l-2.144 2.144a.167.167 0 0 1-.203.019l-2.338-1.604a.23.23 0 0 0-.224-.008l-1.03.55a.121.121 0 0 1-.17-.062l-2.125-5.135a.161.161 0 0 1 .062-.192l.258-.158c.048-.03.113-.08.163-.125a3.354 3.354 0 1 0-3.612 0c.05.046.115.096.163.125l.258.158a.16.16 0 0 1 .062.192L8.552 21.65a.121.121 0 0 1-.17.063l-1.03-.55a.23.23 0 0 0-.224.007L4.79 22.775a.168.168 0 0 1-.204-.019l-2.145-2.144a.167.167 0 0 1-.019-.204l1.633-2.38a.251.251 0 0 0 .017-.228l-.897-2.242a.244.244 0 0 0-.17-.15L.13 14.871a.166.166 0 0 1-.13-.157v-3.032c0-.073.059-.144.13-.157l2.947-.548a.253.253 0 0 0 .175-.15l.903-2.108a.246.246 0 0 0-.014-.227L2.424 5.989a.167.167 0 0 1 .019-.203L4.587 3.64a.166.166 0 0 1 .204-.019L7.337 5.37c.06.041.163.048.229.016l2.043-.836c.07-.023.137-.1.15-.173l.567-3.047a.167.167 0 0 1 .157-.131h3.034c.073 0 .143.059.157.13l.567 3.048a.25.25 0 0 0 .15.173l2.043.836a.252.252 0 0 0 .23-.016l2.546-1.748a.166.166 0 0 1 .203.02l2.144 2.144c.052.051.06.143.02.203l-1.718 2.503a.245.245 0 0 0-.014.227l.903 2.108a.256.256 0 0 0 .175.15l2.946.548"/></svg>
@@ -1102,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1165,7 +1289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7/00-%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7/00-%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1236,7 +1360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E6%95%B0%E7%94%B5/00-%E6%95%B0%E7%94%B5%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E6%95%B0%E7%94%B5/00-%E6%95%B0%E7%94%B5%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1307,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E6%A8%A1%E7%94%B5/00-%E6%A8%A1%E7%94%B5%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E6%A8%A1%E7%94%B5/00-%E6%A8%A1%E7%94%B5%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1386,7 +1510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%A1%AC%E4%BB%B6/01-%E7%94%B5%E8%B7%AF%E4%B8%8E%E6%A8%A1%E5%9D%97/00-%E7%94%B5%E8%B7%AF%E4%B8%8E%E6%A8%A1%E5%9D%97%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/01-%E7%94%B5%E8%B7%AF%E4%B8%8E%E6%A8%A1%E5%9D%97/00-%E7%94%B5%E8%B7%AF%E4%B8%8E%E6%A8%A1%E5%9D%97%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1457,7 +1581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%A1%AC%E4%BB%B6/02-Layout%E5%8F%82%E8%80%83/00-layout%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/02-Layout%E5%8F%82%E8%80%83/00-layout%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1528,7 +1652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%A1%AC%E4%BB%B6/03-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84/00-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/03-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84/00-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1599,7 +1723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%A1%AC%E4%BB%B6/04-%E6%9D%90%E6%96%99/00-%E6%9D%90%E6%96%99%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/04-%E6%9D%90%E6%96%99/00-%E6%9D%90%E6%96%99%E6%80%BB%E8%BF%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1632,8 +1756,6 @@
       
   
   
-    
-  
   
   
     
@@ -1658,22 +1780,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../../%E8%BD%AF%E4%BB%B6/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.038 4.9 13.461.402a2.86 2.86 0 0 0-2.923.001L2.961 4.9A3.023 3.023 0 0 0 1.5 7.503v8.995c0 1.073.557 2.066 1.462 2.603l7.577 4.497a2.86 2.86 0 0 0 2.922 0l7.577-4.497a3.023 3.023 0 0 0 1.462-2.603V7.503A3.021 3.021 0 0 0 21.038 4.9zM15.17 18.946l.013.646c.001.078-.05.167-.111.198l-.383.22c-.061.031-.111-.007-.112-.085l-.007-.635c-.328.136-.66.169-.872.084-.04-.016-.057-.075-.041-.142l.139-.584a.24.24 0 0 1 .069-.121.163.163 0 0 1 .036-.026c.022-.011.043-.014.062-.006.229.077.521.041.802-.101.357-.181.596-.545.592-.907-.003-.328-.181-.465-.613-.468-.55.001-1.064-.107-1.072-.917-.007-.667.34-1.361.889-1.8l-.007-.652c-.001-.08.048-.168.111-.2l.37-.236c.061-.031.111.007.112.087l.006.653c.273-.109.511-.138.726-.088.047.012.067.076.048.151l-.144.578a.255.255 0 0 1-.065.116.161.161 0 0 1-.038.028.083.083 0 0 1-.057.009c-.098-.022-.332-.073-.699.113-.385.195-.52.53-.517.778.003.297.155.387.681.396.7.012 1.003.318 1.01 1.023.007.689-.362 1.433-.928 1.888zm3.973-1.087c0 .06-.008.116-.058.145l-1.916 1.164c-.05.029-.09.004-.09-.056v-.494c0-.06.037-.093.087-.122l1.887-1.129c.05-.029.09-.004.09.056v.436zm1.316-11.062-7.168 4.427c-.894.523-1.553 1.109-1.553 2.187v8.833c0 .645.26 1.063.66 1.184a2.304 2.304 0 0 1-.398.039c-.42 0-.833-.114-1.197-.33L3.226 18.64a2.494 2.494 0 0 1-1.201-2.142V7.503c0-.881.46-1.702 1.201-2.142L10.803.863a2.342 2.342 0 0 1 2.394 0l7.577 4.498a2.479 2.479 0 0 1 1.164 1.732c-.252-.536-.818-.682-1.479-.296z"/></svg>
@@ -1686,13 +1805,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             软件
@@ -1729,7 +1848,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../00-%E9%80%9A%E7%94%A8%E7%AE%97%E6%B3%95/" class="md-nav__link ">
+            <a href="../../../../%E8%BD%AF%E4%BB%B6/00-%E9%80%9A%E7%94%A8%E7%AE%97%E6%B3%95/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1788,7 +1907,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/" class="md-nav__link ">
+            <a href="../../../../%E8%BD%AF%E4%BB%B6/01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1863,7 +1982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/00-%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE/00-%E9%9F%A6%E6%A0%B9%E5%8D%8F%E8%AE%AEWiegand/" class="md-nav__link">
+      <a href="../../../../%E8%BD%AF%E4%BB%B6/01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/00-%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE/00-%E9%9F%A6%E6%A0%B9%E5%8D%8F%E8%AE%AEWiegand/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1921,7 +2040,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../02-%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/" class="md-nav__link ">
+            <a href="../../../../%E8%BD%AF%E4%BB%B6/02-%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1954,8 +2073,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1971,16 +2088,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../../../%E8%BD%AF%E4%BB%B6/03-WEB%E6%8A%80%E6%9C%AF/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1992,7 +2109,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             03 WEB技术
@@ -2037,7 +2154,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../04-AI/" class="md-nav__link ">
+            <a href="../../../../%E8%BD%AF%E4%BB%B6/04-AI/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2096,7 +2213,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../05-%E8%AF%AD%E8%A8%80/" class="md-nav__link ">
+            <a href="../../../../%E8%BD%AF%E4%BB%B6/05-%E8%AF%AD%E8%A8%80/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2154,7 +2271,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../05-%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80/" class="md-nav__link ">
+            <a href="../../../../%E8%BD%AF%E4%BB%B6/05-%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2187,7 +2304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E7%9B%B8%E5%85%B3/" class="md-nav__link">
+      <a href="../../../../%E8%BD%AF%E4%BB%B6/05-%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E7%9B%B8%E5%85%B3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2208,7 +2325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80/%E8%AF%AD%E6%B3%95%E6%89%AB%E7%9B%B2/" class="md-nav__link">
+      <a href="../../../../%E8%BD%AF%E4%BB%B6/05-%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80/%E8%AF%AD%E6%B3%95%E6%89%AB%E7%9B%B2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2260,7 +2377,78 @@
                   
 
 
-<h1 id="web">WEB技术<a class="headerlink" href="#web" title="Permanent link">&para;</a></h1>
+<h1 id="240818-softap">240818-蓝牙配网以及 softAP 方式配网探索<a class="headerlink" href="#240818-softap" title="Permanent link">&para;</a></h1>
+<p><strong>ESP32 端参考：</strong></p>
+<blockquote>
+<p>官方统一配网文档： <a href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/provisioning/provisioning.html#id1">https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/provisioning/provisioning.html#id1</a></p>
+<p>blufi 官方 API 指南： <a href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-guides/ble/blufi.html?highlight=blufi">https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-guides/ble/blufi.html?highlight=blufi</a></p>
+<p>BluFi 蓝牙配网接口参考博客： <a href="https://blog.csdn.net/qq_36347513/article/details/118968576">https://blog.csdn.net/qq_36347513/article/details/118968576</a></p>
+<p>BluFi 蓝牙参考例程： <a href="https://github.com/espressif/esp-idf/tree/d7ca8b94c852052e3bc33292287ef4dd62c9eeb1/examples/bluetooth/blufi">https://github.com/espressif/esp-idf/tree/d7ca8b94c852052e3bc33292287ef4dd62c9eeb1/examples/bluetooth/blufi</a></p>
+</blockquote>
+<p><strong>小程序端参考</strong></p>
+<blockquote>
+<p>BluFi 微信小程序配网参考工程 1： <a href="https://github.com/xuhongv/BlufiEsp32WeChat">https://github.com/xuhongv/BlufiEsp32WeChat</a></p>
+<p>小程序参考工程 1 的参考博客： <a href="https://blog.csdn.net/Boantong_/article/details/115666854">https://blog.csdn.net/Boantong_/article/details/115666854</a></p>
+</blockquote>
+<h2 id="1">1 统一配网<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="2-blufi">2 BluFi 配网<a class="headerlink" href="#2-blufi" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="image-20240818145318764.png" /></p>
+<p>配网流程如官方文档上图所示</p>
+<ul>
+<li>ESP32 端打开 GATTS 模式，发送广播数据包，手机作为 GATTC 接入</li>
+<li>手机端发送数据帧开始进行密钥协商，ESP32 端收到之后开始解析</li>
+<li>协商结束后，手机向 ESP32 发送控制帧，设置安全模式；</li>
+<li>设置完成后开始发送联网所需的数据帧</li>
+<li>发送完成后手机发送控制帧，此时 ESP32 端默认手机已完成必要信息的传输，开始连接 WIFI</li>
+<li>连接 WIFI 后 ESP32发送 WIFI 连接状态报告至手机，至此配网结束</li>
+</ul>
+<h3 id="21">2.1 基于官方例程尝试移植<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<h4 id="211">2.1.1 官方例程结构<a class="headerlink" href="#211" title="Permanent link">&para;</a></h4>
+<p><strong>主函数中首先初始化了三个必要的组件：</strong></p>
+<ul>
+<li>nvs 存储</li>
+<li>wifi 初始化</li>
+<li>封装函数 blufi 控制器初始化</li>
+<li>blufi_host_and_cb 初始化</li>
+</ul>
+<p><strong>NVS 存储初始化略，没有上游依赖</strong></p>
+<p><strong>WIFI 初始化：</strong> </p>
+<ul>
+<li>netif 初始化：网络接口的初始化，保持默认即可</li>
+<li>创建 ble 配网使用的 wifi 事件组，该事件组中只定了一个 <code>CONNECTED_BIT</code> 用来指示获取到 IP 标志联网成功</li>
+<li>创建默认系统事件循环</li>
+<li>在 netif 层上创建默认的 sta 模式以及 ap 模式句柄</li>
+<li>注册 WIFI 事件的回调函数</li>
+<li>注册 IP 事件的回调函数</li>
+<li>按默认配置初始化 WIFI，按 STA 模式使能 WIFI，并设置记录 WIFI 连接的相关信息（用于组成发回给手机的数据包）</li>
+</ul>
+<p><strong>blufi 控制器初始化：</strong> 按照默认配置 <code>BT_CONTROLLER_INIT_CONFIG_DEFAULT</code> 初始化蓝牙控制器并使能</p>
+<p><strong>blufi_host_and_cb 初始化：</strong> </p>
+<ul>
+<li><code>esp_blufi_host_init</code>：<code>blufi_init.c</code> ，初始化 bluedroid 蓝牙协议栈并使能</li>
+<li><code>esp_blufi_register_callbacks</code>：blufi 组件所属函数，注册 blufi 相关事件的回调函数，该函数接受本次例程文件中定义的几个必要回调函数，并传递给 blufi 组件以供 blufi 配网过程使用——如 blufi 事件回调函数、数据协商处理函数（DH 方式）、加解密处理函数（AES 加密方式）、校验处理函数（CRC 方式）</li>
+<li><code>esp_blufi_gap_register_callback</code>：<code>blufi_init.c</code> ，调用了一下 blufi 组件中的相关函数，注册回调函数来广播 blufi 默认的数据包，初始化 blufi 的 profile</li>
+</ul>
+<p>结合上述三个组件来看，由于原有系统中本身就需要初始化 bluedroid 协议栈以及 GATTS 服务，因此第二点 blufi 控制器初始化以及第三点中的初始化 bluedroid 蓝牙协议栈可以在初始化 blufi 协议之前就完成。</p>
+<h4 id="212-kconfig-smartconfig">2.1.2 利用 Kconfig 将原配网实现（smartconfig）配置为可选项<a class="headerlink" href="#212-kconfig-smartconfig" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>ESP-IDF 使用基于 <a href="https://github.com/ulfalizer/Kconfiglib">kconfiglib</a> 的 <a href="https://pypi.org/project/esp-idf-kconfig/">esp-idf-kconfig</a> 包，而 <a href="https://github.com/ulfalizer/Kconfiglib">kconfiglib</a> 是 <a href="https://www.kernel.org/doc/Documentation/kbuild/kconfig-language.txt">Kconfig</a> 系统的 Python 扩展。Kconfig 提供了编译时的项目配置机制，以及多种类型的配置选项（如整数、字符串和布尔值等）。Kconfig 文件指定了选项之间的依赖关系、默认值、组合方式等。</p>
+<p><code>Kconfig</code> 是一种用于配置内核和软件项目的配置语言，广泛应用于 Linux 内核、U-Boot 和其他嵌入式系统项目中。它允许开发者定义配置选项，并通过菜单界面（如 <code>menuconfig</code>）进行配置。</p>
+</blockquote>
+<p>通过编写 IDF 组件文件夹下的 <code>Kconfig.projbuild</code> 文件，在 IDF Full Clean 之后便可以生成由组件 Kconfig 规定的若干宏。</p>
+<blockquote>
+<p>此配置将保存在项目根目录的 <code>sdkconfig</code> 文件中。借助 <code>sdkconfig</code>，<strong>应用程序构建目标将在构建目录中生成 <code>sdkconfig.h</code> 文件</strong> ，并使得 <code>sdkconfig</code> 选项可用于项目构建系统和源文件。</p>
+</blockquote>
+<h4 id="213">2.1.3 移植结果<a class="headerlink" href="#213" title="Permanent link">&para;</a></h4>
+<p>实现 blufi 配网方式；</p>
+<p><img alt="" src="image-20240818191543683.png" /></p>
+<p><img alt="" src="image-20240818192320793.png" /></p>
+<p>并可通过 Kconfig 选择配网方式</p>
+<p><img alt="" src="image-20240818192046201.png" /></p>
+<h4 id="214-todo">2.1.4 ToDo<a class="headerlink" href="#214-todo" title="Permanent link">&para;</a></h4>
+<p>因为是验证性质所以移植的可复用性很差（）</p>
+<p>后面还需要继续重构，并检查有没有因为更改配网方式导致的其他依赖 WIFI 的应用程序错误运行。</p>
+<p>以及还需要与小程序端一起测试一下不同平台手机的配网成功率</p>
 
 
 
@@ -2315,10 +2503,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.top", "toc.integrate", "navigation.tabs", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.top", "toc.integrate", "navigation.tabs", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>

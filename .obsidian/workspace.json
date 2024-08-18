@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
+                "file": "docs/平台/00-MCU/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f1cf2ea3630bbd23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
+                "file": "docs/平台/00-MCU/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
+                "file": "docs/平台/00-MCU/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md"
+                "file": "docs/平台/00-MCU/index.md"
               }
             }
           }
@@ -151,6 +163,8 @@
   "lastOpenFiles": [
     "site/search/search_index.json",
     "site/search",
+    "site/软件/05-语言/C语言/语法扫盲/index.html",
+    "site/软件/05-语言/C语言/语法扫盲",
     "site/软件/05-语言/C语言/内存管理相关/index.html",
     "site/软件/05-语言/C语言/内存管理相关",
     "site/软件/05-语言/C语言/index.html",
@@ -158,26 +172,30 @@
     "site/软件/05-语言/index.html",
     "site/软件/05-语言",
     "site/软件/04-AI/index.html",
-    "site/软件/04-AI",
-    "site/软件/03-WEB技术/index.html",
     "site/assets/images/favicon.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240815102201356.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
-    "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163321161.png",
-    "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163307917.png",
-    "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163248583.png",
-    "site/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/image-20240816163223341.png",
-    "docs/平台/00-MCU/ESP32/240626-BM8563 驱动移植，IDF-I2C 笔记.md",
+    "site/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索/image-20240818192320793.png",
+    "site/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索/image-20240818192046201.png",
+    "site/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索/image-20240818191902611.jpeg",
+    "site/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索/image-20240818191543683.png",
+    "docs/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索.md",
+    "docs/平台/00-MCU/ESP32/index.md",
     "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
-    "docs/平台/00-MCU/ESP32/240619-蓝牙开发.md",
+    "docs/平台/00-MCU/ESP32/240626-BM8563 驱动移植，IDF-I2C 笔记.md",
+    "docs/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记/未命名.md",
+    "docs/平台/00-MCU/ESP32/240615-smartconfig配网.md",
+    "docs/软件/05-语言/C语言/语法扫盲.md",
+    "docs/软件/05-语言/C语言/内存管理相关.md",
+    "docs/软件/05-语言/C语言/index.md",
+    "docs/软件/05-语言/index.md",
     "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
+    "docs/平台/00-MCU/ESP32/240619-蓝牙开发.md",
     "docs/平台/00-MCU/ESP32/240618-SNTP 获取时间、AES 加密.md",
     "docs/平台/00-MCU/ESP32/240617-IDF 的事件循环，及 wifi 运行流程.md",
-    "docs/平台/00-MCU/ESP32/240615-smartconfig配网.md",
-    "docs/平台/00-MCU/ESP32/index.md",
     "docs/平台/00-MCU/ESP32/00-ESP32总述.md",
     "docs/平台/00-MCU/ESP32/x.md",
     "docs/平台/00-MCU/ESP32/01-蓝牙门禁开发笔记.md",
@@ -188,12 +206,6 @@
     "docs/软件/02-嵌入式Linux/index.md",
     "docs/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand.md",
     "docs/软件/00-通用算法/index.md",
-    "docs/软件/04-AI/index.md",
-    "docs/软件/03-WEB技术/index.md",
-    "docs/平台/02-x86/index.md",
-    "docs/平台/01-ARM/index.md",
-    "docs/软件/00-软件总述.md",
-    "docs/硬件/index.md",
-    "docs/软件/index.md"
+    "docs/软件/04-AI/index.md"
   ]
 }

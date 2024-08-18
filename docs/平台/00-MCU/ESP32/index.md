@@ -1,7 +1,7 @@
 # 概述
 
 
-## 蓝牙WIFI双模门禁控制器
+## 1 蓝牙WIFI双模门禁控制器
 
 使用ESP32-S3作为主控，旨在实现断网情况下也可以利用蓝牙功能进行门禁控制。
 
@@ -14,8 +14,9 @@
 - [240625-卡关系存储设计](240625-卡关系存储设计.md)
 - [240626-BM8563 驱动移植，IDF-I2C 笔记](240626-BM8563%20驱动移植，IDF-I2C%20笔记.md)
 - [240719-LEDPWM及常用指示函数封装](240719-LEDPWM及常用指示函数封装.md)
+- [240818-蓝牙配网以及softAP方式配网探索](240818-蓝牙配网以及softAP方式配网探索.md)
 
-## 参考文档以及链接：
+## 2 参考文档以及链接：
 
 - [IDF 官方文档](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.2.1/esp32/get-started/index.html)
 - [IDF 官方注册表仓库](https://components.espressif.com/)
