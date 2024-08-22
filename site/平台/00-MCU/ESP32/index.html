@@ -472,6 +472,8 @@
       
         
       
+        
+      
     
     
       
@@ -672,6 +674,27 @@
   
   <span class="md-ellipsis">
     240818-蓝牙配网以及 softAP 方式配网探索
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="240822-ESP32%E5%88%86%E5%8C%BA%E8%A1%A8%E5%8F%8AOTA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240822-ESP32分区表及 OTA
   </span>
   
 
@@ -1499,6 +1522,8 @@
       
         
       
+        
+      
     
     
       
@@ -1542,6 +1567,27 @@
   
   <span class="md-ellipsis">
     00 机械结构总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A1%AC%E4%BB%B6/03-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84/240820-SolidWorks%E5%BC%80%E8%9E%BA%E7%BA%B9%E5%AD%94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240820 SolidWorks开螺纹孔
   </span>
   
 
@@ -2264,10 +2310,22 @@
 
 <h1 id="_1">概述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="1-wifi">1 蓝牙WIFI双模门禁控制器<a class="headerlink" href="#1-wifi" title="Permanent link">&para;</a></h2>
-<p>使用ESP32-S3作为主控，旨在实现断网情况下也可以利用蓝牙功能进行门禁控制。</p>
+<p>使用 ESP32-S3作为主控，旨在实现断网情况下也可以利用蓝牙功能进行门禁控制。</p>
 <blockquote>
-<p>项目链接：<a href="https://gitee.com/chenym_simpler/git_lock_electromagnet">https://gitee.com/chenym_simpler/git_lock_electromagnet</a></p>
+<p>项目链接： <a href="https://gitee.com/chenym_simpler/git_lock_electromagnet">https://gitee.com/chenym_simpler/git_lock_electromagnet</a></p>
 </blockquote>
+<p>硬件资源如下：</p>
+<ul>
+<li>使用模组 <code>ESP32-S3-WROOM-1U-N8R2</code><ul>
+<li><code>ESP32-S3</code> 主控，主频高达 240MHz，双核 Xtensa® dual-core 32-bit LX7 CPU</li>
+<li>8MB Flash</li>
+<li>2MB PSRAM</li>
+</ul>
+</li>
+</ul>
+<p>ESP32-S3-WROOM-1 采用 PCB 板载天线;</p>
+<p>ESP32-S3-WROOM-1U 采用 U.FL 座子连接外部 IPEX 天线</p>
+<p>可选 4/8/16 MB flash；0/2/8 PSRAM</p>
 <ul>
 <li><a href="240615-smartconfig%E9%85%8D%E7%BD%91/">240615-smartconfig配网</a></li>
 <li><a href="240617-IDF%20%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%EF%BC%8C%E5%8F%8A%20wifi%20%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/">240617-IDF 的事件循环，及 wifi 运行流程</a></li>
@@ -2277,6 +2335,7 @@
 <li><a href="240626-BM8563%20%E9%A9%B1%E5%8A%A8%E7%A7%BB%E6%A4%8D%EF%BC%8CIDF-I2C%20%E7%AC%94%E8%AE%B0/">240626-BM8563 驱动移植，IDF-I2C 笔记</a></li>
 <li><a href="240719-LEDPWM%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8C%87%E7%A4%BA%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/">240719-LEDPWM及常用指示函数封装</a></li>
 <li><a href="240818-%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%91%E4%BB%A5%E5%8F%8AsoftAP%E6%96%B9%E5%BC%8F%E9%85%8D%E7%BD%91%E6%8E%A2%E7%B4%A2/">240818-蓝牙配网以及softAP方式配网探索</a></li>
+<li><a href="240822-ESP32%E5%88%86%E5%8C%BA%E8%A1%A8%E5%8F%8AOTA/">240822-ESP32分区表及OTA</a></li>
 </ul>
 <h2 id="2">2 参考文档以及链接：<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2290,6 +2349,7 @@
 <p>概述类型，包括各外设重要参数</p>
 </blockquote>
 </li>
+<li><a href="https://products.espressif.com/#/product-selector?language=zh&amp;names=">ESP32 选型在线工具</a></li>
 </ul>
 
 

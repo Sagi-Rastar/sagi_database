@@ -1,5 +1,6 @@
 {
-  "attachmentFolderPath": "./240818-蓝牙配网以及softAP方式配网探索",
+  "attachmentFolderPath": "./index",
   "newLinkFormat": "relative",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "showRibbon": false
 }
