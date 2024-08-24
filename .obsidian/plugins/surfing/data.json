@@ -1,0 +1,65 @@
+{
+  "defaultSearchEngine": "google",
+  "customSearchEngine": [
+    {
+      "name": "duckduckgo",
+      "url": "https://duckduckgo.com/?q="
+    }
+  ],
+  "hoverPopover": true,
+  "ignoreList": [
+    "notion",
+    "craft"
+  ],
+  "alwaysShowCustomSearch": false,
+  "showOtherSearchEngines": false,
+  "showSearchBarInPage": true,
+  "markdownPath": "/",
+  "customHighlightFormat": false,
+  "highlightFormat": "[{CONTENT}]({URL})",
+  "highlightInSameTab": false,
+  "openInSameTab": false,
+  "showRefreshButton": false,
+  "openInObsidianWeb": false,
+  "useCustomIcons": false,
+  "useWebview": false,
+  "useIconList": true,
+  "darkMode": true,
+  "randomBackground": false,
+  "lastOpenedFiles": false,
+  "bookmarkManager": {
+    "openBookMark": false,
+    "saveBookMark": false,
+    "sendToReadWise": false,
+    "pagination": "12",
+    "category": "- Tool\n",
+    "defaultCategory": "ROOT",
+    "defaultColumnList": [
+      "name",
+      "description",
+      "url",
+      "category",
+      "tags",
+      "created",
+      "modified",
+      "action"
+    ],
+    "defaultFilterType": "menu"
+  },
+  "treeData": [
+    {
+      "id": "9ca566b59ccf6f39",
+      "parent": 0,
+      "droppable": true,
+      "text": "Kimi.ai - 帮你看更大的世界",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    }
+  ],
+  "enableHtmlPreview": true,
+  "supportLivePreviewInlineUrl": false,
+  "enableTreeView": true
+}

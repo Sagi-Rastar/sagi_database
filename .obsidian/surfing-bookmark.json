@@ -1,0 +1,24 @@
+{
+  "bookmarks": [
+    {
+      "id": "-1172163274",
+      "name": "Kimi AI搜索",
+      "url": "https://kimi.moonshot.cn/",
+      "description": "",
+      "category": [
+        "ROOT"
+      ],
+      "tags": "",
+      "created": 1724483340000,
+      "modified": 1724483340000
+    }
+  ],
+  "categories": [
+    {
+      "value": "ROOT",
+      "text": "ROOT",
+      "label": "ROOT",
+      "children": []
+    }
+  ]
+}

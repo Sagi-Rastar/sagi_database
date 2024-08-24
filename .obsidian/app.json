@@ -1,6 +1,5 @@
 {
-  "attachmentFolderPath": "./index",
-  "newLinkFormat": "relative",
-  "useMarkdownLinks": true,
-  "showRibbon": false
+  "attachmentFolderPath": "./240822-ESP32分区表及OTA",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": true
 }
