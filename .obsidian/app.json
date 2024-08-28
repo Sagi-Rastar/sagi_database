@@ -1,5 +1,6 @@
 {
-  "attachmentFolderPath": "./240822-ESP32分区表及OTA",
+  "attachmentFolderPath": "./240828-Jlink",
   "newLinkFormat": "shortest",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "showRibbon": false
 }
