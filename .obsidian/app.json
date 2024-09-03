@@ -1,6 +1,7 @@
 {
-  "attachmentFolderPath": "./240828-Jlink",
+  "attachmentFolderPath": "./240814-CubeMX+FreeRTOS开发笔记",
   "newLinkFormat": "shortest",
   "useMarkdownLinks": true,
-  "showRibbon": false
+  "showRibbon": false,
+  "alwaysUpdateLinks": true
 }

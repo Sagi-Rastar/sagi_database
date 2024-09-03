@@ -46,19 +46,7 @@
     ],
     "defaultFilterType": "menu"
   },
-  "treeData": [
-    {
-      "id": "8a4c7cd9161ee899",
-      "parent": 0,
-      "droppable": true,
-      "text": "集成开发环境 - 知乎直答",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    }
-  ],
+  "treeData": [],
   "enableHtmlPreview": true,
   "supportLivePreviewInlineUrl": false,
   "enableTreeView": true

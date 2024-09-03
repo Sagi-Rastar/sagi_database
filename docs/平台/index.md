@@ -17,7 +17,7 @@ icon: simple/formspree
 
     > “MCU”：微控制器/单片机/嵌入式系统…
 
-- :simple-arm:{ .lg .middle } [__ARM__](01-ARM/index.md)
+- :simple-arm:{ .lg .middle } [__ARM__](docs/平台/01-SOC/index.md)
 
     ---
 
