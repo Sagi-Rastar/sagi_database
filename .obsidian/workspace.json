@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/平台/00-MCU/ESP32/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/平台/00-MCU/ESP32/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/平台/00-MCU/ESP32/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md"
+                "file": "docs/平台/00-MCU/ESP32/index.md"
               }
             }
           }
@@ -155,7 +155,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3fb23f5db3f883e4",
+  "active": "c8016d244f4b47f0",
   "lastOpenFiles": [
     "site/search/search_index.json",
     "site/search",
@@ -169,17 +169,19 @@
     "site/软件/05-语言",
     "site/软件/04-AI/index.html",
     "site/assets/images/favicon.png",
-    "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240824171923938.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
+    "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240824171923938.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240824171903624.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240815102201356.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
     "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240905200156464.png",
     "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240905200143410.png",
-    "docs/软件/05-语言/C语言/内存管理.md",
+    "docs/平台/00-MCU/index.md",
+    "docs/平台/00-MCU/ESP32/index.md",
     "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+    "docs/软件/05-语言/C语言/内存管理.md",
     "docs/平台/00-MCU/ESP32/240822-ESP32分区表及OTA.md",
     "docs/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索.md",
     "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md",
@@ -195,8 +197,6 @@
     "docs/平台/00-MCU/Debug/240828-Jlink.md",
     "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
     "未命名.md",
-    "docs/平台/00-MCU/index.md",
-    "docs/平台/00-MCU/ESP32/index.md",
     "docs/硬件/03-机械结构/240820-SolidWorks开螺纹孔.md",
     "docs/硬件/03-机械结构/00-机械结构总述.md",
     "docs/平台/00-MCU/ESP32/240626-BM8563 驱动移植，IDF-I2C 笔记.md",
