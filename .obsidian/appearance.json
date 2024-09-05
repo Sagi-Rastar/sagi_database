@@ -2,5 +2,5 @@
   "accentColor": "#96a7ee",
   "interfaceFontFamily": "Source Han Serif SC VF",
   "cssTheme": "Atom",
-  "monospaceFontFamily": "Operator Mono"
+  "monospaceFontFamily": "Operator Mono,Source Han Serif SC VF"
 }
