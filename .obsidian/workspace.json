@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/index.md",
+                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/index.md",
+                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/index.md",
+                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/index.md"
+                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md"
               }
             }
           }
@@ -176,10 +176,10 @@
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240815102201356.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
-    "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240905200156464.png",
-    "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240905200143410.png",
-    "docs/平台/00-MCU/index.md",
+    "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240905201126692.png",
+    "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240905201111627.png",
     "docs/平台/00-MCU/ESP32/index.md",
+    "docs/平台/00-MCU/index.md",
     "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
     "docs/软件/05-语言/C语言/内存管理.md",
     "docs/平台/00-MCU/ESP32/240822-ESP32分区表及OTA.md",

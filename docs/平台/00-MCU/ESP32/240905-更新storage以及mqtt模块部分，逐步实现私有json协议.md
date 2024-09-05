@@ -1,6 +1,12 @@
 # 240905-更新 Storage 以及 MQTT 模块部分，逐步实现私有 json 协议
 
-## 1 Storage 部分
+## 1 提交
+
+>本次提交： https://gitee.com/chenym_simpler/git_lock_electromagnet/commit/5bda321cc7d5459e0bb0fdf33590a92ee622d0a9
+
+![](image-20240905201126692.png)
+
+## 2 Storage 部分
 
 对于需要掉电保存的数据来讲一般可以分作字符串以及数据类，例如：
 
@@ -134,7 +140,7 @@ STG_err_t storage_read_init_value(void)
 }
 ```
 
-## 2 MQTT 部分
+## 3 MQTT 部分
 
 IDF 的文档对于 MQTT5 的部分还没有完善的很详细，反正今天找到的官方文档上面只丢了一个一年前的例程：
 

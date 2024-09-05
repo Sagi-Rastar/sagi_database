@@ -830,18 +830,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-storage" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1 Storage 部分
+      1 提交
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-mqtt" class="md-nav__link">
+  <a href="#2-storage" class="md-nav__link">
     <span class="md-ellipsis">
-      2 MQTT 部分
+      2 Storage 部分
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mqtt" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 MQTT 部分
     </span>
   </a>
   
@@ -2478,7 +2487,12 @@
 
 
 <h1 id="240905-storage-mqtt-json">240905-更新 Storage 以及 MQTT 模块部分，逐步实现私有 json 协议<a class="headerlink" href="#240905-storage-mqtt-json" title="Permanent link">&para;</a></h1>
-<h2 id="1-storage">1 Storage 部分<a class="headerlink" href="#1-storage" title="Permanent link">&para;</a></h2>
+<h2 id="1">1 提交<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>本次提交： <a href="https://gitee.com/chenym_simpler/git_lock_electromagnet/commit/5bda321cc7d5459e0bb0fdf33590a92ee622d0a9">https://gitee.com/chenym_simpler/git_lock_electromagnet/commit/5bda321cc7d5459e0bb0fdf33590a92ee622d0a9</a></p>
+</blockquote>
+<p><img alt="" src="image-20240905201126692.png" /></p>
+<h2 id="2-storage">2 Storage 部分<a class="headerlink" href="#2-storage" title="Permanent link">&para;</a></h2>
 <p>对于需要掉电保存的数据来讲一般可以分作字符串以及数据类，例如：</p>
 <div class="highlight"><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span>
 <span class="p">{</span>
@@ -2591,7 +2605,7 @@
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">STG_OK</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="2-mqtt">2 MQTT 部分<a class="headerlink" href="#2-mqtt" title="Permanent link">&para;</a></h2>
+<h2 id="3-mqtt">3 MQTT 部分<a class="headerlink" href="#3-mqtt" title="Permanent link">&para;</a></h2>
 <p>IDF 的文档对于 MQTT5 的部分还没有完善的很详细，反正今天找到的官方文档上面只丢了一个一年前的例程：</p>
 <blockquote>
 <p><a href="https://github.com/espressif/esp-idf/tree/66733762/examples/protocols/mqtt5">官方 MQTT5 例程</a></p>
