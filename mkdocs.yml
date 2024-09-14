@@ -1,6 +1,16 @@
 site_name: Sagi's database
-site_url: https://sagidb.github.io
+site_url: https://sagidb.github.io/
 dev_addr: "127.0.0.1:46552"
+
+extra_css:
+  - css/custom.css
+  - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - css/heti.css
+
+extra_javascript:
+    - js/heti.js
+
 markdown_extensions:
 
   # Python Markdown
@@ -46,9 +56,11 @@ theme:
         - navigation.instant
         - navigation.instant.progress
         - navigation.indexes
-        - navigation.top
-        - toc.integrate
+        - navigation.path
         - navigation.tabs
+        - navigation.top
+        - content.code.annotate
+        - navigation.tracking
         - header.autohide
 
 plugins:
