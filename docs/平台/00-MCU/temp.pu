@@ -1,0 +1,42 @@
+@startuml
+!define RECTANGLE class
+
+top to bottom direction
+
+RECTANGLE blufi_security {
+    +int blufi_aes_encrypt(uint8_t iv8, uint8_t *crypt_data, int crypt_len)
+    +int blufi_aes_decrypt(uint8_t iv8, uint8_t *crypt_data, int crypt_len)
+    +uint16_t blufi_crc_checksum(uint8_t iv8, uint8_t *data, int len)
+    +esp_err_t blufi_security_init()
+    +void blufi_security_deinit()
+    +void blufi_dh_negotiate_data_handler(uint8_t *data, int len, uint8_t **output_data, int *output_len, bool *need_free)
+}
+
+RECTANGLE wifi_task {
+    +void wifi_task_init()
+    +void initialise_wifi()
+    +void example_event_callback(esp_blufi_cb_event_t event, esp_blufi_cb_param_t *param)
+    +void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data)
+    +void ip_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data)
+}
+
+RECTANGLE esp_blufi_api {
+    +esp_err_t esp_blufi_host_and_cb_init(esp_blufi_callbacks_t *callbacks)
+    +esp_err_t esp_blufi_send_wifi_conn_report(wifi_mode_t mode, esp_blufi_sta_conn_state_t state, uint8_t softap_conn_num, esp_blufi_extra_info_t *info)
+    +esp_err_t esp_blufi_send_error_info(esp_blufi_error_state_t state)
+    +esp_err_t esp_blufi_disconnect()
+}
+
+wifi_task -> blufi_security : +blufi_aes_encrypt()
+wifi_task -> blufi_security : +blufi_aes_decrypt()
+wifi_task -> blufi_security : +blufi_crc_checksum()
+wifi_task -> blufi_security : +blufi_dh_negotiate_data_handler()
+wifi_task -> blufi_security : +blufi_security_init()
+wifi_task -> blufi_security : +blufi_security_deinit()
+
+wifi_task -> esp_blufi_api : +esp_blufi_host_and_cb_init()
+wifi_task -> esp_blufi_api : +esp_blufi_send_wifi_conn_report()
+wifi_task -> esp_blufi_api : +esp_blufi_send_error_info()
+wifi_task -> esp_blufi_api : +esp_blufi_disconnect()
+
+@enduml

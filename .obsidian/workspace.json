@@ -13,7 +13,11 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< Updated upstream
                 "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+=======
+                "file": "docs/软件/05-语言/Python/240829-python操作串口.md",
+>>>>>>> Stashed changes
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +81,11 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< Updated upstream
     "width": 285.5
+=======
+    "width": 261.5
+>>>>>>> Stashed changes
   },
   "right": {
     "id": "1529aa6e59d1d32b",
@@ -93,7 +101,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< Updated upstream
                 "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+=======
+                "file": "docs/软件/05-语言/Python/240829-python操作串口.md",
+>>>>>>> Stashed changes
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +122,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< Updated upstream
                 "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+=======
+                "file": "docs/软件/05-语言/Python/240829-python操作串口.md",
+>>>>>>> Stashed changes
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +149,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< Updated upstream
                 "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md"
+=======
+                "file": "docs/软件/05-语言/Python/240829-python操作串口.md"
+>>>>>>> Stashed changes
               }
             }
           }
@@ -157,6 +177,17 @@
   },
   "active": "c8016d244f4b47f0",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
+=======
+    "docs/平台/00-MCU/Debug/240828-Jlink.md",
+    "docs/软件/05-语言/Python/240829-python操作串口.md",
+    "docs/软件/05-语言/Python",
+    "docs/平台/00-MCU/Debug/240828-Jlink/image-20240828104355358.png",
+    "docs/平台/00-MCU/Debug/240828-Jlink",
+    "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240824171923938.png",
+    "docs/平台/00-MCU/index.md",
+    "docs/平台/00-MCU/ESP32/240822-ESP32分区表及OTA.md",
+>>>>>>> Stashed changes
     "site/search/search_index.json",
     "site/search",
     "site/软件/05-语言/C语言/语法特性/index.html",
@@ -165,9 +196,12 @@
     "site/软件/05-语言/C语言/内存管理",
     "site/软件/05-语言/C语言/index.html",
     "site/软件/05-语言/C语言",
+<<<<<<< Updated upstream
     "site/软件/05-语言/index.html",
     "site/软件/05-语言",
     "site/软件/04-AI/index.html",
+=======
+>>>>>>> Stashed changes
     "site/assets/images/favicon.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
@@ -176,6 +210,7 @@
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240815102201356.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814180226032.png",
     "site/平台/00-MCU/STM32/240814-CubeMX+FreeRTOS开发笔记/image-20240814174016515.png",
+<<<<<<< Updated upstream
     "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240905201126692.png",
     "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240905201111627.png",
     "docs/平台/00-MCU/ESP32/index.md",
@@ -195,6 +230,8 @@
     "docs/平台/01-SOC/Raspberry Pi/00-RaspberryPi总述.md",
     "docs/平台/02-x86/index.md",
     "docs/平台/00-MCU/Debug/240828-Jlink.md",
+=======
+>>>>>>> Stashed changes
     "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
     "未命名.md",
     "docs/硬件/03-机械结构/240820-SolidWorks开螺纹孔.md",

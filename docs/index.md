@@ -17,6 +17,37 @@ icon: material/home
     - `mkdocs build` - 构建项目
     - `mkdocs -h` - 帮助
 
+
+<div id="grid-cards-container" class="grid cards" markdown>
+    <!-- JavaScript will insert cards here -->
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById('grid-cards-container');
+
+    // 假设你有一个API可以返回目录结构
+    fetch('/api/get-directory-structure')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(category => {
+                const card = `
+- :octicons-dot-16:{ .lg .middle } [__${category.name}__](${category.link})
+    ---
+
+    偏向实际开发的分类
+
+    > “${category.name}”：描述...
+`;
+                container.innerHTML += card;
+            });
+        })
+        .catch(error => console.error('Error fetching directory structure:', error));
+});
+</script>
+
+<!-- 
+
 <div class="grid cards" markdown>
 
 -   :simple-formspree:{ .lg .middle } [__平台__](平台/index.md)
@@ -52,4 +83,3 @@ icon: material/home
 
     > “个人主页”：Blog/图集/关于… -->
 
-</div>
