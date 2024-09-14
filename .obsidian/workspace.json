@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/软件/05-语言/C语言/C语言八股.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/软件/05-语言/C语言/C语言八股.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/软件/05-语言/C语言/C语言八股.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md"
+                "file": "docs/软件/05-语言/C语言/C语言八股.md"
               }
             }
           }
@@ -155,7 +155,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b6c75f350af02325",
+  "active": "7b4ceea987866a5c",
   "lastOpenFiles": [
     "site/search/search_index.json",
     "site/search",
@@ -166,18 +166,22 @@
     "site/软件/05-语言/C语言/语法特性",
     "site/软件/05-语言/C语言/内存管理/index.html",
     "site/软件/05-语言/C语言/内存管理",
-    "site/软件/05-语言/C语言/index.html",
-    "site/软件/05-语言/C语言",
+    "site/软件/05-语言/C语言/C语言八股/index.html",
+    "site/软件/05-语言/C语言/C语言八股",
     "site/assets/images/favicon.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
     "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914113522552.png",
-    "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914112053548.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914111239872.png",
+    "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914112053548.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914111158894.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914111134797.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914102121670.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914101929023.png",
+    "docs/软件/05-语言/C语言/语法特性.md",
+    "docs/软件/05-语言/C语言/C语言八股.md",
+    "docs/软件/05-语言/C语言/内存管理.md",
+    "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
     "docs/平台/00-MCU/ESP32/240822-ESP32分区表及OTA.md",
     "docs/平台/00-MCU/Debug/240828-Jlink.md",
     "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
