@@ -2307,6 +2307,8 @@
       
         
       
+        
+      
     
     
       
@@ -2456,6 +2458,77 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7_3" id="__nav_4_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E8%BD%AF%E4%BB%B6/05-%E8%AF%AD%E8%A8%80/Python/240829-python%E6%93%8D%E4%BD%9C%E4%B8%B2%E5%8F%A3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240829 python操作串口
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2491,7 +2564,7 @@
 <blockquote>
 <p>本次提交： <a href="https://gitee.com/chenym_simpler/git_lock_electromagnet/commit/5bda321cc7d5459e0bb0fdf33590a92ee622d0a9">https://gitee.com/chenym_simpler/git_lock_electromagnet/commit/5bda321cc7d5459e0bb0fdf33590a92ee622d0a9</a></p>
 </blockquote>
-<p><img alt="" src="image-20240905201126692.png" /></p>
+<p><img alt="" src="image-20240914134331290.png" /></p>
 <h2 id="2-storage">2 Storage 部分<a class="headerlink" href="#2-storage" title="Permanent link">&para;</a></h2>
 <p>对于需要掉电保存的数据来讲一般可以分作字符串以及数据类，例如：</p>
 <div class="highlight"><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span>
@@ -2612,7 +2685,7 @@
 </blockquote>
 <p>简要记录一下踩的🕳：</p>
 <p>首先 IDF 上面如果要使用 MQTT5 的话不光 menuconfig 里面要勾上 Enable：</p>
-<p><img alt="" src="image-20240905194626031.png" /></p>
+<p><img alt="" src="image-20240914134340025.png" /></p>
 <p>而且在初始化 mqtt_client 句柄的时候也要指定：</p>
 <div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="n">esp_mqtt_client_config_t</span><span class="w"> </span><span class="n">mqtt_cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">.</span><span class="n">broker</span><span class="p">.</span><span class="n">address</span><span class="p">.</span><span class="n">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CONFIG_BROKER_URI</span><span class="p">,</span>
@@ -2640,7 +2713,7 @@
 </code></pre></div>
 <p>以上都是暂时模仿官方例程里面的写法进行配置</p>
 <p>配置结果：</p>
-<p><img alt="" src="image-20240905200156464.png" /></p>
+<p><img alt="" src="image-20240914134346956.png" /></p>
 <blockquote>
 <p>数据都是测试数据</p>
 </blockquote>

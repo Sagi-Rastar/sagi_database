@@ -1,11 +1,5 @@
 {
-<<<<<<< Updated upstream
   "attachmentFolderPath": "./240905-更新storage以及mqtt模块部分，逐步实现私有json协议",
-=======
-  "attachmentFolderPath": "./240829-python操作串口",
->>>>>>> Stashed changes
-  "newLinkFormat": "shortest",
   "useMarkdownLinks": true,
-  "showRibbon": false,
-  "alwaysUpdateLinks": true
+  "newLinkFormat": "relative"
 }

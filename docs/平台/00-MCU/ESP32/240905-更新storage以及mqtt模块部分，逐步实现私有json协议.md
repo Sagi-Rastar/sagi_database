@@ -4,7 +4,7 @@
 
 >本次提交： https://gitee.com/chenym_simpler/git_lock_electromagnet/commit/5bda321cc7d5459e0bb0fdf33590a92ee622d0a9
 
-![](image-20240905201126692.png)
+![](240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240914134331290.png)
 
 ## 2 Storage 部分
 
@@ -150,7 +150,7 @@ IDF 的文档对于 MQTT5 的部分还没有完善的很详细，反正今天找
 
 首先 IDF 上面如果要使用 MQTT5 的话不光 menuconfig 里面要勾上 Enable：
 
-![](image-20240905194626031.png)
+![](240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240914134340025.png)
 
 而且在初始化 mqtt_client 句柄的时候也要指定：
 
@@ -191,7 +191,7 @@ ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
 
 配置结果：
 
-![](image-20240905200156464.png)
+![](240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240914134346956.png)
 
 >数据都是测试数据
 

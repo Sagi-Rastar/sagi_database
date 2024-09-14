@@ -1,0 +1,24 @@
+@startuml
+title I2C Communication Example
+
+actor "Master" as M
+actor "Slave" as S
+
+M -> S: Start Condition
+M -> S: Address + Write Bit
+alt Acknowledged 
+    S -> M: ACK
+else Not Acknowledged
+    S -> M: NACK
+end
+
+M -> S: Data Byte
+alt Acknowledged
+    S -> M: ACK
+else Not Acknowledged
+    S -> M: NACK
+end
+
+M -> S: Stop Condition
+
+@enduml

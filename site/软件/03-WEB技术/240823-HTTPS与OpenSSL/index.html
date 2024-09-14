@@ -2199,28 +2199,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-ca" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2 身份验证 // CA 数字证书
+      2 对称加密、非对称加密
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 对称加密、非对称加密">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 非对称加密
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 HTTPS 的身份验证
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#4-openssl" class="md-nav__link">
     <span class="md-ellipsis">
-      3 实践
+      4 OpenSSL 实践
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3 实践">
+    <nav class="md-nav" aria-label="4 OpenSSL 实践">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-openssl-ssl" class="md-nav__link">
+  <a href="#41-openssl-ssl" class="md-nav__link">
     <span class="md-ellipsis">
-      3.1 使用 OpenSSL 创建自签名的 SSL 证书和私钥
+      4.1 使用 OpenSSL 创建自签名的 SSL 证书和私钥
     </span>
   </a>
   
@@ -2316,6 +2340,8 @@
       
         
           
+        
+      
         
       
         
@@ -2469,6 +2495,77 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7_3" id="__nav_4_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-%E8%AF%AD%E8%A8%80/Python/240829-python%E6%93%8D%E4%BD%9C%E4%B8%B2%E5%8F%A3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240829 python操作串口
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2505,7 +2602,31 @@
 <p>HTTP for HyperText Transfer Protocol；</p>
 <p>S for Secure；</p>
 <p>SSL for Secure Sockets Layer；TLS for Transport Layer Security</p>
-<h2 id="2-ca">2 身份验证 // CA 数字证书<a class="headerlink" href="#2-ca" title="Permanent link">&para;</a></h2>
+<h2 id="2">2 对称加密、非对称加密<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 非对称加密<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>加密和解密使用不同的密钥，私钥加密公钥可解，公钥加密私钥可解</li>
+<li>私钥由用户自己拥有，公钥公开配送</li>
+</ul>
+<iframe frameborder="0" style="width:100%;height:300px;border:0px solid var(--md-typeset-a-color);background-color:transparent;display:block;overflow:auto;border-radius:15px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&ui=dark&sync=auto&grid=1&nav=1&title=%E5%8A%A0%E5%AF%86%E7%A4%BA%E6%84%8F%E5%9B%BE.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FSagi-Rastar%2FSagiDrawio_public%2Fmain%2F%E5%8A%A0%E5%AF%86%E7%A4%BA%E6%84%8F%E5%9B%BE.drawio"></iframe>
+
+<p>但是非对称加密会有如下风险：</p>
+<iframe frameborder="0" style="width:100%;height:500px;border:0px solid var(--md-typeset-a-color);background-color:transparent;display:block;overflow:auto;border-radius:15px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&&ui=dark&sync=auto&grid=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E6%94%BB%E5%87%BB%E5%9B%BE.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FSagi-Rastar%2FSagiDrawio_public%2Fmain%2F%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E6%94%BB%E5%87%BB%E5%9B%BE.drawio"></iframe>
+
+<p>攻击者可能会先一步与 A 和 B 建立联系，从而出现篡改的可能</p>
+<p>因此出现了证书授权机构，也就是 CA（Certificate Authority）</p>
+<iframe frameborder="0" style="width:100%;height:500px;border:0px solid var(--md-typeset-a-color);background-color:transparent;display:block;overflow:auto;border-radius:15px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&ui=dark&sync=auto&grid=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=openssl%E5%8A%A0%E5%AF%86%E6%B5%81%E7%A8%8B.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FSagi-Rastar%2FSagiDrawio_public%2Fmain%2Fopenssl%E5%8A%A0%E5%AF%86%E6%B5%81%E7%A8%8B.drawio"></iframe>
+
+<ol>
+<li>CA 用自己的私钥生成一个自签名的证书</li>
+<li>B 向 CA 发起请求，CA 用自签名证书以及 B 的私钥为其签发证书，证书中包含 B 的公钥信息</li>
+<li>B 把自己的证书发送给 A，同时用自己的私钥签名了一些东西也发了过去，A 拿着 CA 的证书验证 B 证书，如果验证没有问题，就从证书中拿到 B 的公钥，然后拿这个公钥对收到的数据验证签名确定身份</li>
+<li>最后 A 就可以用这个公钥和 B 通信了</li>
+</ol>
+<blockquote>
+<p>来自知乎： <a href="https://zhuanlan.zhihu.com/p/456089100">https://zhuanlan.zhihu.com/p/456089100</a></p>
+</blockquote>
+<h2 id="3-https">3 HTTPS 的身份验证<a class="headerlink" href="#3-https" title="Permanent link">&para;</a></h2>
 <p>HTTPS 协议中的身份验证部分是由数字证书来完成的，证书有如下内容组成：</p>
 <ul>
 <li>公钥</li>
@@ -2516,22 +2637,82 @@
 <p>随后客户端会使用服务器提供的公钥对生成的密钥进行加密，再发送回服务器。</p>
 <p>服务器使用私钥解密收到的加密信息，得到对称加密密钥。</p>
 <p>至此，往后的会话就会使用对称的密钥进行加解密，并在对话结束后销毁对称密钥。</p>
-<h2 id="3">3 实践<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h2 id="4-openssl">4 OpenSSL 实践<a class="headerlink" href="#4-openssl" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">conan</span>
 </code></pre></div>
-<p>如果要自编译的话windows 环境下官方推荐用 conan 来进行下载。</p>
+<p>如果要自编译的话 windows 环境下官方推荐用 conan 来进行下载。</p>
 <blockquote>
 <p>conan：一个 c/c++的包管理工具，用 python 写的</p>
 </blockquote>
-<p>这里可以直接下别人编译好的安装包 <a href="https://slproweb.com/products/Win32OpenSSL.html">https://slproweb.com/products/Win32OpenSSL.html</a></p>
-<h3 id="31-openssl-ssl">3.1 使用 OpenSSL 创建自签名的 SSL 证书和私钥<a class="headerlink" href="#31-openssl-ssl" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># -genra    生成RSA私钥</span>
-<span class="c1"># -des3 des3算法</span>
-<span class="c1"># -out server.key 生成的私钥文件名</span>
-<span class="c1"># -2048 私钥长度</span>
+<p><a href="https://slproweb.com/products/Win32OpenSSL.html">这里</a>可以直接下别人编译好的安装包</p>
+<p>openssl 的一些名词解释：</p>
+<ul>
+<li><strong>pem 和 der</strong>：两种格式（包括公私钥、证书签名请求、证书等内容），前者是文本形式，linux 常用，后者是二进制形式，windows 常用，仅仅是格式，不表明内容，如果作为后缀就像 html 起的效果一样。有时候用 pem 做公钥的后缀</li>
+<li><strong>x509</strong>：证书标准</li>
+<li><strong>crt 和 cer</strong>：常见的两种证书后缀名，前者大多数情况为 pem 格式，后者大多数情况为 der 格式</li>
+<li><strong>csr</strong>：证书签名请求，包含了公钥、用户名等信息 (Certificate Sign Request)</li>
+<li><strong>key</strong>：常见的私钥的后缀名</li>
+</ul>
+<blockquote>
+<p>来自知乎： <a href="https://zhuanlan.zhihu.com/p/456089100">https://zhuanlan.zhihu.com/p/456089100</a></p>
+</blockquote>
+<h3 id="41-openssl-ssl">4.1 使用 OpenSSL 创建自签名的 SSL 证书和私钥<a class="headerlink" href="#41-openssl-ssl" title="Permanent link">&para;</a></h3>
+<p>首先对于自签名 CA 角色来说，需要生成一对公私钥以及自签名证书：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># genrsa    生成RSA私钥</span>
+<span class="c1"># -des3 des3算法（可选）</span>
+<span class="c1"># -out ca.key 生成的私钥文件名</span>
+<span class="c1"># 2048 私钥长度</span>
 
-openssl<span class="w"> </span>genrsa<span class="w"> </span>-des3<span class="w"> </span>-out<span class="w"> </span>server.pass.key<span class="w"> </span><span class="m">2048</span>
+openssl<span class="w"> </span>genrsa<span class="w"> </span>-out<span class="w"> </span>ca.key<span class="w"> </span><span class="m">2048</span>
 <span class="c1"># 输入一个4位以上的密码。</span>
+
+<span class="c1"># rsa 指定操作类型为RSA私钥</span>
+<span class="c1"># -in 指定输入.key文件</span>
+<span class="c1"># -outform PEM 指定输入格式为PEM</span>
+<span class="c1"># -puout ca_public.key 指定输出的公钥文件名为ca_public.key</span>
+openssl<span class="w"> </span>rsa<span class="w"> </span>-in<span class="w"> </span>ca.key<span class="w"> </span>-outform<span class="w"> </span>PEM<span class="w"> </span>-puout<span class="w"> </span>ca_public.key
+
+<span class="c1"># req 请求证书</span>
+<span class="c1"># -new 生成一个新的证书请求（csr）</span>
+<span class="c1"># -key ca.key 指定用于签名csr的私钥文件</span>
+<span class="c1"># -out ca.csr 指定生成的csr文件名</span>
+<span class="c1"># -subj 指定csr的主题信息，格式为 `/组件=值/`，其中 `C` 代表国家代码，`ST` 代表州或省份，`L` 代表城市，`O` 代表组织名称，`OU` 代表组织单位，`CN` 代表通用名称，通常是域名或主机名。</span>
+openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-key<span class="w"> </span>ca.key<span class="w"> </span>-out<span class="w"> </span>ca.csr<span class="w"> </span>-subj<span class="w"> </span><span class="s2">&quot;/C=CN/ST=Guangdong/L=Shenzhen/O=Company/OU=IT/CN=test.com/&quot;</span>
+<span class="c1"># csr这一步可以使用交互式输入</span>
+<span class="c1"># 国家/省/城市/组织/部门/名称/其他可选值</span>
+
+<span class="c1"># x509 指定处理X.509证书</span>
+<span class="c1"># -req 指定输入的文件为csr</span>
+<span class="c1"># -days 365 指定签发证书的有效期为365天</span>
+<span class="c1"># -in ca.csr 指定输入的csr文件</span>
+<span class="c1"># -signkey ca.key 指定用于签名证书的私钥文件</span>
+<span class="c1"># -out ca.crt 指定生成的证书名</span>
+openssl<span class="w"> </span>x509<span class="w"> </span>-req<span class="w"> </span>-days<span class="w"> </span><span class="m">365</span><span class="w"> </span>-in<span class="w"> </span>ca.csr<span class="w"> </span>-signkey<span class="w"> </span>ca.key<span class="w"> </span>-out<span class="w"> </span>ca.crt
+</code></pre></div>
+<p>上述指令流创建了一对公私钥，并生成自签名证书，详细解释见注释。于是得到：</p>
+<ul>
+<li><strong>自签名证书</strong>：<code>ca.crt</code></li>
+<li><strong>公钥</strong>：<code>ca_public.key</code></li>
+<li><strong>私钥</strong>：<code>ca.key</code></li>
+</ul>
+<p>从证书中可以获得公钥：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># x509：指定操作类型为 X.509 证书</span>
+<span class="c1"># -pubkey：指定提取证书中的公钥</span>
+<span class="c1"># -noout：不输出证书的完整内容</span>
+<span class="c1"># -in ca.crt：指定输入的证书文件</span>
+<span class="c1"># &gt; pub.key：将提取的公钥重定向到 pub.key 文件</span>
+openssl<span class="w"> </span>x509<span class="w"> </span>-pubkey<span class="w"> </span>-noout<span class="w"> </span>-in<span class="w"> </span>ca.crt<span class="w"> </span>&gt;<span class="w"> </span>pub.key
+
+<span class="c1"># diff：是一个比较文件差异的命令</span>
+<span class="c1"># pub.key：第一个要比较的文件</span>
+<span class="c1"># ca_public.key：第二个要比较的文件</span>
+diff<span class="w"> </span>pub.key<span class="w"> </span>ca_public.key
+</code></pre></div>
+<p>至此已经完成了生成证书并验证的全部流程，现在也可以继续用该证书对其他生成的私钥进行签名证书，同样也可以从签名出的证书获得公钥：</p>
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>genrsa<span class="w"> </span>-out<span class="w"> </span>server_private.key<span class="w"> </span><span class="m">2048</span>
+openssl<span class="w"> </span>rsa<span class="w"> </span>-in<span class="w"> </span>server_private.key<span class="w"> </span>-outform<span class="w"> </span>PEM<span class="w"> </span>-pubout<span class="w"> </span>-out<span class="w"> </span>server_public.key
+openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-key<span class="w"> </span>server_private.key<span class="w"> </span>-out<span class="w"> </span>server.csr<span class="w"> </span>-subj<span class="w"> </span><span class="s2">&quot;/C=CN/ST=Guangdong/L=Shenzhen/O=Company/OU=IT/CN=test2.com/&quot;</span>
+openssl<span class="w"> </span>x509<span class="w"> </span>-req<span class="w"> </span>-CA<span class="w"> </span>ca.crt<span class="w"> </span>-CAkey<span class="w"> </span>ca.key<span class="w"> </span>-CAcreateserial<span class="w"> </span>-in<span class="w"> </span>server.csr<span class="w"> </span>-out<span class="w"> </span>server.crt
 </code></pre></div>
 
 
