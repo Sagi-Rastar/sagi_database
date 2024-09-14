@@ -4,11 +4,11 @@
 
 HTTPS 简单来讲是 HTTPS 的安全版。也就是 HTTP 加入了 SSL 层
 
-HTTP for HyperText Transfer Protocol；
-
-S for Secure；
-
-SSL for Secure Sockets Layer；TLS for Transport Layer Security
+>HTTP for HyperText Transfer Protocol；
+>
+>S for Secure；
+>
+>SSL for Secure Sockets Layer；TLS for Transport Layer Security
 
 ## 2 对称加密、非对称加密
 
