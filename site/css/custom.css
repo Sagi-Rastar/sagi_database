@@ -11,8 +11,8 @@
 
 .md-typeset strong {
     color: var(--md-typeset-a-color);
-    /* 字重不加粗 */
-    font-weight: 450;
+    /* 字重加粗 */
+    /* 设定为加粗，但不对font-weight操作 */
 }
 
 .md-sidebar--secondary {

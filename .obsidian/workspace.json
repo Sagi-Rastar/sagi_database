@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "63352e6e572b8207",
+    "id": "9688ab5a5a8e99dc",
     "type": "split",
     "children": [
       {
-        "id": "882c1d740b772182",
+        "id": "71608a5f3168396b",
         "type": "tabs",
         "children": [
           {
-            "id": "7b4ceea987866a5c",
+            "id": "b23b674a9c18102d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
+                "file": "docs/软件/05-语言/C语言/C语言八股.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "bb6eb55b60bc637c",
+    "id": "5338c8dd122d52bc",
     "type": "split",
     "children": [
       {
-        "id": "f681fc46d284bb81",
+        "id": "a9b1597f016472cc",
         "type": "tabs",
         "children": [
           {
-            "id": "b6c75f350af02325",
+            "id": "3fb23f5db3f883e4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "759073624c577daa",
+            "id": "0d76c20f4a1d3f08",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "7d9dfb42dd7b3dae",
+            "id": "3e8495fde0c25b2f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -66,7 +66,7 @@
             }
           },
           {
-            "id": "f44e7a0405f14d36",
+            "id": "bd59f9ca0a33a4ff",
             "type": "leaf",
             "state": {
               "type": "surfing-tab-tree",
@@ -77,23 +77,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 285.5,
+    "collapsed": true
   },
   "right": {
-    "id": "e4ffddd4ecb4a9c1",
+    "id": "1529aa6e59d1d32b",
     "type": "split",
     "children": [
       {
-        "id": "c5ea503a4ca8e051",
+        "id": "b6b041572864ef9d",
         "type": "tabs",
         "children": [
           {
-            "id": "f38cb311132f313f",
+            "id": "54fe0f7572b3d0ea",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
+                "file": "docs/软件/05-语言/C语言/C语言八股.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,19 +106,19 @@
             }
           },
           {
-            "id": "e7c1f0ccc139cee7",
+            "id": "e4309c0cbd4628ce",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
+                "file": "docs/软件/05-语言/C语言/C语言八股.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "80246a844f044924",
+            "id": "2a918b3da63a33e1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -128,20 +129,21 @@
             }
           },
           {
-            "id": "8ae02f47412af2be",
+            "id": "f4d909a38ccfb5bf",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md"
+                "file": "docs/软件/05-语言/C语言/C语言八股.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 222.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -155,22 +157,19 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "7b4ceea987866a5c",
+  "active": "f4d909a38ccfb5bf",
   "lastOpenFiles": [
-    "site/search/search_index.json",
-    "site/search",
+    "未命名 1.md",
+    "docs/软件/05-语言/C语言/C语言八股.md",
+    "docs/秋招/秋招进度.md",
+    "docs/秋招/常见问题起草模板.md",
+    "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
+    "docs/秋招",
     "site/软件/05-语言/Python/240829-python操作串口/index.html",
     "site/软件/05-语言/Python/240829-python操作串口",
     "site/软件/05-语言/Python",
-    "site/软件/05-语言/C语言/语法特性/index.html",
-    "site/软件/05-语言/C语言/语法特性",
-    "site/软件/05-语言/C语言/内存管理/index.html",
-    "site/软件/05-语言/C语言/内存管理",
     "site/软件/05-语言/C语言/C语言八股/index.html",
     "site/软件/05-语言/C语言/C语言八股",
-    "site/assets/images/favicon.png",
-    "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529152143714.png",
-    "site/软件/01-嵌入式软件/00-通讯协议/00-韦根协议Wiegand/image-20240529151710450.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914113522552.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914112053548.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914111239872.png",
@@ -178,13 +177,33 @@
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914111134797.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914102121670.png",
     "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914101929023.png",
+    "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914095732951.png",
+    "site/软件/03-WEB技术/240823-HTTPS与OpenSSL/image-20240914095027965.png",
+    "site/平台/00-MCU/STM32/test.pu",
+    "site/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议/image-20240914134346956.png",
+    "site/js/heti.js",
+    "site/js",
+    "site/css/heti.css",
+    "docs/软件/05-语言/Python/240829-python操作串口.md",
     "docs/软件/03-WEB技术/index.md",
-    "docs/软件/05-语言/C语言/C语言八股.md",
-    "docs/软件/05-语言/C语言/语法特性.md",
-    "docs/软件/05-语言/C语言/内存管理.md",
+    "docs/软件/00-通用算法/index.md",
     "docs/平台/00-MCU/ESP32/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+    "docs/平台/00-MCU/ESP32/index.md",
     "docs/平台/00-MCU/ESP32/240822-ESP32分区表及OTA.md",
-    "docs/平台/00-MCU/Debug/240828-Jlink.md",
-    "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md"
+    "docs/平台/00-MCU/ESP32/240625-卡关系存储设计.md",
+    "docs/平台/00-MCU/ESP32/240619-蓝牙开发.md",
+    "docs/平台/00-MCU/ESP32/240618-SNTP 获取时间、AES 加密.md",
+    "docs/平台/00-MCU/ESP32/240617-IDF 的事件循环，及 wifi 运行流程.md",
+    "docs/平台/00-MCU/ESP32/240615-smartconfig配网.md",
+    "docs/平台/index.md",
+    "docs/软件/index.md",
+    "docs/软件/01-嵌入式软件/index.md",
+    "docs/硬件/04-材料/00-材料总述.md",
+    "docs/硬件/index.md",
+    "().md",
+    "docs/平台/00-MCU/index.md",
+    "docs/软件/05-语言/C语言/内存管理.md",
+    "docs/平台/00-MCU/ESP32/240818-蓝牙配网以及softAP方式配网探索.md",
+    "docs/平台/00-MCU/ESP32/240719-LEDPWM及常用指示函数封装.md"
   ]
 }
