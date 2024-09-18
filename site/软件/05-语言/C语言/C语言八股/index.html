@@ -1,0 +1,4542 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sagidb.github.io/%E8%BD%AF%E4%BB%B6/05-%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80/C%E8%AF%AD%E8%A8%80%E5%85%AB%E8%82%A1/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.20">
+    
+    
+      
+        <title>C 语言八股 - Sagi's database</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../css/custom.css">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap">
+    
+      <link rel="stylesheet" href="https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css">
+    
+      <link rel="stylesheet" href="../../../../css/heti.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#c" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Sagi&#39;s database" class="md-header__button md-logo" aria-label="Sagi's database" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sagi's database
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              C 语言八股
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+    
+  
+  欢迎
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../%E5%B9%B3%E5%8F%B0/" class="md-tabs__link">
+          
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.333 2a2 2 0 0 1 2-2h17.334a2 2 0 0 1 2 2v2.857a2 2 0 0 1-2 2H3.333a2 2 0 0 1-2-2zm0 8.571a2 2 0 0 1 2-2h17.334a2 2 0 0 1 2 2v2.858a2 2 0 0 1-2 2H3.333a2 2 0 0 1-2-2zm2 6.572a2 2 0 0 0-2 2V22a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2.857a2 2 0 0 0-2-2z"/></svg>
+    
+  
+  平台
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../%E7%A1%AC%E4%BB%B6/" class="md-tabs__link">
+          
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.87 11.525c.071.013.13.084.13.157v3.033a.166.166 0 0 1-.13.157l-2.875.535a.243.243 0 0 0-.17.151l-.898 2.242a.252.252 0 0 0 .017.229l1.633 2.379a.167.167 0 0 1-.02.204l-2.144 2.144a.167.167 0 0 1-.203.019l-2.338-1.604a.23.23 0 0 0-.224-.008l-1.03.55a.121.121 0 0 1-.17-.062l-2.125-5.135a.161.161 0 0 1 .062-.192l.258-.158c.048-.03.113-.08.163-.125a3.354 3.354 0 1 0-3.612 0c.05.046.115.096.163.125l.258.158a.16.16 0 0 1 .062.192L8.552 21.65a.121.121 0 0 1-.17.063l-1.03-.55a.23.23 0 0 0-.224.007L4.79 22.775a.168.168 0 0 1-.204-.019l-2.145-2.144a.167.167 0 0 1-.019-.204l1.633-2.38a.251.251 0 0 0 .017-.228l-.897-2.242a.244.244 0 0 0-.17-.15L.13 14.871a.166.166 0 0 1-.13-.157v-3.032c0-.073.059-.144.13-.157l2.947-.548a.253.253 0 0 0 .175-.15l.903-2.108a.246.246 0 0 0-.014-.227L2.424 5.989a.167.167 0 0 1 .019-.203L4.587 3.64a.166.166 0 0 1 .204-.019L7.337 5.37c.06.041.163.048.229.016l2.043-.836c.07-.023.137-.1.15-.173l.567-3.047a.167.167 0 0 1 .157-.131h3.034c.073 0 .143.059.157.13l.567 3.048a.25.25 0 0 0 .15.173l2.043.836a.252.252 0 0 0 .23-.016l2.546-1.748a.166.166 0 0 1 .203.02l2.144 2.144c.052.051.06.143.02.203l-1.718 2.503a.245.245 0 0 0-.014.227l.903 2.108a.256.256 0 0 0 .175.15l2.946.548"/></svg>
+    
+  
+  硬件
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../%E7%A7%8B%E6%8B%9B/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%B5%B7%E8%8D%89%E6%A8%A1%E6%9D%BF/" class="md-tabs__link">
+          
+  
+    
+  
+  秋招
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.038 4.9 13.461.402a2.86 2.86 0 0 0-2.923.001L2.961 4.9A3.023 3.023 0 0 0 1.5 7.503v8.995c0 1.073.557 2.066 1.462 2.603l7.577 4.497a2.86 2.86 0 0 0 2.922 0l7.577-4.497a3.023 3.023 0 0 0 1.462-2.603V7.503A3.021 3.021 0 0 0 21.038 4.9zM15.17 18.946l.013.646c.001.078-.05.167-.111.198l-.383.22c-.061.031-.111-.007-.112-.085l-.007-.635c-.328.136-.66.169-.872.084-.04-.016-.057-.075-.041-.142l.139-.584a.24.24 0 0 1 .069-.121.163.163 0 0 1 .036-.026c.022-.011.043-.014.062-.006.229.077.521.041.802-.101.357-.181.596-.545.592-.907-.003-.328-.181-.465-.613-.468-.55.001-1.064-.107-1.072-.917-.007-.667.34-1.361.889-1.8l-.007-.652c-.001-.08.048-.168.111-.2l.37-.236c.061-.031.111.007.112.087l.006.653c.273-.109.511-.138.726-.088.047.012.067.076.048.151l-.144.578a.255.255 0 0 1-.065.116.161.161 0 0 1-.038.028.083.083 0 0 1-.057.009c-.098-.022-.332-.073-.699.113-.385.195-.52.53-.517.778.003.297.155.387.681.396.7.012 1.003.318 1.01 1.023.007.689-.362 1.433-.928 1.888zm3.973-1.087c0 .06-.008.116-.058.145l-1.916 1.164c-.05.029-.09.004-.09-.056v-.494c0-.06.037-.093.087-.122l1.887-1.129c.05-.029.09-.004.09.056v.436zm1.316-11.062-7.168 4.427c-.894.523-1.553 1.109-1.553 2.187v8.833c0 .645.26 1.063.66 1.184a2.304 2.304 0 0 1-.398.039c-.42 0-.833-.114-1.197-.33L3.226 18.64a2.494 2.494 0 0 1-1.201-2.142V7.503c0-.881.46-1.702 1.201-2.142L10.803.863a2.342 2.342 0 0 1 2.394 0l7.577 4.498a2.479 2.479 0 0 1 1.164 1.732c-.252-.536-.818-.682-1.479-.296z"/></svg>
+    
+  
+  软件
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Sagi&#39;s database" class="md-nav__button md-logo" aria-label="Sagi's database" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Sagi's database
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    欢迎
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../%E5%B9%B3%E5%8F%B0/" class="md-nav__link ">
+              
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.333 2a2 2 0 0 1 2-2h17.334a2 2 0 0 1 2 2v2.857a2 2 0 0 1-2 2H3.333a2 2 0 0 1-2-2zm0 8.571a2 2 0 0 1 2-2h17.334a2 2 0 0 1 2 2v2.858a2 2 0 0 1-2 2H3.333a2 2 0 0 1-2-2zm2 6.572a2 2 0 0 0-2 2V22a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2.857a2 2 0 0 0-2-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    平台
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            平台
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    00 MCU
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            00 MCU
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Debug
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Debug
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/Debug/240828-Jlink/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240828 Jlink
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ESP32
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            ESP32
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240615-smartconfig%E9%85%8D%E7%BD%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240615-smartconfig 配网
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240617-IDF%20%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%EF%BC%8C%E5%8F%8A%20wifi%20%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240617-IDF 的事件循环，及 wifi 运行流程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240618-SNTP%20%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E3%80%81AES%20%E5%8A%A0%E5%AF%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240618-SNTP 获取时间、AES 加密
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240619-%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240619-蓝牙开发
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240625-%E5%8D%A1%E5%85%B3%E7%B3%BB%E5%AD%98%E5%82%A8%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240625-卡关系存储设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240626-BM8563%20%E9%A9%B1%E5%8A%A8%E7%A7%BB%E6%A4%8D%EF%BC%8CIDF-I2C%20%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240626-BM8563 驱动移植，IDF-I2C 笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240719-LEDPWM%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8C%87%E7%A4%BA%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240719-LEDPWM及常用指示函数封装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240818-%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%91%E4%BB%A5%E5%8F%8AsoftAP%E6%96%B9%E5%BC%8F%E9%85%8D%E7%BD%91%E6%8E%A2%E7%B4%A2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240818-蓝牙配网以及 softAP 方式配网探索
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240822-ESP32%E5%88%86%E5%8C%BA%E8%A1%A8%E5%8F%8AOTA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240822-ESP32分区表及 OTA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/ESP32/240905-%E6%9B%B4%E6%96%B0storage%E4%BB%A5%E5%8F%8Amqtt%E6%A8%A1%E5%9D%97%E9%83%A8%E5%88%86%EF%BC%8C%E9%80%90%E6%AD%A5%E5%AE%9E%E7%8E%B0%E7%A7%81%E6%9C%89json%E5%8D%8F%E8%AE%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240905-更新 Storage 以及 MQTT 模块部分，逐步实现私有 json 协议
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    STM32
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            STM32
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/STM32/00-STM32%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 STM32总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/STM32/240814-CubeMX%2BFreeRTOS%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240814-CubeMX+FreeRTOS开发笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/00-MCU/STM32/240830-%E7%BC%BA%E9%99%B7%E6%A3%80%E6%B5%8B%E5%85%89%E6%BA%90%E6%8E%A7%E5%88%B6%E5%99%A8%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240830-缺陷检测光源控制器开发笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../%E5%B9%B3%E5%8F%B0/01-SOC/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    01 SOC
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            01 SOC
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Raspberry Pi
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Raspberry Pi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%B9%B3%E5%8F%B0/01-SOC/Raspberry%20Pi/00-RaspberryPi%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 RaspberryPi总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../%E7%A1%AC%E4%BB%B6/" class="md-nav__link ">
+              
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.87 11.525c.071.013.13.084.13.157v3.033a.166.166 0 0 1-.13.157l-2.875.535a.243.243 0 0 0-.17.151l-.898 2.242a.252.252 0 0 0 .017.229l1.633 2.379a.167.167 0 0 1-.02.204l-2.144 2.144a.167.167 0 0 1-.203.019l-2.338-1.604a.23.23 0 0 0-.224-.008l-1.03.55a.121.121 0 0 1-.17-.062l-2.125-5.135a.161.161 0 0 1 .062-.192l.258-.158c.048-.03.113-.08.163-.125a3.354 3.354 0 1 0-3.612 0c.05.046.115.096.163.125l.258.158a.16.16 0 0 1 .062.192L8.552 21.65a.121.121 0 0 1-.17.063l-1.03-.55a.23.23 0 0 0-.224.007L4.79 22.775a.168.168 0 0 1-.204-.019l-2.145-2.144a.167.167 0 0 1-.019-.204l1.633-2.38a.251.251 0 0 0 .017-.228l-.897-2.242a.244.244 0 0 0-.17-.15L.13 14.871a.166.166 0 0 1-.13-.157v-3.032c0-.073.059-.144.13-.157l2.947-.548a.253.253 0 0 0 .175-.15l.903-2.108a.246.246 0 0 0-.014-.227L2.424 5.989a.167.167 0 0 1 .019-.203L4.587 3.64a.166.166 0 0 1 .204-.019L7.337 5.37c.06.041.163.048.229.016l2.043-.836c.07-.023.137-.1.15-.173l.567-3.047a.167.167 0 0 1 .157-.131h3.034c.073 0 .143.059.157.13l.567 3.048a.25.25 0 0 0 .15.173l2.043.836a.252.252 0 0 0 .23-.016l2.546-1.748a.166.166 0 0 1 .203.02l2.144 2.144c.052.051.06.143.02.203l-1.718 2.503a.245.245 0 0 0-.014.227l.903 2.108a.256.256 0 0 0 .175.15l2.946.548"/></svg>
+  
+  <span class="md-ellipsis">
+    硬件
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            硬件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    00 基础理论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            00 基础理论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 基础理论总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    信号完整性
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            信号完整性
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7/00-%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 信号完整性总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数电
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            数电
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E6%95%B0%E7%94%B5/00-%E6%95%B0%E7%94%B5%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 数电总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_4" id="__nav_3_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    模电
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            模电
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/00-%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/%E6%A8%A1%E7%94%B5/00-%E6%A8%A1%E7%94%B5%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 模电总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01 电路与模块
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            01 电路与模块
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/01-%E7%94%B5%E8%B7%AF%E4%B8%8E%E6%A8%A1%E5%9D%97/00-%E7%94%B5%E8%B7%AF%E4%B8%8E%E6%A8%A1%E5%9D%97%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 电路与模块总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    02 Layout参考
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            02 Layout参考
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/02-Layout%E5%8F%82%E8%80%83/00-layout%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 layout总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    03 机械结构
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            03 机械结构
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/03-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84/00-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 机械结构总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/03-%E6%9C%BA%E6%A2%B0%E7%BB%93%E6%9E%84/240820-SolidWorks%E5%BC%80%E8%9E%BA%E7%BA%B9%E5%AD%94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240820 SolidWorks开螺纹孔
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    04 材料
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            04 材料
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A1%AC%E4%BB%B6/04-%E6%9D%90%E6%96%99/00-%E6%9D%90%E6%96%99%E6%80%BB%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 材料总述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    秋招
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            秋招
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A7%8B%E6%8B%9B/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%B5%B7%E8%8D%89%E6%A8%A1%E6%9D%BF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常见问题起草模板
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%A7%8B%E6%8B%9B/%E7%A7%8B%E6%8B%9B%E8%BF%9B%E5%BA%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    秋招进度
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.038 4.9 13.461.402a2.86 2.86 0 0 0-2.923.001L2.961 4.9A3.023 3.023 0 0 0 1.5 7.503v8.995c0 1.073.557 2.066 1.462 2.603l7.577 4.497a2.86 2.86 0 0 0 2.922 0l7.577-4.497a3.023 3.023 0 0 0 1.462-2.603V7.503A3.021 3.021 0 0 0 21.038 4.9zM15.17 18.946l.013.646c.001.078-.05.167-.111.198l-.383.22c-.061.031-.111-.007-.112-.085l-.007-.635c-.328.136-.66.169-.872.084-.04-.016-.057-.075-.041-.142l.139-.584a.24.24 0 0 1 .069-.121.163.163 0 0 1 .036-.026c.022-.011.043-.014.062-.006.229.077.521.041.802-.101.357-.181.596-.545.592-.907-.003-.328-.181-.465-.613-.468-.55.001-1.064-.107-1.072-.917-.007-.667.34-1.361.889-1.8l-.007-.652c-.001-.08.048-.168.111-.2l.37-.236c.061-.031.111.007.112.087l.006.653c.273-.109.511-.138.726-.088.047.012.067.076.048.151l-.144.578a.255.255 0 0 1-.065.116.161.161 0 0 1-.038.028.083.083 0 0 1-.057.009c-.098-.022-.332-.073-.699.113-.385.195-.52.53-.517.778.003.297.155.387.681.396.7.012 1.003.318 1.01 1.023.007.689-.362 1.433-.928 1.888zm3.973-1.087c0 .06-.008.116-.058.145l-1.916 1.164c-.05.029-.09.004-.09-.056v-.494c0-.06.037-.093.087-.122l1.887-1.129c.05-.029.09-.004.09.056v.436zm1.316-11.062-7.168 4.427c-.894.523-1.553 1.109-1.553 2.187v8.833c0 .645.26 1.063.66 1.184a2.304 2.304 0 0 1-.398.039c-.42 0-.833-.114-1.197-.33L3.226 18.64a2.494 2.494 0 0 1-1.201-2.142V7.503c0-.881.46-1.702 1.201-2.142L10.803.863a2.342 2.342 0 0 1 2.394 0l7.577 4.498a2.479 2.479 0 0 1 1.164 1.732c-.252-.536-.818-.682-1.479-.296z"/></svg>
+  
+  <span class="md-ellipsis">
+    软件
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            软件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../00-%E9%80%9A%E7%94%A8%E7%AE%97%E6%B3%95/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    00 通用算法
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            00 通用算法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    01 嵌入式软件
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            01 嵌入式软件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3_2" id="__nav_5_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    00 通讯协议
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            00 通讯协议
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/00-%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE/00-%E9%9F%A6%E6%A0%B9%E5%8D%8F%E8%AE%AEWiegand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 韦根协议Wiegand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6/00-%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE/240830-%E5%90%84%E7%A7%8D%E9%80%9A%E7%94%A8%E4%B8%B2%E5%8F%A3%E6%80%BB%E7%BA%BF%E6%A0%87%E5%87%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240830-各种通用串口总线标准
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../02-%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    02 嵌入式Linux
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            02 嵌入式Linux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../03-WEB%E6%8A%80%E6%9C%AF/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    03 WEB技术
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            03 WEB技术
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../03-WEB%E6%8A%80%E6%9C%AF/240823-HTTPS%E4%B8%8EOpenSSL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTPS 与 OpenSSL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../04-AI/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    04 AI
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            04 AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    05 语言
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            05 语言
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    C语言
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_7_2" id="__nav_5_7_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_7_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            C语言
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    C 语言八股
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    C 语言八股
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-volatile" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 volatile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 volatile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-const-volatile" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 一个参数可以即是 const 又是 volatile 吗
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-volatile" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 指针可以是 volatile 吗
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 辨别代码
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-static" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 static
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 const
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 const">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 什么是常量指针：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 什么是指针常量：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 什么是指向常量的常指针：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 如果 const 修饰的是函数的参数：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 如果 const 修饰的是函数的返回值：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-typedef-define" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 typedef 和 define 的异同
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 typedef 和 define 的异同">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 原理上
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 功能上
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 作用域上
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 对指针的操作上
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 变量
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-define-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 定义常量 #define 和 const 的区别，谁更好：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 全局变量和局部变量的区别：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 全局变量可不可以定义在被多个. C 文件包含的头文件中？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 局部变量能否和全局变量重名
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 数组
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 数组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 数组指针
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 指针数组
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 数组下标
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 指针
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 指针">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 函数指针
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-int-p-int-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 特别注意：区分 int *p 和 int (*p)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 指针函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 数组和指针的异同
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 数组和指针的异同">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#741" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.1 存储方式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#742-sizeof" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.2 sizeof
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#743" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.3 数据访问
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#744" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4 使用场景
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 野指针？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 内存
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 内存">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 C 语言中的内存分配方式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1 C 语言中的内存分配方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.1 静态存储区
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.2 栈上分配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#813" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.3 堆上分配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#814" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.4 堆栈相关寄存器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#815" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.5 内存泄漏
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#816-malloc-free" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.6 malloc 和 free
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 预处理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 预处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 #error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-define" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 使用 #define 声明常数，避免数据溢出问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-include-filenameh-include-filename-h" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 #include &lt;filename.h&gt; 和 #include "filename. h" 的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4 头文件的作用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5 头文件中定义静态变量可行吗
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6 写标准宏 MIN，返回传入的两个参数中较小的那一个
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.7 宏中的 # 以及 ## 的用法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-isr" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 ISR 所涉及的考点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 杂项
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11 杂项">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-strlen-0-sizeof-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 strlen ("\0") 和 sizeof ("\0") 的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-struct-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 struct 和 union 的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 左值以及右值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.4 有符号与无符号的运算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.5 短路计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6 大小端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117-aa" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7 ++a/a++ 的实现：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.8 C 语言编译过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119-strcpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.9 自行实现 strcpy 函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1110-sizeof" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.10 自行实现 sizeof 宏定义
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    内存管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AF%AD%E6%B3%95%E7%89%B9%E6%80%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    语法特性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_7_3" id="__nav_5_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python/240829-python%E6%93%8D%E4%BD%9C%E4%B8%B2%E5%8F%A3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    240829 python操作串口
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-volatile" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 volatile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 volatile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-const-volatile" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 一个参数可以即是 const 又是 volatile 吗
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-volatile" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 指针可以是 volatile 吗
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 辨别代码
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-static" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 static
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 const
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 const">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 什么是常量指针：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 什么是指针常量：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 什么是指向常量的常指针：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 如果 const 修饰的是函数的参数：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 如果 const 修饰的是函数的返回值：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-typedef-define" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 typedef 和 define 的异同
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 typedef 和 define 的异同">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 原理上
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 功能上
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 作用域上
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 对指针的操作上
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 变量
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-define-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 定义常量 #define 和 const 的区别，谁更好：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 全局变量和局部变量的区别：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 全局变量可不可以定义在被多个. C 文件包含的头文件中？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 局部变量能否和全局变量重名
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 数组
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 数组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 数组指针
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 指针数组
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 数组下标
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 指针
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 指针">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 函数指针
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-int-p-int-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 特别注意：区分 int *p 和 int (*p)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 指针函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 数组和指针的异同
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 数组和指针的异同">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#741" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.1 存储方式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#742-sizeof" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.2 sizeof
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#743" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.3 数据访问
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#744" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4 使用场景
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 野指针？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 内存
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 内存">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 C 语言中的内存分配方式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1 C 语言中的内存分配方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.1 静态存储区
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.2 栈上分配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#813" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.3 堆上分配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#814" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.4 堆栈相关寄存器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#815" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.5 内存泄漏
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#816-malloc-free" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1.6 malloc 和 free
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 预处理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 预处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 #error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-define" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 使用 #define 声明常数，避免数据溢出问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-include-filenameh-include-filename-h" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 #include &lt;filename.h&gt; 和 #include "filename. h" 的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4 头文件的作用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5 头文件中定义静态变量可行吗
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6 写标准宏 MIN，返回传入的两个参数中较小的那一个
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.7 宏中的 # 以及 ## 的用法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-isr" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 ISR 所涉及的考点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 杂项
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11 杂项">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-strlen-0-sizeof-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 strlen ("\0") 和 sizeof ("\0") 的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-struct-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 struct 和 union 的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 左值以及右值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.4 有符号与无符号的运算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.5 短路计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6 大小端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117-aa" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7 ++a/a++ 的实现：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.8 C 语言编译过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119-strcpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.9 自行实现 strcpy 函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1110-sizeof" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.10 自行实现 sizeof 宏定义
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="c">C 语言八股<a class="headerlink" href="#c" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><a href="https://blog.csdn.net/qq_43706223/article/details/133301198">参考 1</a>
+<a href="https://blog.csdn.net/weixin_50591371/article/details/141286333?spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7EPosition-2-141286333-blog-133301198.235%5Ev43%5Econtrol&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7EPosition-2-141286333-blog-133301198.235%5Ev43%5Econtrol&amp;utm_relevant_index=5">参考 2</a></p>
+</blockquote>
+<h2 id="1-volatile">1 volatile<a class="headerlink" href="#1-volatile" title="Permanent link">&para;</a></h2>
+<p>防止编译器对变量进行优化，让编译器每次存取该变量的时候都要去内存里存取，而不是寄存器的备份。</p>
+<p>编译器优化有可能会修改变量：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// 1</span>
+<span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 2</span>
+</code></pre></div>
+<ol>
+<li>首先 1 写入 CPU，然后再从 CPU 中将 1 读出，再写入 a 所在的内存中（&amp;a）</li>
+<li>先从内存中将 a 的值取出到 CPU，再从 CPU 中将值写入 b 的内存地址中</li>
+</ol>
+<p>考虑下面一段代码，展现了编译器优化的过程：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
+<span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 1</span>
+<span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 2</span>
+</code></pre></div>
+<ol>
+<li>&amp;a -&gt; CPU -&gt; &amp;b</li>
+<li>&amp;a -&gt; CPU -&gt; &amp;c</li>
+</ol>
+<p>编译器在优化这段代码的时候会省略掉标号 2 中的 <code>&amp;a -&gt; CPU</code> 的过程，因为标号 1 中已经将 a 的值放在寄存器（CPU）中过了。</p>
+<p>不过如果在 <code>b=a</code> 之后 <code>a</code> 在内存中发生了变化，例如正好一个中断改变了 <code>a</code> 的值，就会导致中断回来之后的标号 2 代码还是将原来 <code>a</code> 的值给了 <code>c</code></p>
+<p>引入 <code>volatile</code> 之后，执行标号 2 代码的时候便会不忽略 <code>&amp;a -&gt; CPU</code> 这个步骤</p>
+<p>因此，一般在以下情况使用 volatile：</p>
+<ol>
+<li>并行设备的硬件寄存器，当声明指向设备寄存器的指针的时候需要用，因为每次对其的读写都可能有不同意义</li>
+<li>中断服务程序中修改的“有被其他程序引用的变量”</li>
+<li>多线程应用中被好几个任务共享的变量</li>
+</ol>
+<h3 id="11-const-volatile">1.1 一个参数可以即是 const 又是 volatile 吗<a class="headerlink" href="#11-const-volatile" title="Permanent link">&para;</a></h3>
+<p>可以，可以用于表示只读的状态寄存器</p>
+<h3 id="12-volatile">1.2 指针可以是 volatile 吗<a class="headerlink" href="#12-volatile" title="Permanent link">&para;</a></h3>
+<p>可以，例如中断服务子程序中需要修改一个指向 buffer 的指针时</p>
+<h3 id="13">1.3 辨别代码<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="k">volatile</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>函数目的为返回 ptr 指向的值的平方，但由于 ptr 被定义为 volatile 型了，所以编译器将会等效为：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="k">volatile</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+<span class="w">    </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>因为 <code>*ptr</code> 被设置为 <code>volatile</code> ，因此在对 a 以及 b 赋值的过程中，有可能 ptr 发生了改变，这是这条函数下不愿发生的，正确的应该修改为：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">long</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="k">volatile</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="2-static">2 static<a class="headerlink" href="#2-static" title="Permanent link">&para;</a></h2>
+<p>声明为静态类型的变量，存储在静态区</p>
+<ul>
+<li>如果是静态局部变量，作用域即为一对花括号内</li>
+<li>如果是静态全局变量，作用域即为当前文件</li>
+</ul>
+<p><code>static</code> 修饰的全局变量以及函数只能在本文件中被调用</p>
+<p><strong>函数体内：</strong> 生命周期和函数体相同
+<strong>模块内（函数体外）：</strong> 一个被声明为静态的变量可以被模块内所用函数访问，不能被模块外其他函数访问，是一个本地的全局变量</p>
+<h2 id="3-const">3 const<a class="headerlink" href="#3-const" title="Permanent link">&para;</a></h2>
+<p>定义变量为常量</p>
+<p>当修饰为指针的时候：</p>
+<div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">p1</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">*</span><span class="n">p2</span><span class="p">;</span>
+<span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">p3</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">p4</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li>第一种和第二种为常量指针，语义完全相同</li>
+<li>第三种为指针常量</li>
+<li>第四种是指向常量的常指针</li>
+</ul>
+<p>编译器一般不为普通的 const 常量分配存储空间，而是将其保存在符号表中，使得其成为一个编译期间的常量，考虑这样一段代码：</p>
+<div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">maxUsers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+</code></pre></div>
+<p>编译器再编译这段代码的时候，可以决定不为其分配内存空间，而是在需要使用 <code>maxUsers</code> 的时候直接使用值 <code>100</code></p>
+<h3 id="31">3.1 什么是常量指针：<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<ul>
+<li>不能通过这个指针来改变变量的值，有其他的方法可以改变变量的值</li>
+<li>可以修改这个指针指向的地址</li>
+</ul>
+<blockquote>
+<p><code>*p1 = 5;</code> 不被允许；<code>p1 = &amp;someOtherInt</code> 是允许的</p>
+</blockquote>
+<h3 id="32">3.2 什么是指针常量：<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<ul>
+<li>也就是指针本身是个常量，该指针指向的地址不能被修改，但是指向的地址中保存的数值可以改变</li>
+</ul>
+<blockquote>
+<p><code>*p3 = 5;</code> 是允许的，但 <code>p3 = &amp;someOtherInt;</code> 不被允许</p>
+</blockquote>
+<h3 id="33">3.3 什么是指向常量的常指针：<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<ul>
+<li>上述两者的结合，也就是指针本身不能修改，指向的变量的值也不能修改</li>
+<li>不过需要注意还是可以通过别的普通指针修改变量的值</li>
+</ul>
+<blockquote>
+<p><code>*p4 = 5;</code> 和 <code>p4 = &amp;someOtherInt;</code> 都是不允许的。</p>
+</blockquote>
+<h3 id="34-const">3.4 如果 const 修饰的是函数的参数：<a class="headerlink" href="#34-const" title="Permanent link">&para;</a></h3>
+<ul>
+<li>表示在函数体内不能修改这个参数的值</li>
+</ul>
+<h3 id="35-const">3.5 如果 const 修饰的是函数的返回值：<a class="headerlink" href="#35-const" title="Permanent link">&para;</a></h3>
+<ul>
+<li>修饰的是指针：指针指向的地址不能被修改，并且返回值只能被赋给用 const 修饰的指针</li>
+<li>修饰的是变量：没有意义，因为返回值为临时变量，函数调用之后这个临时变量的生命周期也就结束了，将返回值修饰为 const 是没有意义的</li>
+</ul>
+<blockquote>
+<p>针对修饰对象为指针的情况有以下例子:
+<code>const char getString();</code> 定义一个返回 char 的函数
+<code>char *str = getString();</code> 错误，str 没有被 const 修饰
+<code>const char *str = getString();</code> 正确</p>
+</blockquote>
+<h2 id="4-typedef-define">4 typedef 和 define 的异同<a class="headerlink" href="#4-typedef-define" title="Permanent link">&para;</a></h2>
+<p>首先都是取别名，增强程序的可读性，但是在原理、功能、作用域、对指针的操作这四个方面上都有所不同：</p>
+<h3 id="41">4.1 原理上<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p><code>#define</code> 是预处理指令，在预处理时简单且机械地进行字符串替换，不检查正确性，不管含义是否正确，在编译已被展开的源程序的时候才会发现可能的错误并报错。</p>
+<p><code>typedef</code> 是关键字，编译的时候被处理，具有类型检查的功能，在自己的定义域内给已经存在的类型起一个别名，但不能在一个函数定义内使用标识符。</p>
+<h3 id="42">4.2 功能上<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<p><code>typedef</code> 用来定义类型的别名，一般常用的如为自己定义的类型（<code>struct</code> 定义的）起别名，可以起到利于记忆与辨识的功能，如：</p>
+<div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">wiegand_reader</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">gpio_num_t</span><span class="w"> </span><span class="n">gpio_d0</span><span class="p">,</span><span class="w"> </span><span class="n">gpio_d1</span><span class="p">;</span>
+<span class="w">    </span><span class="n">wiegand_callback_t</span><span class="w"> </span><span class="n">callback</span><span class="p">;</span>
+<span class="w">    </span><span class="n">wiegand_order_t</span><span class="w"> </span><span class="n">bit_order</span><span class="p">;</span>
+<span class="w">    </span><span class="n">wiegand_order_t</span><span class="w"> </span><span class="n">byte_order</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">buf</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">bits</span><span class="p">;</span>
+<span class="w">    </span><span class="n">esp_timer_handle_t</span><span class="w"> </span><span class="n">timer</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">start_parity</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>这样一个结构体，将一个 wiegand 读卡器抽象为一个类别，对于这样的结构体可以在定义的时候直接：</p>
+<div class="highlight"><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">wiegand_reader</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">xxx</span><span class="p">;</span>
+<span class="w">    </span><span class="n">xxx</span><span class="p">;</span>
+<span class="w">    </span><span class="n">xxx</span><span class="p">;</span>
+<span class="p">}</span><span class="w"> </span><span class="n">wiegand_reader_t</span><span class="p">;</span>
+</code></pre></div>
+<p>加上后缀 <code>_t</code> 是常用的写法，意为 <code>type</code> ，向编程人员指示这是一个变量类型</p>
+<h3 id="43">4.3 作用域上<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<p><code>#define</code> 没有作用域，预定义过后的宏在所有的程序中都可以使用，<code>typedef</code> 则有自己的作用域。</p>
+<h3 id="44">4.4 对指针的操作上<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
+<p>考虑这样一个对比场景：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#define INTPTR1 int*</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">INTPTR2</span><span class="p">;</span>
+<span class="n">INTPTR1</span><span class="w"> </span><span class="n">P1</span><span class="p">,</span><span class="w"> </span><span class="n">P2</span><span class="p">;</span><span class="n">s</span>
+<span class="n">INTPTR2</span><span class="w"> </span><span class="n">P3</span><span class="p">,</span><span class="w"> </span><span class="n">P4</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li>INTPTR1 的情况为进行字符串替换：<code>int* p1; int p2;</code> 表达的意义为声明一个 int 型指针变量 p1 和一个整形变量 p2</li>
+<li>INTPTR2 的情况是“具有含义的替换”：<code>int* p1; int* p2;</code> 也就是两个都是指针变量</li>
+</ul>
+<h2 id="5">5 变量<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51-define-const">5.1 定义常量 <code>#define</code> 和 <code>const</code> 的区别，谁更好：<a class="headerlink" href="#51-define-const" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>#define</code> 可以替代常数、表达式、甚至代码段，但容易出错，有的时候可以作为很强大的工具使用，例如 uthash 库这个仅头文件实现的哈希表库就充分利用了 <code>#define</code> 的优势</li>
+<li><code>const</code> 的引入也可以增强可读性，使程序的维护和调试变得更加方便</li>
+</ul>
+<p>使用时的差异一般在如下方面：</p>
+<ul>
+<li><code>#define</code> 声明周期止于编译期，不分配内存，存在于程序的代码段，而 <code>const</code> 存在于程序的数据段，在堆栈中确实有分配了空间，可以被调用、传递</li>
+<li>编译器可以对 <code>const</code> 进行类型检查，<code>#define</code> 则不会</li>
+<li>有些 IDE 支持调试 <code>const</code> 定义的常量，又由于会对 <code>const</code> 进行安全检查，因此更加倾向用 const 来定义常量类型</li>
+</ul>
+<h3 id="52">5.2 全局变量和局部变量的区别：<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<ul>
+<li>作用域不同，全局为程序块，局部为当前函数，引申一下则为使用方式的不同，全局的程序的各个部分都可以用到，局部的只能在局部使用</li>
+<li>生命周期不同，全局与主程序共周期，局部与局部函数、局部循环体等部分共周期</li>
+<li>内存中的存储方式不同，全局变量（静态全局、静态局部变量）分配在全局数据区（静态存储空间），局部分配在栈区</li>
+</ul>
+<h3 id="53-c">5.3 全局变量可不可以定义在被多个. C 文件包含的头文件中？<a class="headerlink" href="#53-c" title="Permanent link">&para;</a></h3>
+<ul>
+<li>可以，在不同的 C 文件中以 static 形式来声明同名全局变量</li>
+<li>可以在不同的 C 文件中声明同名的全局变量，前提是只有一个文件中赋初值</li>
+</ul>
+<h3 id="54">5.4 局部变量能否和全局变量重名<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<ul>
+<li>可以，局部会屏蔽全局</li>
+<li>函数内部引用的时候会使用局部而不会使用全局，并且在某些编译器中同一个函数内可以定义多个同名的局部变量，在循环体内使用各自的同名局部变量就好，作用域被限制在各自的循环体内</li>
+</ul>
+<h2 id="6">6 数组<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 数组指针<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p>指向数组的指针，考虑一个场景：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="mi">12</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">};</span>
+<span class="kt">int</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)[</span><span class="mi">4</span><span class="p">];</span>
+<span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="p">(</span><span class="o">++</span><span class="n">p</span><span class="p">));</span>
+</code></pre></div>
+<p><code>p</code> 则为数组指针，上述代码的重点在于如何理解 <code>p = b</code> 以及 <code>**(++p)</code> ：</p>
+<ul>
+<li>首先 <code>p</code> 是一个指向“包含 4 个 int 成员的数组”的指针，在将 <code>b</code> 赋值给 <code>p</code> 的时候，相当于 <code>p</code> 的每个元素都会存储 <code>b</code> 数组每四个元素的起始地址。在 <code>p = b;</code> 这行代码执行后，<code>p</code> 将指向 <code>b</code>，也就是将 <code>b</code> 的地址值赋给 <code>p</code></li>
+<li>于是 <code>++p</code> 之后 <code>p</code> 指针将向后移动 4 个 int ，解第一层引用得到 <code>b[4]</code> ，解第二层引用得到其值 <code>5</code></li>
+</ul>
+<h3 id="62">6.2 指针数组<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<p>指针数组表示的是一个数组，其中的元素为指针，考虑下列示例：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">p</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">};</span>
+<span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="n">p</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</code></pre></div>
+<p>输出 1234</p>
+<h3 id="63">6.3 数组下标<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<p>可以为负数，下标指示给出一个与当前地址的偏移量而已，根据偏移量能够定位到目标地址即可</p>
+<h2 id="7">7 指针<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h3 id="71">7.1 函数指针<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<p>函数指针，首先是一个指针。</p>
+<p>定义一个函数后，编译时系统则会为这个函数代码分配一段内存，这段空间的首地址则为这个函数的地址，函数名也就表示的是这个地址。</p>
+<blockquote>
+<p>类似数组名的概念</p>
+</blockquote>
+<p>既然是一个地址，那就可以定义一个指针变量来存放。该指针变量就被叫做函数指针：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="p">);</span>
+</code></pre></div>
+<ul>
+<li><code>int</code> 开头的 int 表示该函数返回 int 类型</li>
+<li><code>(*p)</code> <code>*</code> 先与 p 结合，表示 p 是一个指针</li>
+</ul>
+<p><strong>注意：</strong> 括号在此处不能省略，括号能够改变优先级，如果省略了的话，就被视作声明了一个“返回指针的函数”：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="nf">p</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="p">);</span>
+</code></pre></div>
+<ul>
+<li><code>int*</code> <code>*</code> 先与 int 结合，表示 int 指针，作为 p 函数的返回值</li>
+</ul>
+<p><strong>注意：</strong> 函数指针没有++和--运算</p>
+<h3 id="72-int-p-int-p">7.2 特别注意：区分 <code>int *p</code> 和 <code>int (*p)</code><a class="headerlink" href="#72-int-p-int-p" title="Permanent link">&para;</a></h3>
+<p>这俩是不同的变量类型，前者是一个指向 int 类型的指针，后者有可能是一个数组指针或是返回 int 类型的函数指针：</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// int *p</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">;</span><span class="w"> </span><span class="c1">// p 指向 value</span>
+<span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// 通过指针修改 value 的值，现在 value = 20</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// int (*p)</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">};</span>
+<span class="kt">int</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">arr</span><span class="p">;</span><span class="w"> </span><span class="c1">// p 指向一个包含5个整数的数组</span>
+<span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// 修改数组的第一个元素，现在 arr[0] = 10</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)(</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">add</span><span class="p">;</span><span class="w"> </span><span class="c1">// p 指向函数 add</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// 调用 add 函数，结果为 8</span>
+</code></pre></div>
+<h3 id="73">7.3 指针函数<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<p>返回值为地址，必须使用同类型的指针变量来接受</p>
+<p>后缀中的括号表示这是一个函数：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="nf">pfun</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">);</span>
+</code></pre></div>
+<p><code>*</code> 的运算符优先级低于 <code>()</code>，因此括号先与 <code>pfun</code> 进行结合</p>
+<h3 id="74">7.4 数组和指针的异同<a class="headerlink" href="#74" title="Permanent link">&para;</a></h3>
+<h4 id="741">7.4.1 存储方式<a class="headerlink" href="#741" title="Permanent link">&para;</a></h4>
+<p>数组一般存储在静态存储区或栈上，而指针可以随时指向任意类型的内存块</p>
+<ul>
+<li>数组是连续存放的，一块连续的内存空间</li>
+<li>数组是根据数组的下标来进行访问的</li>
+<li>指针可以指向任意类型的数据</li>
+<li>指针的类型说明了它所指向地址空间的内存</li>
+</ul>
+<h4 id="742-sizeof">7.4.2 sizeof<a class="headerlink" href="#742-sizeof" title="Permanent link">&para;</a></h4>
+<ul>
+<li>数组<ul>
+<li>数组占用的内存空间：sizeof（数组名）</li>
+<li>数组的大小：sizeof（数组名）/sizeof（数据类型）</li>
+</ul>
+</li>
+<li>指针<ul>
+<li>在 32 位平台下，无论类型，sizeof（指针名）都是 4（4x8=32）</li>
+<li>在 64 位平台下，无论类型，sizeof（指针名）都是 8（8x8=64）</li>
+</ul>
+</li>
+</ul>
+<h4 id="743">7.4.3 数据访问<a class="headerlink" href="#743" title="Permanent link">&para;</a></h4>
+<ul>
+<li>指针的访问方式是间接访问，需要用到解引用</li>
+<li>数组的访问方式是直接访问，可通过下标访问或数组名+元素偏移量的方式</li>
+</ul>
+<h4 id="744">7.4.4 使用场景<a class="headerlink" href="#744" title="Permanent link">&para;</a></h4>
+<ul>
+<li>指针一般用于动态的数据结构、动态内存的开辟</li>
+<li>数组一般用于固定个数且类型统一的数据结构以及隐式分配</li>
+</ul>
+<h3 id="75">7.5 野指针？<a class="headerlink" href="#75" title="Permanent link">&para;</a></h3>
+<ul>
+<li>野指针是指向不可用内存的指针，当指针被创建的时候指针不可能自动指向 NULL，这个时候默认值是随机的，这个时候的指针成为野指针</li>
+<li>当指针被 free 或 delete 释放之后，如果指针没有被手动设置为 NULL，则会产生野指针，free 和 delete 只是释放了指针指向的内存，没有把指针本身释放掉</li>
+<li>指针操作超越了变量的作用范围也会导致野指针的产生</li>
+</ul>
+<p>避免方法：</p>
+<ul>
+<li>初始化为 NULL</li>
+<li>用 malloc 分配内存</li>
+<li>用已有合法的可访问的内存地址对指针初始化</li>
+<li>指针用完后释放内存，将指针赋 NULL</li>
+</ul>
+<p>关于 malloc 函数的分配完内存后的注意点：</p>
+<ul>
+<li>检查分配是否成功，malloc 若成功会返回内存的首地址，不成功会返回 NULL</li>
+<li>清空内存中的数据</li>
+</ul>
+<h2 id="8">8 内存<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<h3 id="81-c">8.1 C 语言中的内存分配方式<a class="headerlink" href="#81-c" title="Permanent link">&para;</a></h3>
+<h4 id="811">8.1.1 静态存储区<a class="headerlink" href="#811" title="Permanent link">&para;</a></h4>
+<p>这一部分的内存分配在程序编译之前完成，整个程序的运行期间都存在，全局变量、静态变量就存储在此处</p>
+<h4 id="812">8.1.2 栈上分配<a class="headerlink" href="#812" title="Permanent link">&para;</a></h4>
+<ul>
+<li>不需要手动干预，栈内存里存放的东西生命周期为自动管理</li>
+<li>在函数执行时，内部的局部变量的存储单元在栈上创建，函数执行结束之后存储单元自动释放</li>
+<li>栈空间通常较小，主要用于存储函数的局部变量、函数参数、返回地址等</li>
+<li>栈是多线程编程的基础，每个线程都最少由一个自己专属的栈，用来存储本线程运行时的各个函数临时变量，以及维系函数调用和函数返回时的关系以及函数运行场景</li>
+</ul>
+<h4 id="813">8.1.3 堆上分配<a class="headerlink" href="#813" title="Permanent link">&para;</a></h4>
+<ul>
+<li>需要手动管理，通过特定的函数来分配与释放，堆数据的生命周期由程序员控制</li>
+<li>一般适用于存储动态的数据结构，如动态数组、链表等，或在程序运行期间需要动态分配和释放的内存</li>
+<li>堆的大小通常较大，受限于单片机的总内存大小，适合存储动态分配的数据结构</li>
+</ul>
+<p>栈适合快速、临时的内存分配；而堆适合复杂、长期的内存管理</p>
+<h4 id="814">8.1.4 堆栈相关寄存器<a class="headerlink" href="#814" title="Permanent link">&para;</a></h4>
+<p><code>ss（Stack Segment）</code> 堆栈寄存器，用于存放当前堆栈段的选择子（一个 16 位的值），用于访问描述堆栈段的段描述符。
+堆栈段描述符包含了堆栈的基地址和限长等信息。</p>
+<p>但在 arm 架构下并不存在堆栈寄存器，arm 架构下的堆栈一般直接使用 SP（寄存器 R13）来进行管理。</p>
+<h4 id="815">8.1.5 内存泄漏<a class="headerlink" href="#815" title="Permanent link">&para;</a></h4>
+<p><strong>什么是内存泄漏？</strong></p>
+<p>申请了一块内存空间，使用完毕之后没有释放掉。表现在宏观上为程序运行时间越长占用的内存越多：程序申请了一块内存，但在一段时间之后没有任何一个指针指向它，那么这块内存就泄漏了。</p>
+<p><strong>如何判断？</strong></p>
+<ul>
+<li>良好的编码习惯，使用了内存分配的函数后，使用完毕记得使用相应函数释放掉。</li>
+<li>将分配的内存指针用链表的形式自行管理，使用完毕后从链表中删除，这样在程序结束之后可以统一检查链表。</li>
+</ul>
+<h4 id="816-malloc-free">8.1.6 <code>malloc</code> 和 free<a class="headerlink" href="#816-malloc-free" title="Permanent link">&para;</a></h4>
+<p>malloc 向系统申请分配所指定 size 个字节的内存空间，返回类型为 <code>void *</code> 类型，也就是未指定类型的指针，而 C/C++中规定，<code>void *</code> 类型可以强转为任何其他类型的指针。</p>
+<h2 id="9">9 预处理<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<h3 id="91-error">9.1 <code>#error</code><a class="headerlink" href="#91-error" title="Permanent link">&para;</a></h3>
+<p>编译程序的时候遇到 <code>#error</code> 则会生成一个编译错误的提示消息，并停止编译</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#error [自己定义的 error-message]</span>
+</code></pre></div>
+<p><strong>使用场景：</strong></p>
+<p>程序较大的时候，很多宏定义是在外部指定的，比如 <code>makefile</code> 中或是其他系统头文件中指定的，不太确定一个宏是否有被定义的时候就可以使用 <code>#error</code></p>
+<h3 id="92-define">9.2 使用 <code>#define</code> 声明常数，避免数据溢出问题<a class="headerlink" href="#92-define" title="Permanent link">&para;</a></h3>
+<p>例如一年含多少秒：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#define SEC_PER_YEAR (60*60*24*365) UL</span>
+</code></pre></div>
+<h3 id="93-include-filenameh-include-filename-h">9.3 <code>#include &lt;filename.h&gt;</code> 和 <code>#include "filename. h"</code> 的区别<a class="headerlink" href="#93-include-filenameh-include-filename-h" title="Permanent link">&para;</a></h3>
+<ul>
+<li>带 <code>&lt;&gt;</code> 的编译器将会先从标准库路径开始搜索，系统文件调用较快</li>
+<li>带 <code>""</code> 的编译器将会从用户工作路径开始搜索，自定义文件调用较快</li>
+</ul>
+<h3 id="94">9.4 头文件的作用<a class="headerlink" href="#94" title="Permanent link">&para;</a></h3>
+<ol>
+<li>通过头文件来调用库功能，在需要保密源代码的时候，即可向用户提供头文件和二进制库即可，用户只需要按照头文件的接口声明来调用库功能即可，编译器会从二进制库中提取对应的实现</li>
+<li>头文件能够加强类型安全检查。当某个接口被实现或被使用的时候，其方式若与头文件中的声明不一致，编译器就会指出错误，减轻程序员调试、改错的工作量</li>
+</ol>
+<h3 id="95">9.5 头文件中定义静态变量可行吗<a class="headerlink" href="#95" title="Permanent link">&para;</a></h3>
+<p>不可行，一是会造成资源浪费，二是也可能引起程序错误。</p>
+<p>如果在头文件中定义了静态变量的话，按照编译的顺序，在每个使用了该头文件的 <code>. c</code> 文件都会单独存在一个静态变量，会引起空间浪费以及程序错误</p>
+<p>因此不推荐在头文件中定义任何变量，也包括静态变量</p>
+<h3 id="96-min">9.6 写标准宏 MIN，返回传入的两个参数中较小的那一个<a class="headerlink" href="#96-min" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define MIN（A, B） ((A) &lt;= (B) ? (A) : (B))</span>
+</code></pre></div>
+<h3 id="97">9.7 宏中的 <code>#</code> 以及 <code>##</code> 的用法<a class="headerlink" href="#97" title="Permanent link">&para;</a></h3>
+<p><strong><code>#</code> 字符串化操作符</strong></p>
+<p>可以将一个宏参数直接转换成对应的字符串</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#define CONVERT (a) #a</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="n">printf</span><span class="w"> </span><span class="p">(</span><span class="n">CONVERT</span><span class="w"> </span><span class="p">(</span><span class="n">test</span><span class="p">));</span>
+<span class="cm">/* ↓和这句一样↓ */</span>
+<span class="n">printf</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;test&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>最后输出的是宏参数的参数名</p>
+<p><strong><code>##</code> 符号连接操作符</strong></p>
+<p>可以将宏定义的多个形参转换成一个实际参数名。</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#define CAT (a, b) a##b</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">num5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<span class="n">printf</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">CAT</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">));</span>
+<span class="cm">/* ↓和这句一样↓ */</span>
+<span class="n">printf</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num5</span><span class="p">);</span>
+</code></pre></div>
+<h2 id="10-isr">10 ISR 所涉及的考点<a class="headerlink" href="#10-isr" title="Permanent link">&para;</a></h2>
+<p>考虑一段中断服务函数，指出错误：</p>
+<div class="highlight"><pre><span></span><code><span class="n">__interrupt</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">compute_area</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="n">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="p">;</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Area = %f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">area</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">area</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>ISR 不能有返回值，也不能传递参数</li>
+<li>ISR 应当快进快出，不推荐进行浮点运算</li>
+<li><code>printf()</code> 是不可重入函数，不能在 ISR 中使用</li>
+</ol>
+<blockquote>
+<p>不可重入函数：</p>
+<p>指的是在执行过程中会改变全局变量或静态变量状态的函数，使得函数的再次调用可能会导致不可预测的结果，该类函数通常依赖于内部状态或共享资源，如文件指针、内存缓冲区、环境变量等</p>
+<p>不可重入函数的主要问题是它们不是线程安全的，也就是说，它们不能保证在多线程环境中被多个线程同时调用时的正确性。在多任务或多线程操作系统中，这可能会导致数据竞争、资源冲突或其他同步问题。</p>
+</blockquote>
+<p>ISR 通常需要满足以下要求：</p>
+<ol>
+<li><strong>快速执行</strong>：ISR 应该尽可能快地执行完毕，以减少对系统其他部分的干扰。</li>
+<li><strong>最小化资源使用</strong>：ISR 应该避免使用可能被主程序或其他中断共享的资源。</li>
+<li><strong>避免阻塞</strong>：ISR 不应该执行可能导致阻塞的操作，如等待 I/O 操作完成。</li>
+<li><strong>可重入性</strong>：ISR 应该可以被多个中断源或在不同的优先级下安全地调用。</li>
+</ol>
+<h2 id="11">11 杂项<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
+<h3 id="111-strlen-0-sizeof-0">11.1 <code>strlen ("\0")</code> 和 <code>sizeof ("\0")</code> 的区别<a class="headerlink" href="#111-strlen-0-sizeof-0" title="Permanent link">&para;</a></h3>
+<p>前者是 0，后者是 2</p>
+<ul>
+<li><code>strlen</code> 是用来计算字符串的长度的，从内存某位置开始开始扫描到第一个字符串结束符（<code>\0</code>）为止，返回计数值</li>
+<li><code>sizeof</code> 是关键字，返回操作对象的存储大小，操作数的存储大小由操作数的类型决定，这里因为是 <code>""</code> 所以视作字符串，除开 <code>\0</code> 后，还有一个字符串结束符，所以结果是 2</li>
+<li>若为 <code>sizeof('\0')</code> 则结果为 4，因为 <code>\0</code> 的 ascll 码为 0，等价于数字 0，int 型</li>
+</ul>
+<h3 id="112-struct-union">11.2 <code>struct</code> 和 <code>union</code> 的区别<a class="headerlink" href="#112-struct-union" title="Permanent link">&para;</a></h3>
+<p>两者都是常见的复合结构，区别体现在以下几个方面</p>
+<ul>
+<li>联合体中所有成员共用同一块地址空间，联合体中只存放一个被选中的成员</li>
+<li>结构体中所有成员的占用空间是累加的，所有成员都存在；计算结构体的总长度的时候需要考虑<a href="">字节对齐</a>，而联合体的变量长度则等于其最长的成员长度</li>
+<li>对联合体不同的成员赋值的时候，将会对其他成员也重写，原本其他成员的值就不存在了；结构体不同成员赋值不会相互影响</li>
+</ul>
+<h3 id="113">11.3 左值以及右值<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>左值</strong> 可以出现在等号左边的变量或表达式，特点为可写（可寻址），值可被修改</li>
+<li><strong>右值</strong> 只可以出现在等号右侧的变量或表达式，重要特点为可读</li>
+</ul>
+<h3 id="114">11.4 有符号与无符号的运算<a class="headerlink" href="#114" title="Permanent link">&para;</a></h3>
+<p>有符号与无符号一起运算，将强转为无符号</p>
+<h3 id="115">11.5 短路计算<a class="headerlink" href="#115" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="n">printf</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">);</span>
+</code></pre></div>
+<p>结果为 1 而不是 2，因为 if 中判断 <code>i &gt; 0</code> 已经使得该语句为 true 了，所以后面的 <code>j++</code> 则不需要执行</p>
+<p>而对于 <code>&amp;&amp;</code> 操作的话，若前一个语句的返回值为 false，则后面的语句同理也不会执行。</p>
+<h3 id="116">11.6 大小端<a class="headerlink" href="#116" title="Permanent link">&para;</a></h3>
+<p>对同一个十六位整数 <code>0x1234</code> 有如下区别：</p>
+<p><strong>大端</strong> 高地址存低字节，低地址存高字节</p>
+<div class="highlight"><pre><span></span><code><span class="n">内存地址</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">数据</span>
+<span class="mh">0x00</span><span class="w">       </span><span class="mh">0x12</span>
+<span class="mh">0x01</span><span class="w">       </span><span class="mh">0x34</span>
+</code></pre></div>
+<p><strong>小端</strong> 低地址存低字节，高地址存高字节</p>
+<div class="highlight"><pre><span></span><code><span class="n">内存地址</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">数据</span>
+<span class="mh">0x00</span><span class="w">       </span><span class="mh">0x34</span>
+<span class="mh">0x01</span><span class="w">       </span><span class="mh">0x12</span>
+</code></pre></div>
+<h3 id="117-aa">11.7 <code>++a/a++</code> 的实现：<a class="headerlink" href="#117-aa" title="Permanent link">&para;</a></h3>
+<p>a++：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="k">return</span><span class="w"> </span><span class="n">temp</span><span class="p">;</span>
+</code></pre></div>
+<p>++a：</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="118-c">11.8 C 语言编译过程<a class="headerlink" href="#118-c" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>预处理：</strong> 展开宏和头文件，生成 <code>.i文件</code></li>
+<li><strong>编译：</strong> 编译器对预处理后的源代码进行词法、语法、语义分析、优化，最后翻译为汇编码，生成 <code>.s文件</code></li>
+<li><strong>汇编：</strong> 汇编将汇编码转换为机器码，生成 <code>.o文件</code></li>
+<li><strong>链接：</strong> 链接器将多个目标和库文件等组合在一起，解决外部引用，最后生成可执行文件</li>
+</ol>
+<p><strong>——编译细节：</strong></p>
+<ul>
+<li><strong>词法：</strong> 编译过程的第一个阶段，只关注源代码的字符序列；将其分割为一系列的标记或词汇，不关心代码的语法结构，只做分类以及识别单词（关键字、标识符、常量、运算符）的工作，为后继步骤提供输入。</li>
+<li><strong>语法：</strong> 关注源代码的结构和顺序；使用词法的输出来构建抽象语法树。该树状结构展示了代码的语法层次以及构成规则（识别函数定义、表达式、控制流语句等）</li>
+<li><strong>语义：</strong> 关注代码含义、逻辑；使用抽象语法树来检查语义错误——诸如类型不匹配、未定义的引用、错误的表达式使用。</li>
+</ul>
+<p><strong>——链接细节：</strong></p>
+<ul>
+<li><strong>目标文件：</strong> <code>. o 文件</code> 是编译器生成的中间产物，包含了源代码编译后的机器码，但未解决外部引用，每个编译的源文件通常会生成一个对应的目标文件。</li>
+<li><strong>库文件：</strong> 一般库文件是一组编译好的代码的集合，可以是静态库（<code>. a</code> ）或动态库（ <code>. so</code> ）。包含了多个目标文件的集合，代码可以被多个不同的程序共享以及重用。</li>
+</ul>
+<h3 id="119-strcpy">11.9 自行实现 <code>strcpy</code> 函数<a class="headerlink" href="#119-strcpy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="nf">mystrcpy</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">strDest</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">strSrc</span><span class="p">)</span><span class="w">    </span><span class="cm">/* const 修饰拷贝字符串 */</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">assert</span><span class="w"> </span><span class="p">((</span><span class="n">strDest</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">strSrc</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">));</span><span class="w">   </span><span class="cm">/* 检查有效性 */</span>
+<span class="w">    </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">address</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strDest</span><span class="p">;</span><span class="w">                         </span><span class="cm">/* 头指针 */</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">((</span><span class="o">*</span><span class="n">strDest</span><span class="o">++</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">strSrc</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w">            </span><span class="cm">/* 转移，不修改 src 字符串 */</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">address</span><span class="p">;</span><span class="w">                                  </span><span class="cm">/* 链式表达，提高可用*/</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>调用举例：</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strlen</span><span class="w"> </span><span class="p">(</span><span class="n">mystrcpy</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hello World&quot;</span><span class="p">))</span><span class="err">；</span>
+</code></pre></div>
+<h3 id="1110-sizeof">11.10 自行实现 <code>sizeof</code> 宏定义<a class="headerlink" href="#1110-sizeof" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define mysizeof(val) (char*)(&amp;val + 1) - (char*)&amp;val</span>
+</code></pre></div>
+<p>实现思路：计算地址偏移量，从而得出 val 的类型数据大小。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.path", "navigation.tabs", "navigation.top", "content.code.annotate", "navigation.tracking", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+        <script src="../../../../js/heti.js"></script>
+      
+    
+  </body>
+</html>
