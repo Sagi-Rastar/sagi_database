@@ -4037,8 +4037,10 @@
 <li>如果是静态全局变量，作用域即为当前文件</li>
 </ul>
 <p><code>static</code> 修饰的全局变量以及函数只能在本文件中被调用</p>
-<p><strong>函数体内：</strong> 生命周期和函数体相同
-<strong>模块内（函数体外）：</strong> 一个被声明为静态的变量可以被模块内所用函数访问，不能被模块外其他函数访问，是一个本地的全局变量</p>
+<ul>
+<li><strong>函数体内：</strong> 生命周期和函数体相同</li>
+<li><strong>模块内（函数体外）：</strong> 一个被声明为静态的变量可以被模块内所用函数访问，不能被模块外其他函数访问，是一个本地的全局变量</li>
+</ul>
 <h2 id="3-const">3 const<a class="headerlink" href="#3-const" title="Permanent link">&para;</a></h2>
 <p>定义变量为常量</p>
 <p>当修饰为指针的时候：</p>
