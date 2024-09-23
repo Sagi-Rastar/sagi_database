@@ -3,11 +3,6 @@
     --md-code-font: "JetBrains Mono", "Noto Serif SC";
 }
 
-.md-content {
-    max-width: 800px;
-    /* 或你希望的任何宽度 */
-    margin: auto;
-}
 
 .md-typeset strong {
     color: var(--md-typeset-a-color);

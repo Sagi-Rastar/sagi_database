@@ -65,6 +65,14 @@ theme:
 
 plugins:
     - search
+    - tags
+    - macros:
+        module_name: mymacros
+        render_by_default: false
+        j2_variable_start_string: '{{m'
+        j2_variable_end_string: 'm}}'  # 为变量使用 [[ 和 ]]
+    - changelog:
+        file: docs/changelog.yml
     # - git-revision-date-localized
     # - autolinks
     # - section-index
