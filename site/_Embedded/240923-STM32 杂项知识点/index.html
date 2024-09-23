@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://sagidb.github.io/_Embedded/240618-SNTP%20%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E3%80%81AES%20%E5%8A%A0%E5%AF%86/">
+        <link rel="canonical" href="https://sagidb.github.io/_Embedded/240923-STM32%20%E6%9D%82%E9%A1%B9%E7%9F%A5%E8%AF%86%E7%82%B9/">
       
       
-        <link rel="prev" href="../240617-IDF%20%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%EF%BC%8C%E5%8F%8A%20wifi%20%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/">
+        <link rel="prev" href="../240905-%E6%9B%B4%E6%96%B0storage%E4%BB%A5%E5%8F%8Amqtt%E6%A8%A1%E5%9D%97%E9%83%A8%E5%88%86%EF%BC%8C%E9%80%90%E6%AD%A5%E5%AE%9E%E7%8E%B0%E7%A7%81%E6%9C%89json%E5%8D%8F%E8%AE%AE/">
       
       
-        <link rel="next" href="../240619-%E8%93%9D%E7%89%99%E5%BC%80%E5%8F%91/">
+        <link rel="next" href="../ESP32%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>240618-SNTP 获取时间、AES 加密 - Sagi's database</title>
+        <title>240923-STM32 杂项知识点 - Sagi's database</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#240618-sntp-aes" class="md-skip">
+        <a href="#240923-stm32" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              240618-SNTP 获取时间、AES 加密
+              240923-STM32 杂项知识点
             
           </span>
         </div>
@@ -658,30 +658,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    240618-SNTP 获取时间、AES 加密
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../240618-SNTP%20%E8%8E%B7%E5%8F%96%E6%97%B6%E9%97%B4%E3%80%81AES%20%E5%8A%A0%E5%AF%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,95 +670,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-sntp" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 SNTP 获取时间
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-aes" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 AES 加密
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2 AES 加密">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-aes" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 AES 种类
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-esp32-aes-menuconfig" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 ESP32 关于 AES 的 menuconfig 选项
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-aes" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 AES 填充
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#24-mbedtls" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.4 Mbedtls 库
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25-aes-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 门禁 AES 任务 API
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1019,10 +910,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../240923-STM32%20%E6%9D%82%E9%A1%B9%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1031,6 +931,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1247,83 +1148,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-sntp" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 SNTP 获取时间
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-aes" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 AES 加密
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2 AES 加密">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-aes" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 AES 种类
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-esp32-aes-menuconfig" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 ESP32 关于 AES 的 menuconfig 选项
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-aes" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 AES 填充
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#24-mbedtls" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.4 Mbedtls 库
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25-aes-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 门禁 AES 任务 API
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1335,158 +1159,47 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">八股</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">秋招</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">stm32</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">flash</span>
+    
+  
+</nav>
 
 
-<h1 id="240618-sntp-aes">240618-SNTP 获取时间、AES 加密<a class="headerlink" href="#240618-sntp-aes" title="Permanent link">&para;</a></h1>
-<h2 id="1-sntp">1 SNTP 获取时间<a class="headerlink" href="#1-sntp" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>参考博客： <a href="https://blog.csdn.net/qq_41741344/article/details/120117151">https://blog.csdn.net/qq_41741344/article/details/120117151</a></p>
-<p>官方文档： <a href="https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/system/system_time.html#sntp">https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32s3/api-reference/system/system_time.html#sntp</a></p>
-</blockquote>
-<p>SNTP for Simple Network Time Protocol. 是 NTP 协议的一个子集</p>
-<p>NTP 时间戳是该协议的重要内容，是一个 64 位无符号浮点数组成，前面 32 位表示整数，后面 32 位表示小数。单位是秒。时间是相对于 1900 年 1 月 0 点开始到现在所经过的秒数。它能表示的最大数字是 4,294,967,295 秒。嵌入式设备上电后连接 AP 获取 IP 地址之后，可以通过 SNTP 的协议获取全球时间。</p>
-<p>LwIP 的 SNTP 库中含有一些 API 可以更新系统时间，但是并非为线程安全的 API，官方推荐使用 <code>esp_netif_component</code> 来更新时间</p>
-<p>具体开发上在 wifi 那边获取到 ip 之后按照如下方式调用并设置 sntp 服务器即可开启 sntp 服务：
-<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">esp_initialize_sntp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Initializing SNTP&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">sntp_setoperatingmode</span><span class="p">(</span><span class="n">SNTP_OPMODE_POLL</span><span class="p">);</span>
-<span class="w">    </span><span class="n">sntp_set_sync_mode</span><span class="p">(</span><span class="n">SNTP_SYNC_MODE_IMMED</span><span class="p">);</span>
-<span class="w">    </span><span class="n">sntp_setservername</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;s1b.time.edu.cn&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">sntp_setservername</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;210.72.145.44&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">sntp_setservername</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ntp1.aliyun.com&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="n">sntp_init</span><span class="p">();</span>
-<span class="p">}</span>
-</code></pre></div></p>
-<p>随后调用 POSIX 函数 <code>setenv</code> 和 <code>tzset</code> 设置时区以及更新 C 库的运行数据。</p>
-<p>完成上述操作之后可以调用如下函数获取本地时间：</p>
-<ul>
-<li><code>localtime</code>，在调用 <code>time(NULL)</code> 后可以使用这个函数将 <code>time_t</code> 转换为 <code>tm</code> 结构体</li>
-<li><code>localtime_r</code>，跟上面相同，但由于不带 <code>_r</code> 的返回的是一个指向静态变量的指针，因此有可能被覆盖，特别是多线程环境下</li>
-</ul>
-<p><img alt="" src="../01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/image-20240816113803368.png" /></p>
-<blockquote>
-<p>注意: sntp 依赖套接字, 因此维护的 sntp 应用需要监听 wifi 事件</p>
-</blockquote>
-<h2 id="2-aes">2 AES 加密<a class="headerlink" href="#2-aes" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>参考博客: <a href="https://blog.csdn.net/qq_36347513/article/details/120991568">https://blog.csdn.net/qq_36347513/article/details/120991568</a></p>
-<p>idf 集成的 mbedtls 加密库的 API 参考： <a href="https://mbed-tls.readthedocs.io/projects/api/en/v3.4.1/api/file/aes_8h/#_CPPv416mbedtls_aes_initP19mbedtls_aes_context">https://mbed-tls.readthedocs.io/projects/api/en/v3.4.1/api/file/aes_8h/#_CPPv416mbedtls_aes_initP19mbedtls_aes_context</a></p>
-</blockquote>
-<p>乐鑫 esp-idf 框架集成开源的 mbedtls 加密库。Mbedtls 也许是最小巧的 SSL 代码库。高效、便于移植和集成。支持常见的安全算法，如：AES、DES、RSA、ECC、SHA256、MD5、BASE64 等等。除此之外还支持公钥证书体系。它提供了具有直观的 API 和可读源代码的 SSL 库。该工具即开即用，可以在大部分系统上直接构建它，也可以手动选择和配置各项功能。</p>
-<h3 id="21-aes">2.1 AES 种类<a class="headerlink" href="#21-aes" title="Permanent link">&para;</a></h3>
-<p><strong>ECB 形式</strong>：即电子密码本形式，最早采用并且最简单的方式，将加密的数据分为若干组，每组大小跟加密密钥长度相同。一次只能加解密 128 位的明文，也就是 16 个字节。</p>
-<p><strong>CBC 形式</strong>：即加密块链形式，需要一个初始化向量。</p>
-<blockquote>
-<p><strong>什么是初始化向量？</strong></p>
-<p>在密码学中，初始化向量（Initialization Vector，简称 IV）是一个在加密过程中使用的固定长度的随机或伪随机值。它与第一个块的明文一起使用，以确保即使相同的明文块多次加密，也会产生不同的密文块，从而增加加密的安全性。</p>
-<p>在使用像 AES 这样的块加密算法时，每个数据块（通常是 16 字节）都需要使用密钥进行加密。如果不使用 IV，那么相同的明文块将总是产生相同的密文块，这将使得加密算法容易被攻击。</p>
-</blockquote>
-<h3 id="22-esp32-aes-menuconfig">2.2 ESP32 关于 AES 的 menuconfig 选项<a class="headerlink" href="#22-esp32-aes-menuconfig" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="../01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/image-20240816114141586.png" /></p>
-<p>可以选择打开硬件 AES 加速, 并有如下设置</p>
-<ul>
-<li><code>CONFIG_MBEDTLS_AES_USE_INTERRUPT</code> </li>
-<li><code>CONFIG_MBEDTLS_AES_INTERRUPT_LEVEL</code></li>
-</ul>
-<h3 id="23-aes">2.3 AES 填充<a class="headerlink" href="#23-aes" title="Permanent link">&para;</a></h3>
-<p>AES-128-CBC 属于分组对称加密算法：同一组 key 进行明文和密文的转换</p>
-<p>使用 16B 为一组进行加密，即明文的 16B 对应一组加密后的 16B 密文。因此 AES-CBC 需要明文为 16B 的倍数，在不满 16B 的时候需要对明文进行填充，通常的填充方法为 PKCS7（Public-Key Cryptography Standards 7）：</p>
-<p>当加密到最后一组的时候：若不足 16B 则填充长度为恰好补足到 16B 的长度，填充内容即填充长度值本身；若恰好为 16B 则最后加入一个 16B 的 0x10 组再进行加密。</p>
-<p>传入明文、16B 的 key、16B 的初始偏移向量 IV</p>
-<p>初始向量和 key 加密第一组数据之后，<strong>会将第一组加密后的密文赋值给 IV</strong>，然后再进行第二组加密，循环直到结束。</p>
-<h3 id="24-mbedtls">2.4 Mbedtls 库<a class="headerlink" href="#24-mbedtls" title="Permanent link">&para;</a></h3>
-<p>使用该库函数之前需要初始化语境（contex）以及设置加解密的密钥</p>
-<div class="highlight"><pre><span></span><code><span class="n">mbedtls_aes_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">aes_ctx</span><span class="p">);</span>
 
-<span class="n">mbedtls_aes_setkey_dec</span><span class="p">(</span><span class="o">&amp;</span><span class="n">aes_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">aes_key</span><span class="p">,</span><span class="w"> </span><span class="mi">128</span><span class="p">);</span>
-<span class="n">mbedtls_aes_setkey_enc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">aes_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">aes_key</span><span class="p">,</span><span class="w"> </span><span class="mi">128</span><span class="p">);</span>
-</code></pre></div>
-<h3 id="25-aes-api">2.5 门禁 AES 任务 API<a class="headerlink" href="#25-aes-api" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aes_enc_uint8</span><span class="p">(</span><span class="n">mbedtls_aes_context</span><span class="w"> </span><span class="o">*</span><span class="n">aes_ctx</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">input_iv</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">plain</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">cipher</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">cipher_len</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>/**
- * @brief AES加密任务，密文输出为uint8_t，HEX格式
- *
- * @param aes_ctx AES上下文
- * @param[in] input_iv 本次加密的偏移量IV
- * @param[in] plain 需要被加密的明文，可不定长，最大不可超过 AES_TASK_MAX_LEN
- * @param[out] cipher 加密后输出的密文，长度与输入的明文长度相同
- * @param[out] cipher_len 加密后输出的密文长度
- *
- * @return 0: 加密成功
- * @return 1: 明文为空
- * @return 2: 明文过长
- *
- * @attention 本函数会自动对输入的明文进行PKCS7填充
- */
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kt">uint8_t</span><span class="w"> </span><span class="n">aes_dec_uint8</span><span class="p">(</span><span class="n">mbedtls_aes_context</span><span class="w"> </span><span class="o">*</span><span class="n">aes_ctx</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">input_iv</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">plain</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">cipher</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">cipher_len</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>/**
- * @brief AES解密任务，明文输出为uint8_t，字符串格式
- *
- * @param aes_ctx AES上下文
- * @param[in] input_iv 本次解密的偏移量IV
- * @param[out] plain 解密后输出的明文
- * @param[in] cipher 需要被解密的密文，最大长度不可超过 AES_TASK_MAX_LEN
- * @param[in] cipher_len 需要被解密的密文长度
- *
- * @return 0: 解密成功
- * @return 1: 密文为空
- * @return 2: 密文过长
- * @return 3: 填充错误
- *
- * @attention 本函数会自动对输出的明文移除PKCS7填充
- */
-</code></pre></div>
-<p>以下为根据蓝牙私有协议封装的打包/解包数据帧函数</p>
-<p><img alt="" src="../01-%E8%93%9D%E7%89%99%E9%97%A8%E7%A6%81%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/image-20240816120317949.png" /></p>
-<div class="highlight"><pre><span></span><code><span class="kt">uint8_t</span><span class="w"> </span><span class="n">data_frame_packing</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">payload</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">payload_len</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">frame_len</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>/**
- * @brief 打包数据帧
- *
- * @param[in] payload 需要加密的特征值负载
- * @param[in] payload_len 特征值长度
- * @param[out] frame 指向数据帧的指针地址
- * @param[out] frame_len 输出的数据帧长度
- *
- * @return 0: 打包成功
- * @return 1: AES密钥设置错误
- * @return 2: 加密错误
- *
- * @note 暂未支持分包操作
- */
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kt">uint8_t</span><span class="w"> </span><span class="n">data_frame_unpacking</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">frame_len</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">payload</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">payload_len</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>/**
- * @brief 解包数据帧
- *
- * @param[in] frame 接收到的数据帧
- * @param[in] frame_len 数据帧长度
- * @param[out] payload 解密后的特征值负载
- * @param[out] payload_len 特征值负载长度
- *
- * @return 0: 解包成功
- * @return 1: 帧头错误
- * @return 2: AES密钥设置错误
- * @return 3: 解密错误
- * @return 4: CRC校验错误
- *
- * @note 暂未支持分包操作
- *
- */
-</code></pre></div>
-<p>使用时, 应当先维护一个全局变量 <code>uint8_t aes_key[16] = AES_KEY_DEFAULT;</code> 用于提供密钥</p>
-<p>系统在初始化阶段应当通过读取初始参数获取历史存储过的密钥, 并替换全局变量的默认值.</p>
+<h1 id="240923-stm32">240923-STM32 杂项知识点<a class="headerlink" href="#240923-stm32" title="Permanent link">&para;</a></h1>
 
 
 
 
 
 
+
+  
+  
 
 
 

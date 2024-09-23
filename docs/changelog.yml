@@ -1,4 +1,11 @@
 - '2024':
+  - '2024-09-23':
+    - newpage:
+        text: ' [ Embedded ] > STM32 杂项知识点'
+        href: /sagi_database/_Embedded/240923-STM32 杂项知识点
+    - newpage:
+        text: ' [ CS ] > C语言自编小模块笔记'
+        href: /sagi_database/_CS/240923-C语言自编小模块笔记
   - '2024-09-18':
     - newpage:
         text: ' [ CS ] > C语言八股'
@@ -8,8 +15,8 @@
         text: ' [ Embedded ] > 更新storage以及mqtt模块部分，逐步实现私有json协议'
         href: /sagi_database/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议
     - newpage:
-        text: ' [ CS ] > 语法特性'
-        href: /sagi_database/_CS/240905-语法特性
+        text: ' [ CS ] > C语言语法特性'
+        href: /sagi_database/_CS/240905-C语言语法特性
   - '2024-08-30':
     - newpage:
         text: ' [ Embedded ] > 缺陷检测光源控制器开发笔记'
