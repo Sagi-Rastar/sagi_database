@@ -86,7 +86,7 @@ def define_env(env):
                                         entry[readable_time].append({
                                             "newpage": {
                                                 "text": f" [ {folder_name.replace('_', '')} ] > {'-'.join(file_name.split('-')[1:]).replace('.md', '')}",
-                                                "href": f"/{folder_name}/{file_name.replace('.md', '')}"
+                                                "href": f"/sagi_database/{folder_name}/{file_name.replace('.md', '')}"
                                             }
                                         })
                                         break
@@ -96,7 +96,7 @@ def define_env(env):
                                         readable_time: [{
                                             "newpage": {
                                                 "text": f" [ {folder_name.replace('_', '')} ] > {'-'.join(file_name.split('-')[1:]).replace('.md', '')}",
-                                                "href": f"/{folder_name}/{file_name.replace('.md', '')}"
+                                                "href": f"/sagi_database/{folder_name}/{file_name.replace('.md', '')}"
                                             }
                                         }]
                                     })
