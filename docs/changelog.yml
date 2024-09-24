@@ -1,4 +1,8 @@
 - '2024':
+  - '2024-09-24':
+    - newpage:
+        text: ' [ Embedded ] > 通讯协议总结'
+        href: /sagi_database/_Embedded/240924-通讯协议总结
   - '2024-09-23':
     - newpage:
         text: ' [ Embedded ] > STM32 杂项知识点'

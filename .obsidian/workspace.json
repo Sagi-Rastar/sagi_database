@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/秋招/秋招进度.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/秋招/秋招进度.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+                "file": "docs/秋招/秋招进度.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md"
+                "file": "docs/秋招/秋招进度.md"
               }
             }
           }
@@ -156,7 +156,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b23b674a9c18102d",
+  "active": "3fb23f5db3f883e4",
   "lastOpenFiles": [
     "site/css/timeline.css",
     "site/search/search_index.json",
@@ -179,13 +179,15 @@
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914101929023.png",
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914095732951.png",
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914095027965.png",
-    "().md",
-    "docs/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
-    "docs/_CS/240905-C语言语法特性.md",
-    "docs/_CS/240716-内存管理.md",
-    "docs/_CS/240829-python操作串口.md",
+    "docs/秋招/秋招进度.md",
     "docs/_CS/240918-C语言八股.md",
+    "docs/_Embedded/240924-通讯协议总结.md",
+    "docs/_CS/240716-内存管理.md",
     "docs/_CS/240923-C语言自编小模块笔记.md",
+    "docs/_CS/240905-C语言语法特性.md",
+    "docs/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
+    "().md",
+    "docs/_CS/240829-python操作串口.md",
     "docs/_Embedded/240923-STM32 杂项知识点.md",
     "docs/_Embedded/index.md",
     "docs/_Embedded/ESP32项目汇总.md",
@@ -193,7 +195,6 @@
     "docs/_Embedded/240820-SolidWorks开螺纹孔.md",
     "docs/_Embedded/240818-蓝牙配网以及softAP方式配网探索.md",
     "docs/秋招/常见问题起草模板.md",
-    "docs/秋招/秋招进度.md",
     "docs/软件/05-语言/C语言/C语言八股.md",
     "docs/硬件/00-基础理论/模电/三极管和MOS管.md",
     "docs/硬件/00-基础理论/模电/00-模电总述.md",
@@ -202,7 +203,6 @@
     "docs/硬件/00-基础理论/00-基础理论总述.md",
     "未命名 1.md",
     "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
-    "docs/软件/05-语言/Python/240829-python操作串口.md",
-    "docs/软件/03-WEB技术/index.md"
+    "docs/软件/05-语言/Python/240829-python操作串口.md"
   ]
 }
