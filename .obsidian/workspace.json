@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/秋招/秋招进度.md",
+                "file": "docs/_秋招/项目整理.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/秋招/秋招进度.md",
+                "file": "docs/_秋招/项目整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/秋招/秋招进度.md",
+                "file": "docs/_秋招/项目整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/秋招/秋招进度.md"
+                "file": "docs/_秋招/项目整理.md"
               }
             }
           }
@@ -156,19 +156,19 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3fb23f5db3f883e4",
+  "active": "b23b674a9c18102d",
   "lastOpenFiles": [
     "site/css/timeline.css",
     "site/search/search_index.json",
     "site/search",
-    "site/秋招/秋招进度/index.html",
-    "site/秋招/秋招进度",
-    "site/秋招/常见问题起草模板/index.html",
-    "site/秋招/常见问题起草模板",
-    "site/秋招",
+    "site/_秋招/项目整理/index.html",
+    "site/_秋招/项目整理",
+    "site/_秋招/秋招进度/index.html",
+    "site/_秋招/秋招进度",
+    "site/_秋招/常见问题起草模板/index.html",
+    "site/_秋招/常见问题起草模板",
+    "site/_秋招",
     "site/_Web/240823-HTTPS与OpenSSL/index.html",
-    "site/_Embedded/ESP32项目汇总/index.html",
-    "site/_Embedded/ESP32项目汇总",
     "site/assets/images/favicon.png",
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914113522552.png",
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914112053548.png",
@@ -179,7 +179,8 @@
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914101929023.png",
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914095732951.png",
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914095027965.png",
-    "docs/秋招/秋招进度.md",
+    "docs/_秋招/秋招进度.md",
+    "docs/_秋招/项目整理.md",
     "docs/_CS/240918-C语言八股.md",
     "docs/_Embedded/240924-通讯协议总结.md",
     "docs/_CS/240716-内存管理.md",
@@ -194,7 +195,7 @@
     "docs/_Embedded/240603-韦根协议Wiegand.md",
     "docs/_Embedded/240820-SolidWorks开螺纹孔.md",
     "docs/_Embedded/240818-蓝牙配网以及softAP方式配网探索.md",
-    "docs/秋招/常见问题起草模板.md",
+    "docs/_秋招/常见问题起草模板.md",
     "docs/软件/05-语言/C语言/C语言八股.md",
     "docs/硬件/00-基础理论/模电/三极管和MOS管.md",
     "docs/硬件/00-基础理论/模电/00-模电总述.md",
@@ -202,7 +203,6 @@
     "docs/硬件/00-基础理论/信号完整性/00-信号完整性总述.md",
     "docs/硬件/00-基础理论/00-基础理论总述.md",
     "未命名 1.md",
-    "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md",
-    "docs/软件/05-语言/Python/240829-python操作串口.md"
+    "docs/软件/03-WEB技术/240823-HTTPS与OpenSSL.md"
   ]
 }
