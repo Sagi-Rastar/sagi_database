@@ -48,10 +48,21 @@
   },
   "treeData": [
     {
-      "id": "66aed1913cc61b07",
+      "id": "27948609368282c9",
       "parent": 0,
       "droppable": true,
-      "text": "【八股文】嵌入式软件工程师-2025校招必备-详细整理_嵌入式面试八股文-CSDN博客",
+      "text": "我的投递",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "4b959270011642cc",
+      "parent": 0,
+      "droppable": true,
+      "text": "职位详情",
       "data": {
         "fileType": "site",
         "fileSize": "",

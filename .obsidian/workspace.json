@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/_秋招/项目整理.md",
+                "file": "docs/_Embedded/240626-BM8563 驱动移植，IDF-I2C 笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/_秋招/项目整理.md",
+                "file": "docs/_Embedded/240626-BM8563 驱动移植，IDF-I2C 笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/_秋招/项目整理.md",
+                "file": "docs/_Embedded/240626-BM8563 驱动移植，IDF-I2C 笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/_秋招/项目整理.md"
+                "file": "docs/_Embedded/240626-BM8563 驱动移植，IDF-I2C 笔记.md"
               }
             }
           }
@@ -158,6 +158,18 @@
   },
   "active": "b23b674a9c18102d",
   "lastOpenFiles": [
+    "docs/_CS/240716-内存管理.md",
+    "docs/_秋招/秋招进度.md",
+    "docs/_秋招/项目整理.md",
+    "docs/_秋招/常见问题起草模板.md",
+    "docs/_秋招/项目整理/image-20240925133705923.png",
+    "docs/_秋招/项目整理/image-20240925133508680.png",
+    "docs/_秋招/项目整理/image-20240925132815238.png",
+    "docs/_秋招/项目整理/image-20240925132114311.png",
+    "docs/_秋招/项目整理/image-20240925131354781.png",
+    "docs/_秋招/项目整理/image-20240925131347200.png",
+    "docs/_秋招/项目整理/image-20240925131251684.png",
+    "docs/_秋招/项目整理",
     "site/css/timeline.css",
     "site/search/search_index.json",
     "site/search",
@@ -167,23 +179,11 @@
     "site/_秋招/秋招进度",
     "site/_秋招/常见问题起草模板/index.html",
     "site/_秋招/常见问题起草模板",
-    "site/_秋招",
-    "site/_Web/240823-HTTPS与OpenSSL/index.html",
     "site/assets/images/favicon.png",
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914113522552.png",
     "site/_Web/240823-HTTPS与OpenSSL/image-20240914112053548.png",
-    "site/_Web/240823-HTTPS与OpenSSL/image-20240914111239872.png",
-    "site/_Web/240823-HTTPS与OpenSSL/image-20240914111158894.png",
-    "site/_Web/240823-HTTPS与OpenSSL/image-20240914111134797.png",
-    "site/_Web/240823-HTTPS与OpenSSL/image-20240914102121670.png",
-    "site/_Web/240823-HTTPS与OpenSSL/image-20240914101929023.png",
-    "site/_Web/240823-HTTPS与OpenSSL/image-20240914095732951.png",
-    "site/_Web/240823-HTTPS与OpenSSL/image-20240914095027965.png",
-    "docs/_秋招/秋招进度.md",
-    "docs/_秋招/项目整理.md",
     "docs/_CS/240918-C语言八股.md",
     "docs/_Embedded/240924-通讯协议总结.md",
-    "docs/_CS/240716-内存管理.md",
     "docs/_CS/240923-C语言自编小模块笔记.md",
     "docs/_CS/240905-C语言语法特性.md",
     "docs/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
@@ -195,7 +195,6 @@
     "docs/_Embedded/240603-韦根协议Wiegand.md",
     "docs/_Embedded/240820-SolidWorks开螺纹孔.md",
     "docs/_Embedded/240818-蓝牙配网以及softAP方式配网探索.md",
-    "docs/_秋招/常见问题起草模板.md",
     "docs/软件/05-语言/C语言/C语言八股.md",
     "docs/硬件/00-基础理论/模电/三极管和MOS管.md",
     "docs/硬件/00-基础理论/模电/00-模电总述.md",

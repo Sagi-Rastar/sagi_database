@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.20">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.31">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -151,7 +151,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -1219,6 +1219,63 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 灭火网关
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 灭火网关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 电源
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 电源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 调制方式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 工作模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 架构方式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1294,6 +1351,63 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 灭火网关
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 灭火网关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 电源
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 电源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 调制方式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 工作模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 架构方式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1319,6 +1433,39 @@
 <h3 id="12">1.2 主控<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <p>使用 STM32F407 作为系统的主控，在前期设计了最小系统板的可更换方案，拓展出大量接口</p>
 <p>使用 apriltag 定位，openmv 识别 apriltag 后通过自定串口协议发送给主控，同时激光测距以及凌霄 IMU 也通过串口发送数据给无人机主控，四轮小车和无人机的主控之间采用无线串口进行通信，并在四轮小车搭载的屏幕上显示航迹</p>
+<h2 id="2">2 灭火网关<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 电源<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>参考： <a href="https://blog.csdn.net/qq_21794157/article/details/122703076">https://blog.csdn.net/qq_21794157/article/details/122703076</a></p>
+</blockquote>
+<h4 id="211">2.1.1 调制方式<a class="headerlink" href="#211" title="Permanent link">&para;</a></h4>
+<p><strong>PFM 频率调制方式</strong></p>
+<p>开关的脉冲宽度一定，改变脉冲输出的频率使得电压稳定</p>
+<p>适合长时间小负载的工况，耗电较小</p>
+<p><strong>PWM 宽度调制方式</strong></p>
+<p>开关的脉冲频率一定，改变脉冲输出的宽度使得电压稳定</p>
+<p>效率较高，纹波以及噪声较小</p>
+<p><strong>不同点</strong></p>
+<p>一般小负载常用 PFM，重负载常用 PWM</p>
+<h4 id="212">2.1.2 工作模式<a class="headerlink" href="#212" title="Permanent link">&para;</a></h4>
+<ul>
+<li>CCM：电感电流连续工作模式</li>
+<li>DCM：电感电流不连续工作模式</li>
+<li>BCM：电感电流连续工作模式（周期结束时电感电流刚好降为 0）</li>
+</ul>
+<h4 id="213">2.1.3 架构方式<a class="headerlink" href="#213" title="Permanent link">&para;</a></h4>
+<p>伏秒平衡原理：在稳态工作的开关电源中电感两端的正伏秒值等于负伏秒值</p>
+<p><strong>BUCK</strong></p>
+<p><img alt="" src="image-20240925132114311.png" /></p>
+<p><img alt="" src="image-20240925131347200.png" /></p>
+<p>开关导通的时候输入电压加到 LC 滤波器的输入段，电感电流以固定斜率线性上升</p>
+<p><strong>BOOST</strong></p>
+<p><img alt="" src="image-20240925132815238.png" /></p>
+<p>开关管导通时：电感中的电流呈线性增加，电感自感阻碍电流上升，将电能转化为磁能存储起来，二极管用于防止电容对地放电</p>
+<p>开关管关闭时：电感的电流缓慢减少，自感作用阻碍电流减少，电感两端左负右正，因此输出端的电压为输入电压加电感产生的电压，输出电压大于输入电压</p>
+<p><strong>BUCK-BOOST</strong></p>
+<p><img alt="" src="image-20240925133705923.png" /></p>
+<p>注意输出电容极性向下</p>
 
 
 
@@ -1376,7 +1523,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.path", "navigation.tabs", "navigation.top", "content.code.annotate", "navigation.tracking", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
         <script src="../../js/heti.js"></script>
       
