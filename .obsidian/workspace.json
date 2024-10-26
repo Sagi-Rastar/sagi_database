@@ -174,8 +174,9 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "cbf64a1ff82d7d66",
+  "active": "3fb23f5db3f883e4",
   "lastOpenFiles": [
+    "docs/_CS/index.md",
     "docs/_Embedded/241010-硬件设计相关知识/image-20241017111440015.png",
     "docs/_Embedded/ESP32项目汇总.md",
     "docs/_秋招/秋招进度.md",
@@ -205,7 +206,6 @@
     "site/_秋招/秋招进度/index.html",
     "site/_秋招/秋招进度",
     "site/_秋招/常见问题起草模板/index.html",
-    "site/assets/images/favicon.png",
     "docs/_Embedded/240924-通讯协议总结.md",
     "docs/_CS/240905-C语言语法特性.md",
     "docs/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议.md",
