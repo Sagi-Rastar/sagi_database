@@ -46,30 +46,7 @@
     ],
     "defaultFilterType": "menu"
   },
-  "treeData": [
-    {
-      "id": "27948609368282c9",
-      "parent": 0,
-      "droppable": true,
-      "text": "我的投递",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "4b959270011642cc",
-      "parent": 0,
-      "droppable": true,
-      "text": "职位详情",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    }
-  ],
+  "treeData": [],
   "enableHtmlPreview": true,
   "supportLivePreviewInlineUrl": false,
   "enableTreeView": true
