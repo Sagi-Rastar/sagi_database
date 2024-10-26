@@ -46,7 +46,7 @@ def define_env(env):
                     # 使用文件夹名和 "index.md" 生成 MkDocs 路径
                     doc_path = f"{folder_name}"
                     grid_cards.append(
-                        f"-   :material-clock-fast:{{ '.lg .middle' }} [__{title}__](sagi_database/{doc_path})")
+                        f"-   :material-clock-fast:{{ '.lg .middle' }} [__{title}__](/{doc_path})")
             return "\n".join(grid_cards)
         except Exception as e:
             return f"Error generating grid cards: {e}"
