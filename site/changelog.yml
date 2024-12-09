@@ -1,4 +1,20 @@
 - '2024':
+  - '2024-12-05':
+    - newpage:
+        text: ' [ Embedded ] > ESP32&FreeRTOS笔记'
+        href: /sagi_database/_Embedded/241205-ESP32&FreeRTOS笔记
+  - '2024-11-28':
+    - newpage:
+        text: ' [ Embedded ] > JLINK调试相关技巧'
+        href: /sagi_database/_Embedded/241128-JLINK调试相关技巧
+  - '2024-11-24':
+    - newpage:
+        text: ' [ Embedded ] > ESP32Light开发文档'
+        href: /sagi_database/_Embedded/241124-ESP32Light开发文档
+  - '2024-10-10':
+    - newpage:
+        text: ' [ Embedded ] > 硬件设计相关知识'
+        href: /sagi_database/_Embedded/241010-硬件设计相关知识
   - '2024-09-24':
     - newpage:
         text: ' [ Embedded ] > 通讯协议总结'
@@ -88,3 +104,114 @@
     - newpage:
         text: ' [ Embedded ] > 韦根协议Wiegand'
         href: /sagi_database/_Embedded/240603-韦根协议Wiegand
+- _CS:
+  - '2024-09-23':
+    - newpage:
+        text: ' [ CS ] > C语言自编小模块笔记'
+        href: /sagi_database/_CS/240923-C语言自编小模块笔记
+  - '2024-09-18':
+    - newpage:
+        text: ' [ CS ] > C语言八股'
+        href: /sagi_database/_CS/240918-C语言八股
+  - '2024-09-05':
+    - newpage:
+        text: ' [ CS ] > C语言语法特性'
+        href: /sagi_database/_CS/240905-C语言语法特性
+  - '2024-08-29':
+    - newpage:
+        text: ' [ CS ] > python操作串口'
+        href: /sagi_database/_CS/240829-python操作串口
+  - '2024-07-16':
+    - newpage:
+        text: ' [ CS ] > 内存管理'
+        href: /sagi_database/_CS/240716-内存管理
+- _Embedded:
+  - '2024-12-05':
+    - newpage:
+        text: ' [ Embedded ] > ESP32&FreeRTOS笔记'
+        href: /sagi_database/_Embedded/241205-ESP32&FreeRTOS笔记
+  - '2024-11-28':
+    - newpage:
+        text: ' [ Embedded ] > JLINK调试相关技巧'
+        href: /sagi_database/_Embedded/241128-JLINK调试相关技巧
+  - '2024-11-24':
+    - newpage:
+        text: ' [ Embedded ] > ESP32Light开发文档'
+        href: /sagi_database/_Embedded/241124-ESP32Light开发文档
+  - '2024-10-10':
+    - newpage:
+        text: ' [ Embedded ] > 硬件设计相关知识'
+        href: /sagi_database/_Embedded/241010-硬件设计相关知识
+  - '2024-09-24':
+    - newpage:
+        text: ' [ Embedded ] > 通讯协议总结'
+        href: /sagi_database/_Embedded/240924-通讯协议总结
+  - '2024-09-23':
+    - newpage:
+        text: ' [ Embedded ] > STM32 杂项知识点'
+        href: /sagi_database/_Embedded/240923-STM32 杂项知识点
+  - '2024-09-05':
+    - newpage:
+        text: ' [ Embedded ] > 更新storage以及mqtt模块部分，逐步实现私有json协议'
+        href: /sagi_database/_Embedded/240905-更新storage以及mqtt模块部分，逐步实现私有json协议
+  - '2024-08-30':
+    - newpage:
+        text: ' [ Embedded ] > 缺陷检测光源控制器开发笔记'
+        href: /sagi_database/_Embedded/240830-缺陷检测光源控制器开发笔记
+    - newpage:
+        text: ' [ Embedded ] > 各种通用串口总线标准'
+        href: /sagi_database/_Embedded/240830-各种通用串口总线标准
+  - '2024-08-22':
+    - newpage:
+        text: ' [ Embedded ] > ESP32分区表及OTA'
+        href: /sagi_database/_Embedded/240822-ESP32分区表及OTA
+  - '2024-08-20':
+    - newpage:
+        text: ' [ Embedded ] > SolidWorks开螺纹孔'
+        href: /sagi_database/_Embedded/240820-SolidWorks开螺纹孔
+  - '2024-08-18':
+    - newpage:
+        text: ' [ Embedded ] > 蓝牙配网以及softAP方式配网探索'
+        href: /sagi_database/_Embedded/240818-蓝牙配网以及softAP方式配网探索
+  - '2024-08-14':
+    - newpage:
+        text: ' [ Embedded ] > CubeMX+FreeRTOS开发笔记'
+        href: /sagi_database/_Embedded/240814-CubeMX+FreeRTOS开发笔记
+  - '2024-07-19':
+    - newpage:
+        text: ' [ Embedded ] > LEDPWM及常用指示函数封装'
+        href: /sagi_database/_Embedded/240719-LEDPWM及常用指示函数封装
+  - '2024-06-26':
+    - newpage:
+        text: ' [ Embedded ] > BM8563 驱动移植，IDF-I2C 笔记'
+        href: /sagi_database/_Embedded/240626-BM8563 驱动移植，IDF-I2C 笔记
+  - '2024-06-25':
+    - newpage:
+        text: ' [ Embedded ] > 卡关系存储设计'
+        href: /sagi_database/_Embedded/240625-卡关系存储设计
+  - '2024-06-19':
+    - newpage:
+        text: ' [ Embedded ] > 蓝牙开发'
+        href: /sagi_database/_Embedded/240619-蓝牙开发
+  - '2024-06-18':
+    - newpage:
+        text: ' [ Embedded ] > SNTP 获取时间、AES 加密'
+        href: /sagi_database/_Embedded/240618-SNTP 获取时间、AES 加密
+  - '2024-06-17':
+    - newpage:
+        text: ' [ Embedded ] > IDF 的事件循环，及 wifi 运行流程'
+        href: /sagi_database/_Embedded/240617-IDF 的事件循环，及 wifi 运行流程
+  - '2024-06-15':
+    - newpage:
+        text: ' [ Embedded ] > smartconfig配网'
+        href: /sagi_database/_Embedded/240615-smartconfig配网
+  - '2024-06-03':
+    - newpage:
+        text: ' [ Embedded ] > 韦根协议Wiegand'
+        href: /sagi_database/_Embedded/240603-韦根协议Wiegand
+- _Ref: []
+- _Web:
+  - '2024-08-23':
+    - newpage:
+        text: ' [ Web ] > HTTPS与OpenSSL'
+        href: /sagi_database/_Web/240823-HTTPS与OpenSSL
