@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://sagidb.github.io/_Embedded/241205-ESP32%26FreeRTOS%E7%AC%94%E8%AE%B0/">
+        <link rel="canonical" href="https://sagidb.github.io/_Embedded/241205-ESP32%26FreeRTOS%E7%AC%94%E8%AE%B0%E4%B8%8E%E8%8B%A5%E5%B9%B2%E9%85%8D%E7%BD%AE/">
       
       
         <link rel="prev" href="../241128-JLINK%E8%B0%83%E8%AF%95%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7/">
@@ -18,15 +18,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.31">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>241205-ESP32&FreeRTOS 笔记 - Sagi's database</title>
+        <title>241205-ESP32&FreeRTOS 笔记与若干配置 - Sagi's database</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -58,7 +58,7 @@
     
       <link rel="stylesheet" href="../../css/heti.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -99,12 +99,12 @@
     <a href="../.." title="Sagi&#39;s database" class="md-header__button md-logo" aria-label="Sagi's database" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              241205-ESP32&amp;FreeRTOS 笔记
+              241205-ESP32&amp;FreeRTOS 笔记与若干配置
             
           </span>
         </div>
@@ -130,7 +130,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,15 +139,15 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
@@ -189,7 +189,7 @@
         
   
     
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
     
   
   欢迎
@@ -306,7 +306,7 @@
     <a href="../.." title="Sagi&#39;s database" class="md-nav__button md-logo" aria-label="Sagi's database" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     Sagi's database
@@ -324,7 +324,7 @@
       <a href="../.." class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
   
   <span class="md-ellipsis">
     欢迎
@@ -1055,7 +1055,7 @@
           
   
   <span class="md-ellipsis">
-    241205-ESP32&amp;FreeRTOS 笔记
+    241205-ESP32&amp;FreeRTOS 笔记与若干配置
   </span>
   
 
@@ -1066,7 +1066,7 @@
         
   
   <span class="md-ellipsis">
-    241205-ESP32&amp;FreeRTOS 笔记
+    241205-ESP32&amp;FreeRTOS 笔记与若干配置
   </span>
   
 
@@ -1091,6 +1091,15 @@
   <a href="#1-freertos" class="md-nav__link">
     <span class="md-ellipsis">
       1 FreeRTOS 队列
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-esp32log" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 配置 ESP32log 输出
     </span>
   </a>
   
@@ -1196,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../_Ref/FreeRTOS_API_Reference_CN_%E5%85%A8%E6%9C%AC/" class="md-nav__link">
+      <a href="../../_Ref/241205-FreeRTOS_API_Reference_CN_%E5%85%A8%E6%9C%AC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1336,6 +1345,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2-esp32log" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 配置 ESP32log 输出
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1351,21 +1369,54 @@
                   
 
 
-<h1 id="241205-esp32freertos">241205-ESP32&amp;FreeRTOS 笔记<a class="headerlink" href="#241205-esp32freertos" title="Permanent link">&para;</a></h1>
+<h1 id="241205-esp32freertos">241205-ESP32&amp;FreeRTOS 笔记与若干配置<a class="headerlink" href="#241205-esp32freertos" title="Permanent link">&para;</a></h1>
 <h2 id="1-freertos">1 FreeRTOS 队列<a class="headerlink" href="#1-freertos" title="Permanent link">&para;</a></h2>
 <p><strong>创建</strong></p>
-<div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="n">QueueHandle_t</span><span class="w"> </span><span class="n">lock_queue</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="cp">#define xQueueCreate( uxQueueLength, uxItemSize )    xQueueGenericCreate( ( uxQueueLength ), ( uxItemSize ), ( queueQUEUE_TYPE_BASE ) )</span>
 
-<span class="n">lock_queue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xQueueCreate</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">lock_request_t</span><span class="p">));</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lock_queue</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">ESP_LOGE</span><span class="p">(</span><span class="n">TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Failed to create lock queue&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="n">QueueHandle_t</span><span class="w"> </span><span class="n">xQueueGenericCreate</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">UBaseType_t</span><span class="w"> </span><span class="n">uxQueueLength</span><span class="p">,</span>
+<span class="w">                                       </span><span class="k">const</span><span class="w"> </span><span class="n">UBaseType_t</span><span class="w"> </span><span class="n">uxItemSize</span><span class="p">,</span>
+<span class="w">                                       </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">ucQueueType</span><span class="w"> </span><span class="p">)</span>
 </code></pre></div>
+<p>创建队列，操作对象为队列句柄 <code>QueueHandle_t</code>，指定队列长度以及成员大小，若失败则返回 <code>NULL</code>。</p>
 <p><strong>发送请求</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">xQueueSend</span><span class="p">(</span><span class="w"> </span><span class="n">xQueue</span><span class="p">,</span><span class="w"> </span><span class="n">pvItemToQueue</span><span class="p">,</span><span class="w"> </span><span class="n">xTicksToWait</span><span class="w"> </span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="cp">#define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) \</span>
+<span class="cp">    xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )</span>
+
+<span class="n">BaseType_t</span><span class="w"> </span><span class="n">xQueueGenericSend</span><span class="p">(</span><span class="w"> </span><span class="n">QueueHandle_t</span><span class="w"> </span><span class="n">xQueue</span><span class="p">,</span>
+<span class="w">                              </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">pvItemToQueue</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">TickType_t</span><span class="w"> </span><span class="n">xTicksToWait</span><span class="p">,</span>
+<span class="w">                              </span><span class="k">const</span><span class="w"> </span><span class="n">BaseType_t</span><span class="w"> </span><span class="n">xCopyPosition</span><span class="w"> </span><span class="p">)</span>
 </code></pre></div>
+<p>发送给队列数据，指定队列、数据以及等待时间。</p>
+<p><strong>接收请求</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">BaseType_t</span><span class="w"> </span><span class="n">xQueueReceive</span><span class="p">(</span><span class="w"> </span><span class="n">QueueHandle_t</span><span class="w"> </span><span class="n">xQueue</span><span class="p">,</span>
+<span class="w">                          </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">pvBuffer</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">TickType_t</span><span class="w"> </span><span class="n">xTicksToWait</span><span class="w"> </span><span class="p">)</span>
+</code></pre></div>
+<p><strong>队列集合</strong></p>
+<p>某些业务逻辑需要接收多个队列集合发送来的请求时可以使用队列集合：</p>
+<div class="highlight"><pre><span></span><code><span class="n">QueueSetHandle_t</span><span class="w"> </span><span class="n">xQueueCreateSet</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">UBaseType_t</span><span class="w"> </span><span class="n">uxEventQueueLength</span><span class="w"> </span><span class="p">)</span>
+
+<span class="n">BaseType_t</span><span class="w"> </span><span class="n">xQueueAddToSet</span><span class="p">(</span><span class="w"> </span><span class="n">QueueSetMemberHandle_t</span><span class="w"> </span><span class="n">xQueueOrSemaphore</span><span class="p">,</span>
+<span class="w">                               </span><span class="n">QueueSetHandle_t</span><span class="w"> </span><span class="n">xQueueSet</span><span class="w"> </span><span class="p">)</span>
+
+<span class="n">QueueSetMemberHandle_t</span><span class="w"> </span><span class="n">xQueueSelectFromSet</span><span class="p">(</span><span class="w"> </span><span class="n">QueueSetHandle_t</span><span class="w"> </span><span class="n">xQueueSet</span><span class="p">,</span>
+<span class="w">                                                </span><span class="n">TickType_t</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">xTicksToWait</span><span class="w"> </span><span class="p">)</span>
+</code></pre></div>
+<p>创建队列集合时需要指定最大可包含的队列数，在添加之后接收消息时使用 <code>xQueueSelectFromSet</code> 判断来自于哪个队列。</p>
+<p><code>QueueSetMemberHandle_t</code> 与 <code>QueueHandle_t</code> 相同，可以直接进行比较。</p>
+<h2 id="2-esp32log">2 配置 ESP32log 输出<a class="headerlink" href="#2-esp32log" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>参考： <a href="https://blog.csdn.net/ztvzbj/article/details/130472344">https://blog.csdn.net/ztvzbj/article/details/130472344</a>
+// LOG 打印输出开启或关闭的相关选项</p>
+</blockquote>
+<ol>
+<li>在 menuconfig -&gt; Bootloader config -&gt; Bootloader log verbosity -&gt; No output 可将启动 log 关闭</li>
+<li>主界面 -&gt; Component config -&gt; Log output -&gt; Default log verbosity -&gt; No output 可将组件 log 关闭</li>
+<li>Boot ROM Behavior -&gt; Permanently change Boot ROM output -&gt; Permanently disable logging 可永久关闭 log</li>
+<li><code>esp_log_level_set(TAG, ESP_LOG_INFO)</code> 可在程序中开启或变化</li>
+</ol>
 
 
 
@@ -1388,7 +1439,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
   Back to top
 </button>
         
@@ -1420,10 +1471,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.path", "navigation.tabs", "navigation.top", "content.code.annotate", "navigation.tracking", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.indexes", "navigation.path", "navigation.tabs", "navigation.top", "content.code.annotate", "navigation.tracking", "header.autohide"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
         <script src="../../js/heti.js"></script>
       

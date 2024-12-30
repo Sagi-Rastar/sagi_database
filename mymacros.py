@@ -36,6 +36,12 @@ def define_env(env):
     def generate_grid_cards(dir):
         """生成 grid 卡片内容，遍历指定目录下的所有以 '_' 开头的文件夹。"""
         grid_cards = []
+        descriptions = {
+            "Embedded": "嵌入式相关笔记",
+            "Ref": "较为系统的各类大段参考资料",
+            "CS": "计算机科学相关笔记",
+            "Web": "网页开发相关笔记"
+        }
         try:
             for folder_name in os.listdir(dir):
                 folder_path = os.path.join(dir, folder_name)
@@ -45,8 +51,9 @@ def define_env(env):
 
                     # 使用文件夹名和 "index.md" 生成 MkDocs 路径
                     doc_path = f"{folder_name}"
+                    description = descriptions.get(folder_name[1:], "未知")
                     grid_cards.append(
-                        f"-   :material-clock-fast:{{ '.lg .middle' }} [__{title}__](/sagi_database/{doc_path})")
+                        f"-   :material-clock-fast:{{ '.lg .middle' }} [__{title}__](/sagi_database/{doc_path}) - {description}")
             return "\n".join(grid_cards)
         except Exception as e:
             return f"Error generating grid cards: {e}"
@@ -118,7 +125,7 @@ def define_env(env):
             with open('docs/changelog.yml', 'w', encoding='utf-8') as yaml_file:
                 yaml.dump(changelog_data, yaml_file, allow_unicode=True,
                           default_flow_style=False, sort_keys=False)
-            return f"## Timeline "  # "Changelog YAML generated successfully."
+            return f"## :material-timetable: Change Log"  # "Changelog YAML generated successfully."
         except Exception as e:
             # 记录错误信息
             # changelog_data.append({"error": f"Error generating changelog YAML: {e}"})
